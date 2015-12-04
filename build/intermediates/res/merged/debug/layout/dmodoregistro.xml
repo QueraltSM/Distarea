@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/basedialog" >
+    		
+		<RadioGroup
+		    android:id="@+id/modoregistro"
+		    android:layout_width="match_parent"
+    		android:layout_height="wrap_content" >
+		    
+		    <RadioButton 
+		        android:id="@+id/auto"
+		        android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="@string/registerAutoLogin"/>
+		    
+		    <RadioButton 
+		        android:id="@+id/manual"
+		        android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="@string/registerManualLogin"/>
+		    
+		</RadioGroup>
+		
+		<LinearLayout
+		    android:id="@+id/linearegcode"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:visibility="gone" >
+		
+			<TextView 
+			    android:layout_width="wrap_content"
+		      	android:layout_height="wrap_content"
+		      	android:text="@string/registerLogCode"/>
+			
+			<EditText 
+			    android:id="@+id/regcode"
+			    android:layout_width="match_parent"
+		      	android:layout_height="wrap_content"
+		      	android:inputType="text"/>
+		
+		</LinearLayout>
+	
+	<LinearLayout
+	    android:id="@+id/botones"
+	    android:layout_width="match_parent"
+      	android:layout_height="wrap_content"
+      	android:orientation="horizontal">
+	    
+	    <Button 
+	        android:id="@+id/cancelar"
+	        android:layout_width="0dip"
+      		android:layout_height="wrap_content"
+      		android:layout_weight="1"
+      		android:text="@string/registerCancel"/>
+	    
+	    <Button 
+	        android:id="@+id/aceptar"
+	        android:layout_width="0dip"
+      		android:layout_height="wrap_content"
+      		android:layout_weight="1"
+      		android:text="@string/registerContinue"/>
+	    
+	</LinearLayout>
+
+</LinearLayout>

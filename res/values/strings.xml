@@ -1,0 +1,649 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <string name="app_name">Distarea</string>
+    <string name="tvgenerica">"http://efacdis.disoft.es/comercio/innova/"</string>
+    <string name="paginaefacdis">"http://efacdis.disoft.es/"</string>
+    <string name="dirbbdd">"jdbc:postgresql://87.106.247.15/app_distarea?user=demomovil"&amp;password=dismovil</string>
+    <string name="dirlogos">"http://www.distarea.es/subido/"</string>
+    <string name="camposest">"app_company.idcompanyapp, idclienteglobal, nombre, telefonocontacto, mailrecepcion, fechaultimamodificacion, activo, comentariovisual, ubicacionmap, comentariointerno, desdefechaci, hastafechaci, tiendavirtual, zonainfluencia, logo, codactivageneral, restringepedidos, usuarioapp, requierefirma, requieretelefono, mailrecepcionmsg, configura"</string>
+    <string name="copyrightd">&#169; Disoft Servicios Informáticos, S.L.</string>
+    
+    <!-- Reciclados -->
+    <string name="articulo">Artículo</string>
+    <string name="menviado">Mensaje enviado</string>
+    <string name="mail">E-mail: </string>
+    <string name="see">Ver</string>
+    <string name="ms">Modo Seguro</string>
+    <string name="txtcp">Código Postal:</string>
+    <string name="txtuser">Nombre de usuario:</string>
+    <string name="txtpass">Contraseña:</string>
+    <string name="seg">Seguridad</string>
+    <string name="fin">Finalizar</string>
+    <string name="beespere">Buscando establecimientos.\nEspere, por favor&#8230;</string>
+    <string name="be">Buscando establecimientos&#8230;</string>
+    <string name="acbdespere">Actualizando campos de la Base de Datos.\nEspere, por favor&#8230;</string>
+    
+    <!-- Ayuda.java -->
+    <!-- <string name="popirajustes">Ir a ajustes</string> -->
+    <string name="pedirayuda">Pedir ayuda</string>
+    <string name="nointernet">No se ha detectado conexión a Internet. Revise sus ajustes e intente reconectar.</string>
+    <string name="recargar">Recargar</string>
+    <string name="textoayuda">¿Tienes algún problema que no sabes cómo resolver, tras haber visto la ayuda? ¿Has encontrado algún fallo en la aplicación? ¿Se te ocurre cómo mejorarla? ¡Cuéntanoslo todo en la siguiente ventana!</string>
+    <!-- <string name="disoftayuda">soporte@disoft.es</string> -->
+    <string name="disoftayuda">javiercastellanoguillen@gmail.com</string>
+    <string name="asuntoayuda">solicita ayuda para Distarea</string>
+    <!-- <string name="menviado">Mensaje enviado</string> -->
+    <string name="mfallo">Fallo al enviar mensaje</string>
+    <string name="merror">Error al enviar mensaje</string>
+    
+    <!--  Chat.java -->
+    <string name="chatViewPreviousMessages">Ver mensajes anteriores</string>
+	<string name="chatSendingMessage">Enviando mensaje...</string>
+	<string name="chatFilesHasBeenAttachedStart">\n\n Se han adjuntado</string> 
+	<string name="chatFilesHasBeenAttachedEnd">archivos a la copia por e-mail de este mensaje:</string> 
+	<string name="chatOneFileHasBeenAttached">\n\n Se ha adjuntado un archivo a la copia por e-mail de este mensaje:\n\t</string>
+	<string name="chatMessageTo">Mensaje de </string>
+	<string name="chatTo">para </string>
+	
+	<!--  Conversaciones.java -->
+	<string name="conversations">Conversaciones</string>
+	<string name="conversationsNoStarted">No tiene conversaciones iniciadas. Puede enviar un mensaje a un establecimiento favorito usando el botón de la esquina.</string>
+	<string name="conversationsNew">New Conversation</string>  	    
+    
+    <!-- Establecimiento.java -->
+    <string name="tel">Teléfono: </string>
+    <string name="mailped">E-mail de pedidos: </string>
+    <string name="mailmsj">E-mail de contacto: </string>
+    <string name="web">Página Web: </string>
+    <string name="dir">Dirección: </string>
+    <string name="valor">Valoración: </string>
+    <string name="dltoast">Descargando todos los artículos de la Tienda Virtual del Establecimiento&#8230;</string>
+    <!-- Añadir Contacto -->
+    <string name="textoaddcontacto">¿Está seguro de querer añadir este contacto a la Lista de Contactos de su teléfono?</string>
+    <string name="contactoagregado">Se ha agregado el establecimiento a sus contactos</string>
+    <string name="contactonoagregado">No se ha agregado el establecimiento a sus contactos</string>
+    <!-- Geolocalizacion.java -->
+    <string name="geolocalizacion">Geolocalización</string>
+    <!-- menus -->
+    <string name="prior">Prioritario</string>
+    <string name="refresh">Refrescar</string>
+    <string name="establishmentCall">Llamar al establecimiento</string>
+	<string name="establishmentSendEmail">Enviar e-mail</string>
+	<string name="establishmentAddToPhonebook">Añadir a la agenda de contactos del dispositivo</string>
+	<string name="establishmentSendMessageViaDistarea">Enviar mensaje desde Distarea</string>
+	<string name="establishmentLocateStoreMap">Localizar la tienda en el mapa</string>
+	<string name="establishmentBookmark">Añadir a establecimientos prioritarios</string>
+	<string name="establishmentSeePriorityMessage">Ver mensaje prioritario</string>
+	<string name="establishmentCreateView">Crear/Ver pedido</string>
+	<string name="establishmentDownloadVirtualStore">Descargar productos de la Tienda Virtual</string>
+	<string name="establishmentPromotionDate">Este establecimiento no ha elaborado un comentario interno, o su promoción ha pasado de fecha.</string>
+	<string name="establishmentUpdate">Actualizando información del establecimiento</string>
+    
+    <!-- ListaAnterior.java -->
+    <string name="pedidosanteriores">Pedidos Anteriores</string>
+    <string name="reciclajearticulos">Reciclaje de artículos</string>
+    <string name="popupselvacia">No ha seleccionado ningún artículo de los de sus pedidos anteriores. Seleccionarlos ahora le ahorrará tener que volver a definir precios y cantidades. ¿Está seguro de que quiere seguir adelante?</string>
+    <string name="insertarahora">¿Desea insertar algún artículo ahora?</string>
+    <string name="okeinsertarahora">Se han añadido sus artículos de los pedidos anteriores. ¿Quiere insertar algún artículo más?</string>
+    <string name="previousListPreviousOrder">No ha seleccionado ningún artículo de los de su pedido anterior. Seleccionarlos ahora le ahorrará tener que volver a definir precios y cantidades. ¿Está seguro de que quiere seguir adelante?</string>
+	<string name="previousListAddingRepeated">Sumando cantidades de artículo repetido.</string>
+	<string name="previousListAddingItemAbove">Añadiendo artículo creado anteriormente.</string>  
+	<string name="previousListItemCreated">Artículo creado.</string>
+	<string name="previousListDeviceNotSupported">Dispositivo no soportado</string>
+    
+    <!-- ListaArticulos.java -->
+    <string name="articulos">Artículos</string>
+    <string name="sel1">) seleccionado</string>
+    <string name="selx">) seleccionados</string>    
+    <!--  <string name="articulo">Artículo</string> -->
+    <string name="txtsel">Seleccionado</string>
+    <string name="borart">Borrar artículos</string>
+    <string name="addart">Añadir artículos</string>
+    <string name="busart">Buscar artículo</string>
+    <string name="resord">Reestablecer orden</string>
+    <string name="itemListYourGoingTo">Va a borrar definitivamente estos</string>
+    <string name="itemListFromTheHistory">artículos del historial. ¿Está seguro?</string>
+	<string name="itemListDeletePermanently">Va a borrar definitivamente este artículo del historial. ¿Está seguro?</string>
+	  
+    <!-- ListaCompra.java -->
+    <string name="shoppingListLackInfo">Se han detectado las siguientes carencias de información:\n</string> 
+	<string name="shoppingListSameUserAndNick">\n\t· El nombre de usuario y el seudónimo son el mismo</string> 
+	<string name="shoppingListEmptyAddress">\n\t· La dirección no puede estar vacía.\n</string>
+	<string name="shoppingListToComplete">Para completar la información necesaria para realizar el pedido, por favor, acceda a Configuración -> Datos de Usuario, o pulse el botón de la izquierda.</string>
+	<string name="shoppingListSendOrderCopy">Enviar copia del pedido a mi e-mail</string>
+	<string name="shoppingListSignTheOrder">Firmar el pedido</string>
+	<string name="shoppingListSendTo">Enviar a: </string>
+	<string name="shoppingListPickedUpPersonally">Se recogerá personalmente.</string>
+	<string name="shoppingListReference">Referencia:</string>
+	<string name="shoppingListDeliveryDate">Fecha de entrega:</string>
+	<string name="shoppingListDeliveryTime">Hora de entrega:</string> 
+	<string name="shoppingListOrderNotes">Observaciones del pedido: </string> 
+	<string name="shoppingListAdditionalInformation">Información adicional</string>
+	<string name="shoppingListRetrieveItems">Puede recuperar los artículos creados pulsando   ···</string>  
+	<string name="shoppingListBarcodeExits">El código de barras insertado ya existe en otro artículo</string>
+	<string name="shoppingListDeviceNotSupported">Dispositivo no soportado</string>
+	<string name="shoppingListConectionError">Error de conexión</string>
+	<string name="shoppingListRegister">Para darse de alta, debe tener conexión a Internet.</string>
+	
+	<!-- Leyenda -->
+	<string name="ley_pulse">Pulse </string>
+	<string name="ley_mas">para añadir productos a su pedido.</string>
+	<string name="ley_mas2">para crear una lista de la compra nueva.</string>
+	<string name="ley_reloj">para ver una lista de artículos pedidos con anterioridad.</string>
+	<string name="ley_carrito">para visitar la Tienda Virtual.</string>
+	<string name="ley_datosestablecimiento">Mantenga pulsado el selector de establecimientos para acceder a más información y opciones del mismo.</string>
+	<string name="ley_mensajeprivado">para enviar un mensaje privado al Establecimiento.</string>
+	<string name="ley_mensajeasesoria">para realizar una contabilización por voz.</string>
+	<string name="ley_reservasuno">para reservar pista.</string>
+	<string name="ley_reservavarios">para buscar pistas libres en Internet.</string>
+	<string name="ley_lapiz">para modificar el nombre de la lista, o borrarla.</string>
+	<string name="ley_qr">para escanear un código QR de un establecimiento relacionado con Distarea.</string>
+	
+	<!-- LeyendaEstablecimiento -->
+	<string name="leyest_titulo">Pulse el nombre del Establecimiento en la parte superior para acceder directamente a la zona de pedidos.</string>
+	<string name="leyest_icono">Mantenga pulsado el icono del Establecimiento para actualizar sus datos.</string>
+	<string name="leyest_mensajeprioritario">para ver un mensaje publicado por el Establecimiento para todos los que lo consideren prioritario.</string>
+	<string name="leyest_descargaproductos">para descargar la lista de productos del Establecimiento manualmente.</string>
+	
+    <!-- ListaEst.java -->
+    <string name="nomest">Nombre del establecimiento</string>
+    <string name="codpos">Código Postal</string>
+    <string name="estmar1">establecimiento marcado</string>
+    <string name="estmarx">establecimientos marcados</string>
+    <string name="dl1">Descargando su establecimiento.\nEspere, por favor&#8230;</string>
+    <string name="dlx">Descargando establecimientos.\nEspere, por favor&#8230;</string>
+    
+    <!-- ListaEstablecimientos.java -->
+    <string name="titlemenuest">Menú establecimientos</string>
+    <string name="invest">Invitar</string>
+    <string name="addest">Añadir</string>
+    <string name="hidest">Ocultar</string>
+    <string name="resest">Restaurar</string>
+    <string name="busest">Buscar establecimiento</string>
+    <string name="limpio">Este programa permite capturar mensajes y/o pedidos con sus establecimientos preferidos\n\nPara conectarse puede:\n\t- Mediante código de ha recibido en el proceso añadir de \n\n-Si el establecimiento no exige invitación, puede conectarse mediante el nombre, o código postal del establecimiento\n\nTambién puede invitar a sus establecimientos preferidos a usar Distarea, mediante el proceso invitar de </string>
+    <string name="limpioempresa">Este programa permite capturar mensajes y/o pedidos con sus establecimientos preferidos\n\nPara conectarse puede:\n\t- Mediante código de ha recibido en el proceso añadir de \n\n-Si el establecimiento no exige invitación, puede conectarse mediante el nombre, o código postal del establecimiento\n\nTambién puede invitar a sus establecimientos preferidos a usar Distarea, mediante el proceso invitar de </string>
+    <string name="busnores">Su búsqueda no produjo resultados.</string>
+    <string name="envinv">Enviando su invitación&#8230;</string>
+    <!-- lvlistaestablecimientos.xml -->
+    <string name="favorito">Favorito</string>
+    <!-- popupestablecimientos.xml -->
+    <string name="userauto">disoftmovil@gmail.com</string>
+    <string name="passauto">dismovil</string>
+    <string name="asuntoauto"> desea comunicarse con usted.</string>
+    <string name="cuerpoauto">Como cliente habitual de su empresa y con el afán de mejorar y agilizar las vías de comunicación entre ambos, le invito a utilizar DISTAREA.\n\nSe trata de una aplicación GRATUITA, apta para uso en dispositivos móviles Android, que le permitiría enviarme sus ofertas y promociones  y a mí realizar pedidos.\n\nPara obtener más información o darse de alta, solo tiene que acceder a través del siguiente enlace:  http://www.distarea.es\n\nSi así lo hace, le agradecería que me lo comunicara utilizando el sistema propio de mensajería que incorpora la aplicación\n\nPara cualquier otra duda no dude en contactar  con nosotros \n\nMis datos\nNombre: </string>
+    <!-- Invitar Establecimiento -->
+    <!-- <string name="mail">E-mail: </string> -->
+    <string name="textoinvitarest">¿Le gustaría añadir un establecimiento? Envíe un mail de invitación:</string>
+    <string name="invitado">Se ha enviado un correo de invitación a </string>
+    <string name="noinvitado">Ha habido un problema al enviar un correo de invitación a </string>
+    <string name="nopudoinvitar">No se pudo mandar el e-mail</string>
+    <string name="cancelainvitar">Se ha cancelado la invitación a un establecimiento.</string>
+    <!-- Buscar Establectimiento -->
+    <string name="textobuscar">Introduzca el código postal o parte de la denominación del establecimiento con el que conectará.</string>
+    <string name="tbemp">También podrá introducir el código de invitación si el establecimiento se lo ha proporcionado.</string>
+    <string name="txtbuscar">Nombre o CP: </string>
+    <string name="txtcodinv">Código de Invitación: </string>
+    <string name="err2lineas">Introduzca sólo un criterio de búsqueda</string>
+    <!-- <string name="beespere">Buscando establecimientos.\nEspere, por favor&#8230;</string> -->
+    <string name="dldata">Descargando datos&#8230;</string>
+    <string name="be1">Buscando establecimiento&#8230;</string>
+    <string name="errcodinv1">El código insertado no es válido.</string>
+    <string name="errcodinv2">Este establecimiento ya se encuentra registrado.</string>
+    <string name="errcodinv3">Código de registro incorrecto. Por favor, revise el código.</string>
+    <string name="estenc">¡Establecimiento encontrado!</string>
+    <!-- Mensaje automatizado nuevo usuario -->
+    <string name="nuevocliente1">El usuario</string>
+    <string name="deempresa">de la empresa</string>
+    <string name="nuevocliente2">se ha conectado con su establecimiento.</string>
+    <string name="condir">Su dirección es</string>
+    <string name="ycontel">, y su teléfono de contacto es</string>
+    <string name="contel">Su teléfono de contacto es</string>
+    
+    <!-- Actualizar -->
+    <string name="busestnue">Buscando establecimientos nuevos&#8230;</string>
+    
+    <!-- ListaCompra.java -->
+    <string name="seleccionar">Seleccionar</string>
+    <string name="menu">Inicio</string>
+    <string name="mipedido">Solicitud</string>
+    <string name="actualizando">Actualizando datos.\n Espere, por favor&#8230;</string>
+    <!-- <string name="popuplista">Aquí puede crear una lista para controlar los productos que quiera comprar, sin tener que hacer un pedido a un establecimiento.</string> -->
+    <string name="popuplistaparticular">Este proceso le permite crear productos para generar listas de la compra en otros establecimientos.</string>
+    <string name="popuplistaempresa">Está a punto de crear una lista de pedido independiente. Ésta no se puede enviar a un establecimiento.</string>
+    <string name="txteditalista">Aquí puede editar el nombre de la lista, o borrarla.</string>
+    <string name="nombrelista">Nombre de la lista: </string>
+    <string name="errornombreseleccionar">La lista no puede llamarse \"Seleccionar\"</string>
+    <string name="cancelalista">No se ha creado la lista</string>
+    <string name="encped"><u>Pedidos:</u></string>
+    <string name="encest"><u>Establecimientos:</u></string>
+    <string name="encmsj"><u>Mensajes:</u></string>
+    <string name="nhn"><b> - No hay novedades - </b></string>
+    <string name="pp">Pedido pendiente</string>
+    <string name="pc">Pedido cerrado</string>
+    <string name="pe">Pedido enviado</string>
+    <string name="ppr">Pedido procesado</string>
+    <string name="nhplista">Añada artículos a su lista para no olvidarlos. Cuando esté en el establecimiento, marque los adquiridos.</string>
+    <string name="borrarlista">Está a punto de borrar esta Lista. ¿Está seguro de haber acabado con ella?</string>
+    <string name="cancelaborrarlista">No se ha borrado la Lista</string>
+    <string name="nohaypedidos">Si desea enviar un mensaje, pulse \nSi desea crear un pedido, pulse</string>
+    <string name="nohaypedidosasesoria">Si desea enviar un mensaje, pulse </string>
+    <string name="nhppedidopendiente">Para borrar o editar un artículo, mantenga pulsada la línea del producto. Para finalizar su pedido, pulse la flecha en el Total.</string>
+    <string name="total">Total</string>
+    
+    <!-- Menú Superior Dcha. -->
+    <string name="menutitle">Menú Principal</string>
+    <string name="mensajes">Mensajes</string>
+    <string name="establecimientos">Establecimientos</string>
+    <string name="panterior">Pedido anterior</string>
+    <string name="opciones">Configuración</string>
+    <string name="ayuda">Ayuda</string>
+    <!-- Tabla -->
+    <!-- <string name="articulo">Artículo</string> -->
+    <string name="unidades">Und.</string>
+    <string name="tipo">Tipo</string>
+    <string name="udytipo">Und.  Tipo</string>
+    <string name="precio">Precio</string>
+    <string name="importe">Importe</string>
+    <string name="observaciones">Notas</string>
+    <string name="check">&#10003;</string>
+    <!-- Editar Artículo (LongPress), popuparticulopedido.xml -->
+    <string name="popartpedtxtcbarras">Cód. barras: </string>
+    <string name="popartpedscan">Escanear</string>
+    <string name="popartpedtxtcantidad">Cantidad: </string>
+    <string name="popartpedtxtprecio">Precio: </string>
+    <string name="popartpedtxtimporte">Importe: </string>
+    <string name="popartpededi">Editar</string>
+    <!-- <string name="popartpedcan">Cancelar</string> -->
+    <string name="popartpedbor">Borrar</string>
+    <!-- Borrar Artículo (Ambos casos) -->
+    <string name="textoconfborart">¿Está seguro de querer borrar este artículo de su pedido?</string>
+    <string name="textoconfborartpedant">Borrar este artículo no lo eliminará de este pedido, que ya está enviado, sino que si hiciera una copia del pedido, no se incluiría. ¿Está seguro de querer borrar este artículo de su próximo pedido?</string>
+    <!-- VistaControl (elipses) -->
+    <string name="tiene">Tiene </string>
+    <string name="unpp">Tiene un pedido pendiente.\n</string>
+    <string name="xpp2"> pedidos pendientes.\n</string>
+    <string name="unest">Tiene un establecimiento nuevo.\n\n -Toque aquí para verlo-</string>
+    <string name="xest2"> establecimientos nuevos. \n\n -Toque aquí para verlos-</string>
+    <string name="unmsj">Tiene un mensaje nuevo.\n\n -Toque aquí para verlo-</string>
+    <string name="xmsj2"> mensajes nuevos.\n\n -Toque aquí para verlos-</string>
+    
+    
+    <!-- popupadd.xml -->
+    <string name="popsolicitar">Solicitar un artículo nuevo</string>
+    <string name="popcbarras">Código de Barras:</string>
+    <string name="poparticulo">Artículo: </string>
+    <string name="popunidades">Cantidad: </string>
+    <string name="poptipo">Tipo: </string>
+    <string name="popprecio">Precio: </string>
+    <string name="popobs">Notas: </string>
+    <string name="yaexiste">"El nombre del artículo ya existe. Revise la lista de artículos, si quiere pedirlo de nuevo"</string>
+    <string name="nohayant">No ha realizado pedidos anteriormente</string>
+    <string name="artrep1">Quiere añadir a su pedido </string>
+    <string name="de">de</string>
+    <string name="artrep2">, pero ya tiene en su pedido</string>
+    <string name="artrepops">.\n¿Desea sumar las cantidades, reemplazarla por la nueva, o cancelar?</string>
+    <string name="sumacant">Sumando cantidades de artículo repetido.</string>
+    
+    <!-- popuptip.xml -->
+    <string name="tiplupa">Si esta lista o establecimiento tiene pedidos anteriores, podrá acceder a sus productos con el botón de la lupa, situado en el margen superior izquierda.</string>
+    <string name="nvamem">No volver a mostrar este mensaje.</string>
+    
+    <!-- popupfinish.xml -->
+    <string name="textofinish">Antes de enviar la información de su pedido, elija si quiere que sea <b>enviado a domicilio</b>, o si prefiere <b>recogerlo personalmente</b>.</string>
+    <string name="ad">A domicilio</string>
+    <string name="rp">Recoger personalmente</string>
+    <string name="direnv">Dirección del envío:</string>
+    <string name="savedir">¿Quiere guardar esta dirección como su dirección predeterminada, para futuros envíos? (Se seguirá preguntando por la dirección, pero se autorellenará con esta).</string>
+    <!-- popupresult.xml -->
+    <string name="popok">Su pedido ha sido enviado correctamente.</string>
+    <string name="popnook">Ha habido un problema enviando su pedido. Por favor, inténtelo de nuevo más tarde.</string>
+    <string name="popinternetfail">No se ha podido conectar con el Establecimiento. Revise su conexión a Internet e inténtelo de nuevo más tarde.</string>
+    
+    <!-- Botón Nuevo Pedido -->
+    <string name="textoconfnuevo">Va a crear un pedido nuevo desde cero, que sobreescribirá este. ¿Está seguro de querer continuar?</string>
+    <string name="textoconfnuevo2">Va a crear un pedido nuevo. ¿Está seguro de querer continuar?</string>
+    <string name="textocopia">Está a punto de hacer un pedido nuevo con los artículos que solicitó la última vez. ¿Está seguro de querer continuar?</string>
+    
+    <!-- Botón Buscar -->
+    <!-- popupbuscar.xml -->
+    <string name="popbuscar">Buscar artículo</string>
+    <string name="noencontrado">No se han encontrado pedidos con el criterio seleccionado en su búsqueda.</string>
+    
+    <!-- Botón Total -->
+    <!-- popuptotal.xml -->
+    <string name="enviarpedido">Enviar\npedido</string>
+    <string name="adjuntafirma">Adjuntar\nfirma</string>
+    <string name="verestablecimiento">Ver\nestablecimiento</string>
+    <string name="quitarmarcados">Quitar artículos\nmarcados</string>
+    <string name="quitarmarcadosalt">\"Comprados\" artículos marcados</string>
+    <string name="borrartodo">Borrar\ntodo</string>
+    <string name="borrartodoalt">Limpiar\nlista</string>
+    <string name="marcartodo">Marcar\ntodo</string>
+    <string name="desmarcartodo">Desmarcar\ntodo</string>
+    <string name="confirmaborrar">Va a borrar todos los artículos de su pedido. ¿Está seguro?</string>
+    <string name="confirmaborraralt">Los productos pasarán al historial, que se activa con la lupa, para que la creación de la próxima lista de la compra le sea más sencilla. ¿Continuo?</string>
+    <string name="confirmaquitar">Va a quitar todos los elementos marcados. ¿Está seguro?</string>
+    <string name="confirmaquitaralt">Se va a proceder a dar por comprados y pasarán al historial los productos marcados. El resto quedará como pendiente. ¿Desea Continuar?</string>
+    
+	<!-- NotificacionMensajes.java -->
+	<string name="messageNotificationSearching">Buscando mensajes...</string>
+	<string name="messageNotificationNewMessageOnDistarea">Mensaje nuevo en Distarea</string>
+	<string name="messageNotificationHave">Tiene</string>
+	<string name="messageNotificationNewMessages">mensajes nuevos.</string>
+	<string name="messageNotificationNewMessageFrom">Tiene un mensaje nuevo de</string>
+	<string name="messageNotificationNewMessageBy">Mensaje nuevo de</string>
+	
+    <!-- Mensajes.java -->
+    <string name="share">Compartir</string>
+    <string name="recibidos">Recibidos</string>
+    <string name="enviados">Enviados</string>
+    <string name="redactar">Redactar</string>
+    <string name="noenviados">No ha enviado ningún mensaje</string>
+    <string name="cmen">Comprobando sus mensajes</string>
+    <string name="via">Compartir vía:</string>
+    <string name="cadenacompartir">Te invito a probar la app Distarea. Compra con tu móvil en las tiendas de siempre. Descárgala aquí: https://play.google.com/store/apps/details?id=com.disoft.distarea</string>
+    <string name="malmacen">Fallo de conexión, inténtelo de nuevo. Mensaje almacenado.</string>
+    <!-- enviados.xml -->
+    <string name="enviadoa">Destinatario:</string>
+    <string name="fechahora">Fecha/Hora:</string>
+    <string name="notsentyet">(Aún no se ha enviado)</string>
+    <string name="leyendaenv">Leyenda:\n\t\t\t[ &#8230;] Pendiente\t[  &#187;  ] Enviado\n\t\t\t[&#10003;] Leído\t[  ?  ] Desconocido</string>
+    <!-- <string name="ver">Ver</string> -->
+    <!-- recibidos.xml -->
+    <string name="enviadopor">Remitente:</string>
+    <string name="norecibidos">No ha recibido ningún mensaje</string>
+    <string name="leyendarec">Leyenda:\n\t\t\t[ &#160;! ] Nuevo\t[&#10003;] Leído\n\t\t\t[  ?  ] Desconocido</string>
+	<string name="messagesTODO">la composición de la ventana de adjuntos. Ambos usan el flag</string>
+	<string name="messagesRemoveAttachedFile">Quitar archivo adjunto</string>
+	<string name="messagesYouAreAboutToRemoveStart">Está a punto de quitar el archivo adjunto</string>
+	<string name="messagesYouAreAboutToRemoveEnd">de su mensaje. Esto NO borrará su archivo del dispositivo. ¿Está seguro de querer continuar?</string>
+	<string name="messagesYesRemoveIt">Sí, quitarlo</string>
+	<string name="messagesNoKeepIt">No, conservarlo</string>
+	
+    <!-- Mensaje.java -->
+	<string name="messageEstablishment">Establecimiento </string>
+	<string name="messagePending">Mensaje pendiente</string>
+    <!-- <string name="menviado">Mensaje enviado</string> -->
+    <string name="mrecibido">Mensaje recibido</string>
+    <string name="mrecibidode">Mensaje recibido de: </string>
+    <string name="menviadoa">Mensaje enviado a: </string>
+    <string name="recibido">Recibido </string>
+    <string name="leido">Leído </string>
+    <string name="enviado">Enviado </string>
+    <string name="dia">el día </string>
+    <string name="alas"> a las </string>
+    <string name="estado">Estado: </string>
+    <string name="pendiente">Pendiente de ser enviado</string>
+    <string name="desconocido">Desconocido</string>
+    <string name="borrarmensaje">¿Está seguro de querer borrar este mensaje?</string>
+    
+	
+    <!-- Redactar.java -->
+    <string name="nofav">No tiene usted establecimientos marcados como favoritos para poder comunicarse. Puede agregar alguno desde el menú de Establecimientos.</string>  
+	<string name="writeAttatchFile">Adjuntar archivo</string>
+	<string name="writeTakeAPhoto">Sacar foto</string>
+	<string name="writeMakeAVideo">Grabar vídeo</string>
+	<string name="writeRecordVoice">Grabar voz</string>  
+	<string name="writeSendingMessage">Enviando mensaje...</string> 
+	<string name="writeEmailSent">E-mail con adjuntos enviado</string>
+	<string name="writeFilesAttached">Se han adjuntado archivos a la copia por e-mail de este mensaje</string>
+	<string name="writeFilesHasBeenAttachedStart">\n\n Se han adjuntado</string> 
+	<string name="writeFilesHasBeenAttachedEnd">archivos a la copia por e-mail de este mensaje:</string> 
+	
+    <!-- xml/opciones.xml -->
+    <string name="tono">Tono para notificaciones</string>
+    <string name="vibra">Vibración en las notificaciones</string>
+    <string name="vibras">Activa/desactiva vibración para mensajes nuevos</string>
+    <string name="ch">Comunicación háptica</string>
+    <string name="chs">Pequeña vibración al pulsar botones</string>
+    <string name="bg">Botón accesible</string>
+    <string name="bgs">Añade un botón grande en la ventana de Solicitud</string>
+    <string name="vi">Ver Imágenes</string>
+    <string name="vis">Permite ver fotos de los artículos en las listas (tarda más)</string>
+    <string name="cmain">Establecimiento inicial</string>
+    <string name="du">Datos de Usuario</string>
+    <!-- <string name="seg">Seguridad</string> -->
+    <!-- <string name="ms">Modo Seguro</string> -->
+    <string name="mss">Pide contraseña antes de envíos</string>
+    <string name="submenus">Toca para más opciones&#8230;</string>
+    <string name="txtpopupms">Inserte su contraseña para</string>
+    <string name="motivo1">enviar su mensaje.</string>
+    <string name="cancel1">Mensaje cancelado</string>
+    <string name="motivo2">finalizar su pedido.</string>
+    <string name="cancel2">Finalización de pedido cancelada</string>
+    <string name="motivo3">invitar al establecimiento.</string>
+    <string name="motivo4">cambiar datos de usuario.</string>
+    <!-- <string name="confirmar">Confirmar</string> -->
+    <!-- <string name="cancelar">Cancelar</string> -->
+    <string name="undefined">*Sin definir*</string>
+    <string name="invalidmail">*E-mail inválido*</string>
+    <string name="invalidmailerror">Revise su e-mail. No es válido.</string>
+    <!-- xml/opciones2.xml -->
+    <string name="subop2">Datos de usuario</string>
+    <string name="info">Hemos buscado sus datos en nuestra Base de Datos, pero no han habido coincidencias. Por favor, rellene los siguientes campos, para completar un registro, y toque "Confirmar" para terminar. Si no quiere registrarse como un cliente nuevo, salga de la aplicación e intente iniciar sesión con sus datos de nuevo.</string>
+    <string name="cnombre">Cambiar nombre</string>
+    <string name="ccp">Cambiar código postal</string>
+    <string name="cmoneda">Cambiar moneda</string>
+    <string name="ctipo">Cambiar tipo de cliente</string>
+    <string name="cpass">Cambiar contraseña</string>
+    <string name="cseudonimo">Cambiar seudónimo</string>
+    <string name="cmail">Cambiar e-mail</string>
+    <string name="ctel">Cambiar teléfono</string>
+    <string name="cdir">Cambiar dirección</string>
+    <string name="cpais">Cambiar país</string>
+    <string name="tda">Actividades de Interés</string>
+    <string name="actemp">Actividad Empresarial</string>
+    <string name="cnemp">Cambiar nombre de la Empresa</string>
+    <string name="ccodsuc">Cambiar código de sucursal</string>
+    <string name="aboutUs">Sobre nosotros</string>    
+	
+	<!-- Opciones2.java -->
+	<string name="option2AllTheEstablishments">Desea descargar TODOS los Establecimientos de la nueva zona de influencia?</string> 
+	<string name="option2CheckTheNewFields">Revise los campos nuevos: Nombre de Empresa y Código de Sucursal.</string>
+	<string name="options2InvalidEmail">*E-mail inválido</string>
+	<string name="option2Undefined">*No definido*</string> 
+	<string name="option2NotABranch">*No es sucursal*</string> 
+	<string name="option2SearchingEstablishmentUser">Buscando su usuario en establecimientos...</string>  
+	<string name="option2SynchronizingEstablishment">Sincronizando mensajes del establecimiento</string>  
+	<string name="option2CheckTheCompanyName">Revise el campo \"Nombre de Empresa\", no puede estar vacío</string>
+	<string name="option2Synchronizing">Sincronizando...</string>
+	<string name="option2YouDoNotHaveSynchronized">No tiene establecimientos sincronizados.</string>
+	<string name="option2XMLSincronize">Sincronizar mensajes de Establecimiento</string>
+	<string name="option2XMLSincronizeSummary">Busca si tienes un Establecimiento del que recibir mensajes</string>
+	
+	<!-- Opciones3.java -->
+	<string name="option3Undefined">*Sin definir*</string>
+	<string name="options3InvalidEmail">*E-mail inválido</string>
+	<string name="options3CheckEmail">Revise su e-mail. No es válido</string>
+	<string name="options3DisableSafeMode">desactivar Modo Seguro.</string> 
+	<string name="options3Warning">¡Atención! Las siguientes opciones pueden eliminar del dispositivo información importante de la aplicación, provocando errores, pérdidas de datos permanentes y fallos de la aplicación. ¿Está seguro de lo que está haciendo?</string>
+	<string name="options3Watchout">¡Cuidado! No entrar si no se sabe lo que se hace</string>
+	
+	<!-- OpcionesAv.java -->
+	<string name="optionsAvConfiguration">Configuración</string>
+	<string name="optionsAvAdvancedOptions">Opciones Avanzadas</string>
+	<string name="optionsAvWarning">¡Atención! Va a eliminar TODOS los establecimientos descargados, y sus pedidos pendientes. Esta información NO se puede recuperar. ¿Está seguro?</string>
+	<string name="optionsAvAllDeleted">Se han borrado todos los establecimientos</string> 
+	<string name="optionsAvMessageReseted">Reiniciados mensajes de establecimientos</string> 
+	<string name="optionsAvSearchingYourUser">Buscando su usario en establecimientos...</string>  
+	<string name="optionsAvSyncMessages">Sincronizando mensajes del establecimiento</string>
+	<string name="optionsAvXMLRemoveEstablishment">Borrar Establecimientos</string> 
+	<string name="optionsAvXMLRemoveEstablishmentSummary">Se eliminarán de la base de datos interna todos los establecimientos</string>  
+	<string name="optionsAvXMLResetDate">Reiniciar fecha</string> 
+	<string name="optionsAvXMLResetDateSummary">Permite volver a ver el Mensaje Prioritario de los establecimientos</string>
+	<string name="optionsAvXMLDownloadCNAE">Actualizar CNAEs</string>
+	<string name="optionsAvXMLDownloadCNAESummary">Redescarga todos los códigos CNAE de sus establecimientos</string>
+	<string name="optionsAvXMLClientRequest">Solicitar cliente</string>
+	<string name="optionsAvXMLClientRequestSummary">En autoventa y en asesorías, solicita previamente el cliente</string>
+	<string name="introduzcacodigo">Introduzca su código de empleado para poder conectar.</string>
+	
+	<!-- OpCNAE.java -->
+	<string name="opCNAEBusineddActivities">Actividades empresariales</string>
+	<string name="opCNAEActivityTypes">Tipos de actividad</string>
+	<string name="opCNAEDefineBusinessActivity">Debe definir una Actividad Empresarial</string>
+	<string name="opCNAEMoreThanFive">Una empresa no puede dedicarse a más de 5 actividades empresariales</string> 
+	
+    <!-- <string name="confirmar">Confirmar</string> -->
+    <string name="idenuso">El identificador ya se encuentra en uso. Tendrá que elegir otro.</string>
+    <!-- <string name="nonombre">Inserte su nombre para poder continuar.</string>
+    <string name="nocp">Inserte Código Postal para poder continuar.</string> ESTOS NO SE USAN YA --> 
+    <string name="usernametaken">El nombre de usuario ya está en uso</string>
+    <string name="ccp1">Cambiando zona de influencia</string>
+    <string name="ccp2">Descargando establecimientos</string>
+    <!-- xml/opciones3.xml -->
+    <string name="crecpass">Recordar contraseña</string>
+    <string name="cps">Pregunta secreta</string>
+    <string name="crs">Respuesta secreta</string>
+    <!-- xml/opabout.xml -->
+    <string name="about">Sobre nosotros</string>
+    <string name="texto1about">Esta aplicación ha sido desarrollada por </string>
+    <string name="enlaceabout"><b><u>Disoft Servicios Informáticos, S.L.</u></b></string>
+    <string name="texto2about">\nSoluciones informáticas a la medida de su empresa.</string>
+    <string name="version"><b>Versión:</b> </string>
+
+    <!-- Registro.java -->
+	<string name="registerWrongCode">Código incorrecto. Revise su código</string>
+	<string name="registerPutRegCode">Debe introducir un código de registro para el modo Automático</string>
+	<string name="registerDownloadingLogos">Descargando logos:</string> 
+	<string name="registerSavingData">Guardando sus datos\nPor favor, espere...</string>
+	<string name="registerMode">Modo de registro</string>
+	<string name="registerAutoLogin">Registro automático</string>
+	<string name="registerManualLogin">Registro manual</string>
+	<string name="registerLogCode">Código de registro</string>
+	<string name="registerCancel">Cancelar</string>
+	<string name="registerContinue">Continuar</string>
+	
+	<string name="identificate">Identifícate</string>
+	<string name="usuario">Usuario:</string>
+    <!-- <string name="txtuser">Nombre de usuario:</string> -->
+    <string name="hintUser">Recomendamos teléfono</string>
+    <!-- <string name="txtpass">Contraseña:</string> -->
+    <string name="txtpass2"> Repetir\ncontraseña:</string>
+    <string name="txtpais"> País:</string>
+    <!-- <string name="idconsejo">Introduzca un valor que recuerde fácilmente: nº de teléfono, e-mail, apodo,&#8230;</string> -->
+    <string name="idconsejo">Si su país es distinto a España, añada delante del teléfono "+" y el código de su país.</string>
+    <string name="continuar">Continuar</string>
+    <string name="salir">Salir</string>
+    <string name="inicioload">Conectando con nuestros servidores&#8230;</string>
+    <string name="caraperm">Caracteres permitidos: letras, números, \"@\", \"-\", \"_\" y \".\"</string>
+    <string name="nousernameerror">No se ha insertado teléfono.</string>
+    <string name="nopassworderror">No se ha insertado contraseña.</string>
+    <string name="nopassmatch">Las contraseñas insertadas no coinciden.</string>
+    <string name="usernamelength">Revise que el teléfono sea válido.</string>
+    <string name="passlength">La contraseña debe tener un mínimo de 6 caracteres.</string>
+    <string name="usernametaken1">El teléfono ya está registrado, y la contraseña no es la correcta.\nRevise su contraseña, use otro teléfono para crear una cuenta nueva, o compruebe que está usando el código de país correcto.</string>
+    <string name="conectando">Conectando</string>
+    <string name="ri">Recuperando información</string>
+    <string name="cd">Comprobando datos</string>
+    
+    <!-- Registro2.java -->
+    <string name="ru">Registrando usuario</string>
+    <!-- <string name="seg">Seguridad</string> -->
+    <string name="op1">Opcionales</string>
+    <string name="op2">Opcionales 2</string>
+    <!-- <string name="fin">Finalizar</string> -->
+    
+    <!-- RegCP.java -->
+    <string name="nest0">No existen establecimientos registrados. Más adelante, podrá invitarlos a adherirse a la plataforma, o buscarlos por su denominación.</string>
+    <string name="nestuno">Actualmente, existe un establecimiento en su zona de influencia.</string>
+    <string name="nest1">Actualmente, existen</string>
+    <string name="nest2">establecimientos en su zona de influencia.</string>
+    <string name="encabezado">Estos son los establecimientos que tenemos registrados en su zona de influencia:\n</string>
+    <string name="pie">En el proceso "Establecimientos" podrás incluir los de otras zonas, o invitar a otros.</string>
+    <!-- <string name="be">Buscando establecimientos&#8230;</string> -->
+    <!-- regcp.xml -->
+    <string name="regstart">Estás registrándote como un usuario nuevo.</string>
+    <string name="txttipo">¿Eres un usuario particular, o una empresa?</string>
+    <string name="regtxtcp">Necesitamos que nos digas tu código postal, para saber en qué zona vives, y qué establecimientos pueden llegar hasta ti.</string>
+    <!-- <string name="txtcp">Código Postal:</string> -->
+    <string name="validar">Validar</string>
+    <string name="regtxtnemp">Introduce el Nombre de la Empresa:</string>
+    <string name="regtxtcodsuc">Si eres una Sucursal o Departamento, introduce tu Código de Identificación:</string>
+    <string name="txtcodsuc">Código de Sucursal:</string>
+    <string name="desliza">&lt;&#8212;Desliza para continuar</string>
+    
+    
+    <!-- RegRecPass.java -->
+    <string name="prs">Pregunta-Respuesta Secretas</string>
+    <string name="email">E-mail</string>
+    <!-- regrecpass.xml -->
+    <string name="txtregrecpass">Si olvidas tu contraseña, necesitamos una forma de reconocerte. Te damos a elegir entre un mail, o una pregunta y respuesta secreta. Te recomendamos que uses tu e-mail, ya que será preciso para poder realizar pedidos.</string>
+    <string name="txtregrecpassemp">Si olvidas tu contraseña, necesitamos una forma de reconocerte.</string>
+    <string name="rademail">Por e-mail</string>
+    <string name="radprs">Por pregunta-respuesta sercretas</string>
+    
+    <!-- regop1.xml -->
+    <string name="regoptxt">Datos opcionales</string>
+    <string name="txtnombreop1">Introduce tu nombre, seudónimo o apodo</string>
+    <string name="txttlfop1">Teléfono para confirmar pedidos</string>
+    <string name="txtdirop1">Dirección para envío de mercancías</string>
+    
+    <!-- regop2.xml -->
+    <string name="txtmsop2">¿Quieres activar el Modo Seguro? (Se te preguntará la contraseña para varias funciones de la aplicación)</string>
+    <!-- <string name="ms">Modo Seguro</string> -->
+    <!-- <string name="txtpmsj">¿Quieres permitir publicidad? (Sólo de tus establecimientos cercanos)</string>
+    <string name="pmsj">Permitir mensajes</string>
+    <string name="txtinteresop2">¿Te interesan algunos de estos campos?</string>  -->
+    <string name="txtmonedaop2">¿En qué moneda quieres ver tus compras?</string>
+    <string name="txtCNAE">Seleccione los tipos de establecimiento de su interés. A los NO seleccionados no se les podrá localizar ni crear pedidos.</string>
+    <string name="txtCNAEempresa">Seleccione las actividades de su Empresa. Debe seleccionar al menos una.</string>
+    	
+    <!-- RegFin.java -->	
+	<string name="regFinCertify">Confirmo ser mayor de edad y he leído y acepto los términos y condiciones de uso.</string>
+	<string name="regFinSQLError">Error de SQL, volviendo a Registro...</string>
+	<string name="regFinDownloadingLogos">Descargando logos...</string>
+	
+    <!-- <string name="email">E-mail</string> -->
+    <string name="ps">Pregunta secreta:</string>
+    <string name="rs">Respuesta secreta:</string>
+    <string name="on">Activado</string>
+    <string name="off">Desactivado</string>
+    <!-- regfin.xml -->
+    <string name="regfintxt">Revisa tus elecciones. Estás a un paso de terminar.</string>
+    <!-- <string name="txtuser">Nombre de usuario:</string> -->
+    <!-- <string name="txtpass">Contraseña:</string> -->
+    <string name="txtnemp">Nombre de la Empresa:</string>
+    <!-- <string name="txtcp">Código Postal:</string> -->
+    <string name="txtrecpass">Seguridad:</string>
+    <string name="txtrs">Respuesta secreta:</string>
+    <string name="txtnombre">Seudónimo:</string>
+    <string name="txttlf">Teléfono:</string>
+    <string name="txttc">Tipo de cliente:</string>
+    <string name="txtms">Modo Seguro:</string>
+    <string name="txtpm">Permite mensajes:</string>
+    <string name="txtinteres">Campos de interés:</string>
+    <string name="txtinteresempresa">Actividades empresariales:</string>
+    <string name="txtmoneda">Moneda:</string>
+    <string name="txttdi">Tipos de interés:</string>
+    <string name="todos">Todos</string>
+    <string name="ninguno">Ninguno</string>
+    <string name="finalizar">Confirmar registro</string>
+    
+    <!-- TiendaVirtual.java -->
+    <string name="nohayarticulos">No se han encontrado artículos.</string>
+    <string name="error404">La tienda virtual que busca no se encuentra disponible en este momento. Póngase en contacto con el dueño del Establecimiento, o inténtelo de nuevo más tarde.</string>
+	<string name="virtualStoreUpdating">Actualizando información del establecimiento</string>
+	<string name="virtualStoreDownloaded">Descargados</string>
+	<string name="virtualStoreUpdated">Actualizados</string>
+	<string name="virtualStoreArticles">artículos</string>
+	<string name="virtualStoreNothing">No hay novedades.</string>  
+    
+    <!-- Descripciones (Accesibilidad) -->
+    <string name="btnaceptar">Botón aceptar</string>
+    <string name="btncancelar">Botón cancelar</string>
+    <string name="btnlistaarticulos">Botón lista artículos</string>
+    <string name="btntiendavirtual">Botón tienda virtual</string>
+    <string name="btnescanear">Botón escanear</string>
+    <string name="btndesplegar">Botón desplegar</string>
+    
+    <string name="theresNoFilesToAdd">No hay ficheros que añadir</string>
+    
+    <!-- Condiciones de uso -->
+    <string name="terminosycondiciones">CONDICIONES DE USO Y DE PRIVACIDAD.&lt;br/&gt;&lt;br/&gt;El usuario reconoce ser mayor de edad y que no cuenta con ningún tipo de impedimento legal para el uso de esta aplicación.\n\nEsta prohibido el uso de esta aplicación que incluya contenidos de tipo sexual o de acciones o procesos que cuenten con impedimentos legales en su país de origen.&lt;br/&gt;&lt;br/&gt;El uso de DISTAREA no supone que el usuario esté obligado a facilitar ninguna información sobre si mismo. En el caso de que proporcione el usuario alguna información de carácter personal, los datos recogidos serán utilizados con la finalidad, en la forma y con las limitaciones y derechos que recoge la Ley Orgánica 15/1999, de Protección de Datos de Carácter Personal y sus normas de desarrollo. Los datos facilitados por los usuarios serán incorporados a los ficheros de carácter personal de los que es responsable DISOFT, donde serán conservados de forma confidencial.&lt;br/&gt;&lt;br/&gt;DISOFT procederá a la cancelación de los datos recogidos cuando dejen de ser necesarios o pertinentes para la finalidad para la que hubiesen sido recabados o registrados. En el caso de que los datos recogidos se utilizasen para una finalidad distinta para la cual hubiesen sido recabados o recogidos se requerirá el consentimiento previo de los interesados. Los usuarios cuyos datos sean objeto de tratamiento podrán ejercitar gratuitamente los derechos de oposición, acceso e información, rectificación, cancelación de sus datos y revocación de su autorización sin efectos retroactivos en los términos especificados en la Ley Orgánica 15/1999, de Protección de Datos de Carácter Personal, conforme al procedimiento legalmente establecido. Estos derechos podrán ser ejercitados dirigiendo comunicación por escrito al domicilio de DISOFT sito en la calle Federico Viera número 163 de Las Palmas de Gran Canaria (35012) o a través de de correo electrónico en la siguiente dirección administracion@disoftweb.com&lt;br/&gt;&lt;br/&gt;En el caso de que los usuarios debieran facilitar su dirección de correo electrónico para acceder a algunos de los servicios ofertados o para identificarse voluntariamente, podrán manifestar que no desean recibir ningún tipo de comunicación que pudiese enviar, siempre que no esté ligada estrictamente a la finalidad para la que se solicitó el servicio. DISOFT pone a disposición de los usuarios un correo electrónico donde puede manifestar su intención de darse de baja de la lista de contactos: administracion@disoftweb.com.\n\nLa aceptación de estas condiciones de uso y de privacidad conllevan la implícita renuncia a su fuero propio si lo tuvieran y se someten a los Juzgados y Tribunales de Las Palmas de G.C. ESPAÑA, para cualquier cuestión litigiosa que se deriven.</string>
+    
+    <!-- Ayuda dictado documentos -->
+    <string name="ayudadictado">Pulse el micrófono y dicte los campos del documento. No haga paradas en la conversación, ya que finalizará el proceso. No obstante, si esto ocurriera, podrá continuar por donde lo dejó volviendo a pulsar en el micrófono o corrigiéndolo manualmente.\n\na.	Los importe superiores a 1000, recomendamos lo digan de 2 en 2. Así, 8745 se debería decir OCHENTA Y SIETE CUARENTA Y CINCO.\nb. Los decimales siempre se activan con la palabra CON \nc. Los términos que obligatoriamente deberían dictar son: \n\ti.	EMPRESA \n\tii.	FECHA \n\tiii.	FACTURA \n\tiv.	TOTAL \n\nd. Otros términos que el programa sabe interpretar son: \n\ti. BASE y añadir el porcentaje de IVA o IGIC. Por ejemplo para el 21% de IVA dictaríamos: BASE 21 \n\tii. CUENTACOBRO. A continuación deberá indicar la cuenta de cobro \n\tiii. COBRADO/PAGADO. Fecha en la que se cobró/pagó. \n\tiv. IMPORTECOBRO \n\tv. CUENTACONTRAPARTIDA. Sólo puede reconocer una y a continuación deberá indicar la cuenta contable que usaremos como contrapartida \n\tvi. IMPORTECONTRAPARTIDA \n\tvii. RETENCIÓN. Es la base de retención, e igual que en el IVA o IGIC, debe añadirle el porcentaje. Por ejemplo: RETENCIÓN QUINCE\n\tviii. IMPLÍCITO. Sólo indicar SI o No\n\tix. EXENTO. Indicar a continuación la cantidad EXENTA \n\tx. MODO. Se recogerán los distintos modos de la factura. Por ejemplo: MODO COMPRAS, o MODO PAGO. \n\txi. DESCRIPCIÓN.\n\txii. AVISO. Es un mensaje que aparecerá en CONDIS con información de interés.\n\nAl terminar podrá comprobar el resultado de la conversación. \n\nTRUCOS PARA AGILIZAR.\n\n•	En la fecha no es necesario decir el mes y/o el año si es el actual.\n•	Sólo a las empresas que apliquen 2 o más IVA o IGIC debe indicar la BASE, ya que CONDIS automatiza según los documentos anteriores.\n•	No se moleste en modificar el nombre de la empresa si esta no fue entendida perfectamente. El sistema se autoregula con las denominaciones de las empresas a medida que usamos el programa CONDIS.\n•	Si lo prefiere en vez de decir el nombre de la empresa puede indicar el código de la cuenta contable.</string>
+	
+</resources>

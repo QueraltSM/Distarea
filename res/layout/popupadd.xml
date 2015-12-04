@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/azulDisoft3">
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@color/azulDisoft3"
+    android:padding="10dip" >
+    
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="@string/poparticulo"/>
+
+    <LinearLayout 
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:gravity="center">
+	    
+	    <EditText 
+	        android:id="@+id/articulo"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:inputType="textCapSentences|textNoSuggestions"
+	        android:textColor="@android:color/black"
+	        android:layout_weight="1">
+	        <requestFocus />
+	    </EditText>
+	    
+	    <ImageButton
+	        android:id="@+id/mic"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:src="@drawable/device_access_mic"
+        	android:paddingLeft="10dp"
+        	android:paddingRight="10dp"
+        	android:layout_margin="0dp"
+            android:background="@drawable/botonfino" />
+	       
+	</LinearLayout>
+	
+    <LinearLayout 
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:textStyle="bold"
+	        android:text="@string/popunidades"/>
+	    
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:textStyle="bold"
+	        android:text="@string/poptipo"/>
+	    
+	    <TextView
+	      	android:id="@+id/popprecio"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:textStyle="bold"
+	        android:gravity="center"
+	        android:text="@string/popprecio"/>
+	       
+	</LinearLayout>
+	
+     <LinearLayout 
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:gravity="left">
+	    
+         <EditText 
+	        android:id="@+id/unidades"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:ems="3"
+	        android:inputType="numberDecimal"
+	        android:layout_weight="1"
+	        android:selectAllOnFocus="true"
+	        android:textColor="@android:color/black"
+	        android:text="1"/>
+         
+         <Spinner
+	        android:id="@+id/tipo"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:spinnerMode="dialog"
+	        android:drawSelectorOnTop="true"
+	        android:layout_weight="1"
+        	android:entries="@array/tipound"
+        	android:entryValues="@array/tipoundv"/>
+         
+         <TextView
+		        android:id="@+id/dolar"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"/>
+         
+         <EditText 
+		        android:id="@+id/precio"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:ems="3"
+		        android:inputType="numberDecimal"
+		        android:layout_weight="1"
+		        android:selectAllOnFocus="true"
+		        android:textColor="@android:color/black"
+		        android:text="0"/>
+		    
+		    <TextView
+		        android:id="@+id/moneda"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"/>
+         
+         
+     </LinearLayout>
+	
+    <LinearLayout 
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+	    
+        <ImageButton
+            android:id="@+id/avanzado" 
+            android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:gravity="center"
+        	android:src="@drawable/navigation_expand"
+        	android:padding="0dp"
+        	android:layout_margin="0dp"
+            android:background="@drawable/botonfino"
+            android:contentDescription="@string/btndesplegar"/>
+	    
+    </LinearLayout>
+	
+    <LinearLayout
+        android:id="@+id/opciones"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:orientation="vertical"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:visibility="gone" >
+        
+        <LinearLayout 
+            android:id="@+id/lineaobs"
+	        android:orientation="horizontal"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="left">
+
+		    <TextView
+		        android:id="@+id/txtobs"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/popobs"/>
+		    
+		    <EditText 
+		        android:id="@+id/obs"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1"
+		        android:textColor="@android:color/black"
+		        android:inputType="textCapSentences|textNoSuggestions"/>
+		    
+		    <ImageButton
+		        android:id="@+id/micobs"
+	            android:layout_height="match_parent"
+	            android:layout_width="wrap_content"
+	            android:src="@drawable/device_access_mic"
+	        	android:paddingLeft="10dp"
+	        	android:paddingRight="10dp"
+	        	android:layout_margin="0dp"
+	            android:background="@drawable/botonfino"/>
+	    
+	    </LinearLayout>
+	    
+	    <LinearLayout 
+	        android:orientation="horizontal"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="left">
+	    
+		    <TextView
+		        android:id="@+id/popcbarras"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/popcbarras"/>
+		    
+		    <EditText 
+		        android:id="@+id/cbarras"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:textColor="@android:color/black"
+		        android:inputType="textNoSuggestions"/>
+		    
+		</LinearLayout>
+
+	</LinearLayout>
+	    
+    <LinearLayout 
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:gravity="center">
+        
+        <ImageButton
+            android:id="@+id/confirm"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:src="@drawable/navigation_accept"
+        	android:padding="0dp"
+        	android:layout_margin="0dp"
+            android:background="@drawable/botonfino" 
+            android:contentDescription="@string/btnaceptar"/>
+        
+        <ImageButton
+            android:id="@+id/scan"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:src="@drawable/barcode"
+        	android:padding="0dp"
+        	android:layout_margin="0dp"
+            android:background="@drawable/botonfino"
+            android:contentDescription="@string/btnescanear"/>
+        
+        <ImageButton
+            android:id="@+id/web"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:src="@drawable/shop_cart"
+        	android:padding="0dp"
+        	android:layout_margin="0dp"
+            android:background="@drawable/botonfino"
+            android:contentDescription="@string/btntiendavirtual"/>
+   
+    </LinearLayout>
+    
+</LinearLayout>
+
+	<LinearLayout
+	    android:layout_height="wrap_content"
+	    android:layout_width="wrap_content"
+	    android:layout_alignParentTop="true"
+		android:layout_alignParentLeft="true">
+	    
+	    <ImageButton
+            android:id="@+id/list"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:src="@drawable/action_search"
+        	android:padding="0dp"
+        	android:layout_margin="0dp"
+        	android:inputType="textNoSuggestions"
+            android:background="@drawable/botonfino"
+            android:contentDescription="@string/btnlistaarticulos"/>
+	    
+	    <ProgressBar
+	        android:id="@+id/loading"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:padding="0dp"
+        	android:layout_margin="0dp"
+            android:visibility="gone"/>
+    
+	</LinearLayout>
+
+	<LinearLayout
+	    android:layout_height="wrap_content"
+	    android:layout_width="wrap_content"
+	    android:layout_alignParentTop="true"
+		android:layout_alignParentRight="true">
+	    
+	    <ImageButton
+            android:id="@+id/cancel"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:src="@drawable/navigation_cancel"
+        	android:padding="0dp"
+        	android:layout_margin="0dp"
+            android:background="@drawable/botonfino"
+            android:contentDescription="@string/btncancelar"/>
+    
+	</LinearLayout>
+</RelativeLayout>

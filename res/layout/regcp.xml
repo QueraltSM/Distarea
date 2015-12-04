@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical" 
+    android:gravity="center_horizontal"
+    android:id="@+id/base">
+    
+    <ScrollView
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical"
+        android:id="@+id/englobe">
+
+    <TextView 
+        android:text="@string/regstart"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top|center_horizontal"/>
+    
+    <!-- Espacio extra -->
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    
+    <TextView
+   	    android:layout_width="fill_parent"
+   	    android:layout_height="wrap_content"
+   	    android:text="@string/txttipo"
+		android:background="@drawable/test3az"/>
+    
+   	<RadioGroup 
+   	    android:id="@+id/tipo"
+       	android:layout_height="wrap_content"
+       	android:layout_width="fill_parent">
+    	    
+    	    <RadioButton
+    	        android:id="@+id/particular"
+    	        android:layout_height="wrap_content"
+        		android:layout_width="fill_parent"
+    	        android:text="Particular"></RadioButton>
+    	    
+    	    <RadioButton
+    	        android:id="@+id/empresa"
+    	        android:layout_height="wrap_content"
+        		android:layout_width="fill_parent"
+    	        android:text="Empresa"></RadioButton>
+    	    
+    	</RadioGroup>
+    
+    <!-- Espacio extra -->
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    
+     <LinearLayout
+         android:id="@+id/lineacp"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:gravity="left"
+         android:background="@android:color/background_light"
+         android:orientation="horizontal"
+         android:visibility="gone">
+     
+     	<TextView 
+     	    android:id="@+id/txtcp"
+     	    android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="@string/txtcp"/>
+     	
+     	<EditText
+     	    android:id="@+id/cp"
+     	    android:layout_width="wrap_content"
+         	android:layout_height="wrap_content"
+         	android:inputType="number"
+         	android:textColor="@android:color/black"
+         	android:ems="4"/>
+     	
+     	<Button
+     	    android:id="@+id/validar"
+     	    android:layout_width="fill_parent"
+     	    android:layout_height="fill_parent"
+     	    android:text="@string/validar"
+     	    android:background="@drawable/botondisoft"/>
+     		
+     </LinearLayout>
+     
+     <!-- Espacio extra -->
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+     
+     <TextView
+   	    android:id="@+id/regtxtnemp"
+       	android:text="@string/regtxtnemp"
+       	android:layout_width="wrap_content"
+       	android:layout_height="wrap_content"
+       	android:gravity="right"
+        android:background="@drawable/test3az"
+       	android:visibility="gone"/>
+    
+    
+   	<EditText
+   	    android:id="@+id/nemp"
+   	    android:layout_width="wrap_content"
+       	android:layout_height="wrap_content"
+       	android:inputType="text"
+       	android:textColor="@android:color/black"
+       	android:ems="15"
+       	android:visibility="gone" />
+   	
+   	<TextView
+   	    android:id="@+id/regtxtcodsuc"
+       	android:text="@string/regtxtcodsuc"
+       	android:layout_width="wrap_content"
+       	android:layout_height="wrap_content"
+       	android:gravity="right"
+        android:background="@drawable/test3az"
+       	android:visibility="gone"/>
+    
+     <LinearLayout
+         android:id="@+id/lineacodsuc"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:gravity="left"
+         android:background="@android:color/background_light"
+         android:orientation="horizontal"
+         android:visibility="gone">
+     
+     	<TextView 
+     	    android:id="@+id/txtcodsuc"
+     	    android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="@string/txtcodsuc"/>
+     	
+     	<EditText
+     	    android:id="@+id/codsuc"
+     	    android:layout_width="wrap_content"
+         	android:layout_height="wrap_content"
+         	android:inputType="number"
+         	android:textColor="@android:color/black"
+         	android:ems="15"
+         	android:text="0" />
+     		
+     </LinearLayout>
+     
+     <LinearLayout
+         android:id="@+id/desliza"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:gravity="bottom"
+         android:background="@drawable/test3az"
+         android:visibility="invisible">
+     	
+         <TextView
+             android:text="@string/desliza"
+             android:layout_width="wrap_content"
+         	 android:layout_height="wrap_content"/>
+         
+     </LinearLayout>
+     
+     <ImageView
+         android:id="@+id/flechas"
+         android:src="@drawable/navigation_scrolldown"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center_horizontal"
+         android:visibility="gone"/>
+     
+     <!-- Espacio extra -->
+    	<TextView 
+        	android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"/>
+    	
+   	
+    	
+    	<TextView
+     		 	android:id="@+id/nest"
+             	android:layout_width="wrap_content"
+         	 	android:layout_height="wrap_content"
+         	 	android:visibility="gone"/>
+     	
+     	<LinearLayout
+     		android:id="@+id/listacp"
+     		android:orientation="vertical"
+         	android:layout_width="fill_parent"
+         	android:layout_height="fill_parent"
+         	android:drawSelectorOnTop="false"
+		 	android:textSize="18sp"
+		 	android:visibility="gone"/>
+     
+     </LinearLayout>
+     
+     </ScrollView>
+
+</LinearLayout>

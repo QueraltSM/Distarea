@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="moneda">
+        <item>(€) Euro</item>
+        <item>($) Dollar</item>
+        <item>(£) Pounds</item>
+        <item>(¥) Yen</item>
+    </string-array>
+    
+    <string-array name="monedav">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    
+    <string-array name="tipo">
+        <item>Private</item>
+        <item>Enterprise</item>
+        <item>Both</item>
+    </string-array>
+    
+    <string-array name="tipov">
+        <item>P</item>
+        <item>E</item>
+        <item>A</item>
+    </string-array>
+    
+    <string-array name="interes">
+        <item>Field 1</item>
+        <item>Field 2</item>
+        <item>ALL</item>
+    </string-array>
+    
+    <string-array name="interesv">
+        <item>1</item>
+        <item>2</item>
+        <item>*</item>
+    </string-array>
+    
+    <string-array name="tipound">
+        <item>Units</item>
+        <item>Kilograms/Liters</item>
+        <item>Grams</item>
+        <item>Meters</item>
+    </string-array>
+    
+    <string-array name="preguntas">
+        <item>What is the second surname of your mother?</item>
+        <item>What college you studied?</item>
+        <item>What hospital were you born?</item>
+        <item>What is the name of your first pet?</item>
+        <item>What is the name of your best friend?</item>
+        <item>What is your favorite food?</item>
+        <item>What is your favorite color?</item>
+        <item>What was your first console?</item>
+        <item>What is the name of your parents car?</item>
+    </string-array>
+    
+    <string-array name="recpass">
+        <item>Via E-mail</item>
+        <item>By Secret Question-Answer</item>
+    </string-array>
+    
+    <string-array name="tipoundv">
+        <item>UN</item>
+        <item>KG</item>
+        <item>GR</item>
+        <item>MT</item>
+    </string-array>
+    
+    <string-array name="tipodato">
+        <item>Item</item>
+        <item>Barcode</item>
+        <item>Price</item>
+        <item>Total Price</item>
+        <item>Amount</item>
+        <item>Amount Type</item>
+        <item>Comments</item>
+    </string-array>
+    
+    <string-array name="mes">
+        <item>January</item>
+        <item>February </item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+    
+    <string-array name="mesmini">
+        <item>Jan</item>
+        <item>Feb</item>
+        <item>Mar</item>
+        <item>Apr</item>
+        <item>May</item>
+        <item>Jun</item>
+        <item>Jul</item>
+        <item>Aug</item>
+        <item>Sep</item>
+        <item>Oct</item>
+        <item>Nov</item>
+        <item>Dec</item>
+    </string-array>
+</resources>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:weightSum="1" 
+    android:background="@color/azulDisoft3">
+ 	<!-- android:paddingLeft="4dp"
+    android:paddingRight="15dp"
+    android:paddingTop="13dp"
+    android:paddingBottom="13dp" -->
+ 	
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="64dip"
+        android:layout_height="64dip"
+        android:layout_gravity="center_vertical|left"
+        android:layout_weight="0.10"
+        android:paddingLeft="2dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/ic_launcher_old"
+        android:visibility="visible" />
+    
+    <!-- <ProgressBar
+        android:id="@+id/loading"
+        android:layout_width="64dip"
+        android:layout_height="64dip"
+        android:layout_gravity="center_vertical|left"
+        android:layout_weight="0.10"
+        android:paddingLeft="2dp"
+        android:adjustViewBounds="true"/>  -->
+    
+    <LinearLayout
+        android:id="@+id/textos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:paddingLeft="2dp"
+        android:orientation="vertical"
+        android:layout_weight="0.90">
+    
+    	<LinearLayout
+        	android:id="@+id/filaarriba"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_gravity="left"
+        	android:paddingLeft="2dp"
+        	android:orientation="horizontal">
+ 
+		    <TextView
+		        android:id="@+id/nombreest"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="0.75"
+		        android:gravity="top|left"
+		        android:ellipsize="end"
+		        android:lines="1"
+		        android:textAppearance="?android:attr/textAppearanceMedium"
+		        android:textColor="@android:color/black"
+		        android:textStyle="bold" />
+		    
+		    <TextView
+		        android:id="@+id/hora"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:gravity="top|right"
+		        android:lines="1"
+		        android:paddingLeft="0dip"
+		        android:paddingTop="0dip"
+		        android:textAppearance="@android:style/TextAppearance.Small"
+		         />
+		    <!-- android:textColor="@android:color/darker_gray" -->
+		    
+		</LinearLayout>
+		    
+	    <LinearLayout
+	        android:id="@+id/filaabajo"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="left"
+	        android:orientation="horizontal"
+	        android:paddingLeft="5dp"
+	        android:weightSum="1" >
+ 
+		    <TextView
+		        android:id="@+id/mensaje"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="@dimen/cero"
+		        android:layout_marginRight="@dimen/cero"
+		        android:layout_weight="1"
+		        android:ellipsize="end"
+		        android:gravity="center|left"
+		        android:lines="1"
+		        android:textAppearance="@android:style/TextAppearance.Small"
+		        android:textColor="@android:color/black" />
+		    
+		    <TextView
+		        android:id="@+id/nmensajes"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="bottom|right"
+		        android:layout_weight="1"
+		        android:gravity="bottom|right"
+		        android:lines="1"
+		        android:paddingLeft="0dip"
+		        android:paddingTop="0dip"
+		        android:text="(300)"
+		        android:textAppearance="@android:style/TextAppearance.Small"
+		        android:textColor="@android:color/black" />
+		    
+		    </LinearLayout>
+		    
+	    </LinearLayout>
+
+</LinearLayout>

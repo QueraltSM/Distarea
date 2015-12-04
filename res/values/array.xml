@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="moneda">
+        <item>(€) Euro</item>
+        <item>($) Dólar</item>
+        <item>(£) Libra</item>
+        <item>(¥) Yen</item>
+    </string-array>
+    
+    <string-array name="monedav">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    
+    <string-array name="tipo">
+        <item>Particular</item>
+        <item>Empresa</item>
+        <!-- <item>Ambos</item> -->
+    </string-array>
+    
+    <string-array name="tipov">
+        <item>P</item>
+        <item>E</item>
+        <!-- <item>A</item> -->
+    </string-array>
+    
+    <string-array name="interes">
+        <item>Campo 1</item>
+        <item>Campo 2</item>
+        <item>TODOS</item>
+    </string-array>
+    
+    <string-array name="interesv">
+        <item>1</item>
+        <item>2</item>
+        <item>*</item>
+    </string-array>
+    
+    <string-array name="tipound">
+        <item>Unidades</item>
+        <item>Kilos/Litros</item>
+        <item>Gramos/Mililitros</item>
+        <item>Metros</item>
+    </string-array>
+    
+    <string-array name="tipoundv">
+        <item>UN</item>
+        <item>KG</item>
+        <item>GR</item>
+        <item>MT</item>
+    </string-array>
+    
+    <string-array name="tipodato">
+        <item>Artículo</item>
+        <item>Código de Barras</item>
+        <item>Precio</item>
+        <item>Importe</item>
+        <item>Cantidad</item>
+        <item>Tipo de cantidad</item>
+        <item>Observación</item>
+    </string-array>
+    
+    <string-array name="preguntas">
+        <item>¿Segundo apellido de tu madre?</item>
+        <item>¿En qué colegio estudiastes?</item>
+        <item>¿En qué hospital naciste?</item>
+        <item>¿Nombre de tu primera mascota?</item>
+        <item>¿Cómo se llama tu mejor amigo?</item>
+        <item>¿Cuál es tu comida favorita?</item>
+        <item>¿Cuál es tu color favorito?</item>
+        <item>¿Cuál fue tu primera videoconsola?</item>
+        <item>¿Qué coche tenían tus padres?</item>
+    </string-array>
+    
+    <string-array name="preguntasv">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+    </string-array>
+    
+    <string-array name="recpass">
+        <item>Por E-mail</item>
+        <item>Por Pregunta-Respuesta secretas</item>
+    </string-array>
+    
+    <string-array name="recpassv">
+        <item>email</item>
+        <item>prs</item>
+    </string-array>
+    
+    <string-array name="mes">
+        <item>Enero</item>
+        <item>Febrero</item>
+        <item>Marzo</item>
+        <item>Abril</item>
+        <item>Mayo</item>
+        <item>Junio</item>
+        <item>Julio</item>
+        <item>Agosto</item>
+        <item>Septiembre</item>
+        <item>Octubre</item>
+        <item>Noviembre</item>
+        <item>Diciembre</item>
+    </string-array>
+    
+    <string-array name="mesmini">
+        <item>Ene</item>
+        <item>Feb</item>
+        <item>Mar</item>
+        <item>Abr</item>
+        <item>May</item>
+        <item>Jun</item>
+        <item>Jul</item>
+        <item>Ago</item>
+        <item>Sep</item>
+        <item>Oct</item>
+        <item>Nov</item>
+        <item>Dic</item>
+    </string-array>
+    
+    <string-array name="camposXML">
+        <item>empresa</item>
+        <item>fecha</item>
+        <item>factura</item>
+        <item>total</item>
+        <item>igic0</item>
+        <item>igic3</item>
+        <item>igic7</item>
+        <item>igic9</item>
+        <item>igic13</item>
+        <item>igic20</item>
+        <item>igic99</item>
+        <item>iva0</item>        
+        <item>iva4</item>
+        <item>iva10</item>
+        <item>iva21</item>
+        <item>iva99</item>
+        <item>nif</item>
+        <item>cuentacontrapartida</item>
+        <item>cuentacobro</item>
+        <item>cuentapago</item>
+        <item>importecontrapartida</item>
+        <item>importecobro</item>
+        <item>importepago</item>
+        <item>cobrado</item>
+        <item>pagado</item>
+        <item>efectivo</item>
+        <item>recargo</item>
+        <item>retencion</item>
+        <item>implicito</item>
+    </string-array>
+    
+    <string-array name="tipofoto">
+        <item>Foto normal</item>
+        <item>Documento asesoría</item>
+    </string-array>
+    
+    <string-array name="palabrasclave">
+        <item>empresa</item>
+        <item>importe</item>
+        <item>fecha</item>
+    </string-array>
+    
+</resources>

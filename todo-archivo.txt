@@ -1,0 +1,263 @@
+	-Ideas Pesadas- 
+		Conservar la MAC del dispositivo que intente +10 veces iniciar sesión con el mismo nombre de usuario
+		- (PARA EL FUTURO) PedidoAnt debería venir con separadores de fecha/hora del pedido, y recoger todos los anteriores (no sólo el último)
+		- Borrar artículos manuales (Establecimiento) (AVANZADAS, LISTA MANEJADOR?)
+
+
+	PENDIENTE
+		- Arreglar posición estrella (igualar en todos a la esquina del verdadero
+		- Buscar en todos no encuentra todos los artículos hasta que se borra y vuelve a escribir (¿pillado de Familia?)
+		- ¿Decimales en KG/LT?
+		- Comprobar mensajes de usuarioapp PuertoSport
+		- Revisar que la descarga en peso BORRE TODO antes.
+		- nombres de clientes busqueda ? 
+		- configuracion da error al navegar para vendedor
+		- Pie con información en Establecimiento
+		- Interpretar HTML en mensajes (recibidos)
+		- Intentar conservar que vengo de ListaArticulos al entrar a la TiendaVirtual (Ver más artículos)
+		- Errores Configuración:
+			- Casillas Actividad Empresarial se marcan al salir de vista (revisar funcionamiento)
+			- Al cambiar Nombre Empresa, no se ve el cambio inmediato
+		- No debo permitir marcar favoritos para Empresas con Autoventa (nuevo sistema pulsación larga)
+		- "Quitar marcados" en Listas de la Compra (ListaCompra) no hace nada. Arreglar texto.
+		- Botón redescargar clientes en la ventana de clientes		
+		> Artículos descargados de TiendaVirtual genérica no aparecen en ListaArtículos
+			- En DatabaseHandler tiro de una función aparte (preparaFilaLC(int eid)); que mira los artículos en
+				PedidoAnt y Articulo, y asigna ArticuloEstablecimiento=null
+		- Marcar como prioritario el 1er establecimiento recibido de mensaje, si no hay otro criterio
+		- Texto "Pulse + en Familia"
+		X Limpiar cuadros texto en ventana botonAddArticulo en ListaArticulo (Faltaría revisar funcionamiento enters)
+		- Alteración documentada: Ahora supuestamente, un pedido ya existente que se recoge en TiendaVirtual, sobreescribe lo del artículo anterior
+			(Es decir, si tengo Aceite 1UD, y pido el mismo Aceite 2UD, debería sobreescribir)
+		X Añadir descripción botónAnterior en pie ListaCompra
+		? Revisar historial de navegación al pulsar atrás con PedidoAnt (vine de ListaCompra -> atrás -> PedidoAnt, después de haber creado un pedido mediante él)
+		
+		--FEEDBACK MARI--
+			- Creó Asesoría Martín Disoft
+				- Las tildes devuelven marcianitos en la web
+			- Por mi parte, no encuentro el establecimiento (no sé el por qué; pero lo conseguimos mediante descarga de Operador)
+			- Al introducir Drive, nos quedamos en palanca: no salta mensaje confirmación todo OK, pero está funcionando OK para API>19
+			> Se perdió la primera contabilización (.jpg + .xml) al seguir mediante Continuar
+			
+		- Al editar, debería tener icono lápiz en el dialog
+		- Revisar nombre fichero en editar(previa muestra el último siempre)
+
+		- Pruebas móvil Noemi
+			- Descarga auto de Establecimiento Operador no recibe icono (falta tiempo, o no lo busca)
+			- Mensaje % descarga artículos (guardando en BD)
+			- Mensaje % envío pedidos del tirón
+			X ! Quitar el teclado me desmarca la casilla de selección de varios artículos en la ListaArtículos (parche función botón "Listo")
+				- Buscar todas las entradas de texto con botón de continuar
+					X Registro 1
+					X Registro Cambio contraseña
+					X Comprobar CP Registro
+					X Buscar Establecimiento
+					X Código invitación Establecimiento (no en uso)
+					X Crear lista
+					X Cambiar nombre lista
+					X Referencia Camarero
+					- Crear artículo ListaCompra
+					- Crear artículo ListaArtículo
+					X Dirección enviar pedido
+					X Insertar cantidad ListaArtículo
+					
+			- Botones + / - en cantidades Artículos (Editar/crear)
+			- Cuadro texto marca final de texto
+			X Crear lista -> lleva a lista =v
+			!! Descarga clientes en ventana Clientes >.<'
+			
+			- Troll - Artículo = Emojis =V
+			
+			asdasd
+			
+			- Italiano -
+				Agua 000312
+				pz3 - 4 (Harinas)
+				- Cambiar texto en peso a carpeta exterior (noRoot)
+				- Intentar demostrar con La Percha Negra si los sucesivos Pedidos borran artículos de ListaArticulos, o algo 
+			- Deticport - 
+				Comprobar bases de datos/usuarios especiales
+					Actualmente, está bloqueado el idioma a Francés.
+					(ESPAÑOL){FRANCÉS}; * = comentado
+					- Si clave activación = "activacion" (DeticPort2014)
+						[dbdata] 	= "dbdata" 			(/gg_deticport_demo?user=demomovil&password=dismovil)
+														{/gg_senegal?user=postgres&password=pgdisoft}
+						[ip] 		= "ipdeticport2" 	(*){196.207.209.121}
+					- Si clave activación = "activacion2" (Disoft2014)
+						[dbdata] 	= "dbdata" 			(/gg_deticport_demo?user=demomovil&password=dismovil)
+														{/gg_senegal?user=postgres&password=pgdisoft}
+						[ip] 		= [Inserción manual]
+					- Si clave activación = "activacion3" (Demomovil)
+						[dbdata] 	= "dbdata2" 		(*){/gg_deticport?user=demomovil&password=dismovil}
+						[ip] 		= "ipdemomovil" 	87.106.247.15 
+						
+					Las conexiones de los 3 acaban siendo
+						Connection conn = DriverManager.getConnection("jdbc:postgresql://"+[ip]+[dbdata]);
+						
+					Usuarios especiales (No hacen Login()):
+						- demo1,demo1 -
+							- Thomas Garnier
+							- 12 miembros Colla
+							- 1 Mano
+							- 6 Mensajes
+							- 6 Máquinas
+						- demo2,demo2 -
+							- Clément Garcia
+							- 12 miembros Colla
+							- 3 Manos
+							- 6 Mensajes
+							- 6 Máquinas 
+						- demo3,demo3 -
+							- Maël Moreau
+							- NADA -
+					Login()
+						- SELECT agent_id, name, lastname FROM ad_agent 
+							WHERE userid=nombredeusuario AND password=contrasenia AND disabled=0 AND administrador=1
+						- id = agent_id; nombre = name; apellido = lastname
+						- INSERT INTO ad_login (agent_id, login_date, logged, session_id, lang, ip, user_agent, hora) VALUES 
+							(id, fecha(), 1, 0, 'fr', ip(), 'Deticport\versionDis() (Android AndVer()\API AndApi() "AndCod()")', hora())
+  						- UPDATE ad_agent SET last_login=fecha(),login_state=1 WHERE agent_id=id
+  						- Guarda locales: sp_username=nombredeusuario, sp_password=contrasenia, sp_id=id, sp_nombre=nombre, sp_apellido=apellido 
+     				-->CheckTrabajo().execute();
+     					- SELECT mc.mano,ca.codigo,ca.buque,bu.nombrebuque,ma.carga,ca.zona,op.nombreoperacion,op.descripcion,
+     						ma.tipooperacion,ma.desdehora,ma.hastahora, mc.npersonas, ma.observa, ma.creadopor, mc.modo
+  							FROM dp_manocapataz AS mc 	LEFT JOIN dp_mano 			AS ma ON mc.mano=ma.id
+  														LEFT JOIN dp_carpeta 		AS ca ON ma.carpeta=ca.id
+  														LEFT JOIN dp_operaciones 	AS op ON ma.operacion=op.idoperacion
+  														LEFT JOIN dp_buque 			AS bu ON ca.buque=bu.idbuque
+  							WHERE mc.operador=id AND ma.fecha=fecha() AND mc.estado<>'F' 
+  							OR mc.operador=id AND ma.fecha=fecha() AND mc.estado IS NULL
+  						- for(addManos())
+  						- if(db.getManos().size()>0) -> CheckTrabajadores()
+  						- else 						 -> CheckMensajes()
+  					-->CheckTrabajadores().execute();
+  						- SELECT agent_id, name, lastname, observaciones 
+  							FROM ad_agent, dp_colla AS co, dp_manocapataz AS mc	INNER JOIN dp_mano ON mc.mano=dp_mano.id
+  							WHERE mc.id=manocapataz AND agent_id=co.operador AND mc.estado<>'F' AND dp_mano.fecha=fecha() AND mc.operador=id
+  							OR mc.id=manocapataz AND agent_id=co.operador AND mc.estado IS NULL AND dp_mano.fecha=fecha() AND mc.operador=id
+  						- for(addColla())
+  					-->CheckMensajes().execute();
+  						SELECT id, agent_id, msg_es, begin_date(fecha), begin_date(hora) FROM ad_news WHERE agentto_id="+id AND hoy()=begin_date(fecha)
+  						for(addMensaje())
+  					-->CheckNoticias())
+  						SELECT body FROM pw_news WHERE fecha <= hoy() AND hoy() <= fechahasta
+  						sp_noticia=body;
+  					==>Info.class
+  						
+  				X Montar vídeo (H:\Internas\Borrar)
+  				
+  				!! Detectar fallo Artículos desaparecidos en Distarea:
+  					
+  					- Posibles desapariciones -
+  						- Artículo nuevo/existente
+  						- Al editar/borrar/enviar un artículo/pedido
+  						! Alta sospecha: Al cancelar un pedido
+  						
+  				IMPORTANTE 22/10
+  					- Deshacer aviso inserción BD TiendaVirtual - DatabaseHandler (Muchos errores, sólo un parón tonto) ((ARREGLADO))
+  					PedidosAnt (envíoPedido)
+  						- 
+  						
+  				
+			REVISIÓN CONTABILIDAD
+			O Archivos pendietes recueprar L:1569 (null)
+			O Diccionario no salta en la 1era corrección
+			O ".jpg.jpg" --> Selección imagen
+			O "Implícito" = · ???
+			- Fallo final importante: Los archivos seleccionados no tienen nombre compuesto por tramos (coge el nombre del fichero). Tengo que:
+				- Copiarlo en la zona, con el nombre nuevo
+				- Detectar si viene de uno u otro (creo que el sistema va a ser el mismo, revisión)
+				- Hora límite: 9:30 am
+  													
+  			- Falta especificarlo, pero queremos que la Comprobación de mensajes del Establecimiento (usuarioapp), sea desconectable (botón Sí/No)
+  				- Al desconectarlo, no comprueba usuarioapp de nadie.
+  				- Habrá que investigar formas de que sepa que su usuarioapp es X
+  			- Rework mensajes:
+  				- Condición descarga: NO descargar los mensajes del establecimiento (usuarioapp) recibidos cuyo id sea el mío (repetición)
+  				- Condición muestreo: En los mensajes de TipoMsj() 'A', excluir los que sean id != mío (enviados de otros usuarios).
+  					- Éstos tienen botón "envío de parte del usuarioapp/Establecimiento" (crear dialog envío texto)
+  						- Posibilidad de añadir botón "enviar mensaje como Establecimiento", que permita elegir mis clientes ¿?
+  				- Condición muestreo 2: Los mensajes TipoMsj() 'A', id != mío, deben aparecer junto a los TipoMsj() 'G'
+  				- Estoy pensando que puede ser algo confuso ver una conversación mía con el Establecimiento, y de repente los clientes
+  					(y más, que no veré lo que les he ido contestando, sino sólo sus envíos, ya que los envíos de parte del usuarioapp
+  					se verán como mensajes del Establecimiento, sin relación con Distarea... salvo que guarde una copia, pero si he
+  					enviado mensajes desde la web, esos SÍ que no los puedo ver ni de coña...)
+  				
+  				- Posibles soluciones -
+  					- Sólo ver los mensajes NUEVOS de este sistema, y al abrir el diálogo "enviar mensaje como Establecimiento", descargar
+  						TODA la conversación en relación ese_usuario-Establecimiento, para conservar una coherencia...
+  					- Sólo mostrar los nuevos, pero no hacer diálogo: conectar de alguna forma con Distarea web (Esther/Joanna), y que opere
+  						a través de web.
+  					- Discutido con Esther, preguntar, porque trae miga...
+  				
+  				- Se habló de conservar el sistema como está, pero recibir bien los mensajes de usuarios-al-usuarioapp, 
+  					y para contestar, llevarlo a la página web
+  				- Revisar envíos y trims
+  				
+  			- 04/11 -
+  			
+  				X Terminar de limpiar Establecimiento (quitar botones, completar pie). Al final hay que dejar el Prioritario, y puede que crear un "Compartir"
+  				X Arreglar mensajes de usuarioapp que parten el sistema
+  				- Añadir botón conectar como usuarioapp para enviar mensajes como Establecimiento
+  				- Traducciones / cambio de idioma
+  				- Investigar curso: Notificaciones Push (Citas -> Diciembre)
+  				- Ideas Citas
+  				- Ideas Touroperadores (App aparte)
+  				X Menú mantener-pulsado-mensaje: Compartir, borrar, ver sólo este Remitente, Responder como Establecimiento (web)
+  				X Parche urgente: copia BBDD a cache pública
+  				X Compartir Lista Compra
+  				
+  			- 11/11 -
+  				O Añadir campo [REFERENCIA] en el pedido, para evitar líos de IDCLIF!=REFERENCIA
+  				
+  			- Caso de los artículos desaparecidos:
+  				? Líneas cambiadas: L:3664; L:4133; (+"&& pe.getPid()!=0")
+  				O No sé aún el cambio aparente de esas líneas, pero he detectado otro problema: BORRAR
+  			
+  			-Reunión-
+  				- Falta probar usuario nuevo -> que funcione "Ver + productos"
+  				- Al descargar artículos, dar casilla borrar todo lo anterior (sólo si no hay pedidos pendientes, aviso borra históricos/favoritos)
+  				- Opción Técnica: limpiar TODOS los artículos (wipe artículos, artest, pedido y pedidoant)
+  				- Investigar: Google Wallet (implementación pagos tarjeta por móvil), equipo para profesionales (resistente y con opciones de impresión integrada)
+  					- Descartado: Wallet (Pay) es sólo para moneda americana, y la In-App Billing es para pagos de la aplicación.
+  				- Fondo info Establecimiento: Blanco con recuadro exterior (visibilidad enlaces)
+  				- Mensajes Conversaciones: problema en tablet ¿?
+  				O Mensaje pedido tiene decimales en unidades ? 
+  				
+  			- 13/11 -
+  				- Error de Ped null en ListaCompra (probablemente datos anteriores al parche)
+  				~ Probar redescarga borrando artículos
+  				O Añadir casilla (tener las 2, no sobrepisar la de imágenes con la de borrar)
+  				- Subcarpeta establecimiento para imagenes de caché
+  				
+  			- 17/11 -
+  				? Revisar mensajes usuarioapp: vuelve a fallar al recibir reenviados (faltaba conectar con usuarioapp y descargar Establecimiento).
+  				- Buscar una forma de borrar masivamente todo lo de un Establecimiento, más rápido.
+  				- Comprobar y resolver si procede, lo de los artículos desaparecidos (Guille)
+  				
+  			- 18/11 -
+  				Tiempo descarga pre-parche(856 artículos, borrando previos, descargando imágenes)
+  					1:43
+  				Tiempo descarga post-parche
+  					1:07
+  				REVISAR LAS COMAS NINJA DEL FINAL DE TIENDAVIRUTAL
+  					
+					
+	-- Changelog Vers. 2.2.6 --
+		
+		- Enter en cuadros de texto = continuar(por defecto)
+		- Añadida descarga Establecimientos en Conversaciones de establecimiento nulo (descarga de mensajes sin comprobación coherencia)
+		- Arreglo borrar seleccionados
+		- Ahora se pueden marcar iniciales todos los favoritos (no prioritarios)
+		- Ventana emergente y guardado de pedido antes de "Ver más productos"
+		- Establecimiento inicial el primer Establecimiento que se descargue.
+		- Solución problemas decimales Casilla seleccionar X...
+		- Revisión números decimales en cálculos de total de compra
+		
+	-- Changelog Vers. 2.2.6.1 --
+	
+		- Arreglos de adjuntos de Contabilización por Voz
+		- Simplificación del menú de Establecimiento
+		- Añadidas mejoras en el sistema de mensajería
+		- Parche función recuperar fichero BD
+

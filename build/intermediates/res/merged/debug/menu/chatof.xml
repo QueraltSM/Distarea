@@ -1,0 +1,41 @@
+﻿<menu xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+    	android:id="@+id/overflow"
+    	android:orderInCategory="150"
+    	app:showAsAction="always"
+    	android:icon="@drawable/content_attachment"
+    	android:title="Adjuntar">
+    	<menu>
+
+	<!-- android:icon="@drawable/clip_gmail" -->
+    	    
+    	<item
+	        android:id="@+id/adjarc"
+	        app:showAsAction="never"
+	        android:title="Adjuntar archivo"
+	        android:icon="@drawable/content_attachment" />
+    	
+	    <item
+	        android:id="@+id/adjfot"
+	        app:showAsAction="never"
+	        android:title="Sacar foto"
+	        android:icon="@drawable/device_access_camera" />
+	    
+	    <item
+	        android:id="@+id/adjvid"
+	        app:showAsAction="never"
+	        android:title="Grabar vídeo"
+	        android:icon="@drawable/device_access_video" />
+	    
+	    <item
+	        android:id="@+id/adjaud"
+	        app:showAsAction="never"
+	        android:title="Grabar voz"
+	        android:icon="@drawable/device_access_mic" />
+	    
+    	</menu>
+    </item>
+    
+</menu>

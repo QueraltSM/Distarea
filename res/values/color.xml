@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+ <color name="verdeDisoft1">#494F0E</color> <!-- 73,79,14 -->
+ <color name="verdeDisoft2">#96A200</color> <!-- 150,162,0 -->
+ <color name="verdeDisoft3">#CDD29A</color> <!-- 205,210,154 -->
+ <color name="azulDisoft1">#0E494F</color> <!-- 14,73,79 -->
+ <color name="azulDisoft2">#0096A2</color> <!-- 0,150,162 -->
+ <color name="azulDisoft3">#9ACDD2</color> <!-- 154,205,210 -->
+ <color name="violetaDisoft">#D29ACD</color> <!-- 210,154,205 -->
+ <color name="naranjacl">#FFF1D5</color> <!-- 255,241,213 -->
+ <color name="violetacl">#FAD7FF</color> <!-- 250,215,255 -->
+ <color name="gazul">#33B5E5</color>
+ <color name="gvioleta">#AA66CC</color>
+ <color name="gverde">#99CC00</color>
+ <color name="gnaranja">#FFBB33</color>
+ <color name="grojo">#FF4444</color>
+ <color name="gazulos">#0099CC</color>
+ <color name="gvioletaos">#9933CC</color>
+ <color name="gverdeos">#669900</color>
+ <color name="gnaranjaos">#FF8800</color>
+ <color name="grojoos">#CC0000</color>
+</resources>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?><LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/bloque"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:orientation="vertical" >
+
+    <LinearLayout 
+        android:id="@+id/lineabuscar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+         <TextView
+	        android:id="@+id/txtbuscar"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/txtbuscar"
+	        android:paddingRight="5dp"
+	        android:textColor="@android:color/black"/>
+        
+	    <EditText
+	        android:id="@+id/buscar"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        style="@layout/edittext"
+	        android:lines="1"
+	        android:singleLine="true"
+	        android:textColor="@android:color/black"
+	        android:layout_weight="1" />
+	    
+    </LinearLayout>
+    
+    <TextView 
+        android:id="@+id/separador"
+        android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center_horizontal"
+	    android:textStyle="bold"
+	    android:text="ó"/>"
+    
+     <LinearLayout 
+        android:id="@+id/lineacodinv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+         <TextView
+	        android:id="@+id/txtcodinv"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/txtcodinv"
+	        android:paddingRight="5dp"
+	        android:textColor="@android:color/black"/>
+        
+	    <EditText
+	        android:id="@+id/codinv"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:lines="1"
+	        android:singleLine="true"
+	        style="@layout/edittext"
+	        android:textColor="@android:color/black"
+	        android:layout_weight="1" />
+	    
+    </LinearLayout>
+
+</LinearLayout>

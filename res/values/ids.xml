@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- IDs OpcionesAv -->
+    <item name="codigoempleadoId" type="id"/>
+    <item name="claveId" type="id"/>
+</resources>

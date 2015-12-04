@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:orientation="vertical"
+    android:id="@+id/base" >
+	
+	<PreferenceScreen
+	    android:key="cuentadrive"
+	    android:layout_width="fill_parent"
+	    android:title="Cambiar cuenta Google Drive"/>
+	
+	<PreferenceScreen
+	    android:key="carpetadrive"
+	    android:layout_width="fill_parent"
+	    android:title="Crear carpeta Google Drive"
+	    android:summary="Vuelve a crear la carpeta Distarea"/>
+	
+	<PreferenceScreen
+	    android:key="permisosdrive"
+	    android:layout_width="fill_parent"
+	    android:title="Revisar permisos Google Drive"
+	    android:summary="Accede a su cuenta Google Drive"/>
+	
+	<PreferenceScreen
+	    android:key="exportarpreferencias"
+	    android:layout_width="fill_parent"
+	    android:title="Exportar preferencias"
+	    android:summary="Permite analizar fallos al programador de la aplicación"/>
+	
+	<PreferenceScreen
+	    android:key="exportarbd"
+	    android:layout_width="fill_parent"
+	    android:title="Exportar base de datos"
+	    android:summary="Permite analizar otros fallos al programador de la aplicación"/>
+	
+	<PreferenceScreen
+	    android:key="calibracionmicro"
+	    android:layout_width="fill_parent"
+	    android:title="Calibración micrófono"
+	    android:summary="Lea algunos textos para mejorar el reconocimiento de voz"/>
+
+</PreferenceScreen>

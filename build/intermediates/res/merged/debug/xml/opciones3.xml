@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:orientation="vertical" >
+
+	<ListPreference
+        android:key="recpass"
+        android:title="@string/crecpass"
+        android:layout_width="fill_parent"
+        android:entries="@array/recpass"
+        android:entryValues="@array/recpassv"/>
+	
+	<EditTextPreference
+	    android:key="mail"
+	    android:title="@string/cmail"
+       	android:layout_width="fill_parent"
+       	android:inputType="textEmailAddress"/>
+	
+	<ListPreference
+        android:key="ps"
+        android:title="@string/cps"
+        android:layout_width="fill_parent"
+        android:entries="@array/preguntas"
+        android:entryValues="@array/preguntasv"/>
+	
+	<EditTextPreference
+	    android:key="rs"
+	    android:title="@string/crs"
+       	android:layout_width="fill_parent" />
+	
+	<CheckBoxPreference 
+        android:key="ms"
+        android:title="@string/ms"
+        android:defaultValue="false"
+        android:layout_width="fill_parent"
+        android:summary="@string/mss" />
+	
+	<PreferenceScreen
+	    android:key="opcionesav"
+	    android:layout_width="fill_parent"
+	    android:title="Opciones Avanzadas"
+	    android:summary="@string/options3Watchout"/>
+
+</PreferenceScreen>

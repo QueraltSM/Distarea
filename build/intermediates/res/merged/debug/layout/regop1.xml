@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical" 
+    android:gravity="center_horizontal"
+    android:id="@+id/base">
+    
+    <ScrollView
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical"
+        android:id="@+id/englobe">
+
+    <TextView 
+        android:text="@string/regoptxt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top|center_horizontal"/>
+     
+     	<TextView 
+     	    android:id="@+id/txtnombre"
+     	    android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:text="@string/txtnombreop1"
+        	android:background="@drawable/test3az"/>
+     	
+     	<EditText
+     	    android:id="@+id/nombre"
+     	    android:layout_width="fill_parent"
+         	android:layout_height="wrap_content"
+         	android:textColor="@android:color/black"
+         	android:inputType="textCapSentences"/>
+     	
+     	<TextView 
+     	    android:id="@+id/txttlf"
+     	    android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:text="@string/txttlfop1"
+			android:background="@drawable/test3az"/>
+     	
+     	<EditText
+     	   	android:id="@+id/tlf"
+     	   	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:textColor="@android:color/black"
+        	android:inputType="phone"/>
+     	
+     	<TextView 
+     	    android:id="@+id/txtdir"
+     	    android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:text="@string/txtdirop1"
+			android:background="@drawable/test3az"/>
+     	
+     	<EditText
+     	   	android:id="@+id/dir"
+     	   	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:textColor="@android:color/black"
+        	android:inputType="textCapWords"/>
+     	
+     	</LinearLayout>
+     	
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:orientation="vertical" >
+    
+	<RingtonePreference
+        android:key="tono"
+        android:title="@string/tono"
+        android:layout_width="fill_parent"
+        android:ringtoneType="notification" />
+	
+	<CheckBoxPreference 
+        android:key="vibra"
+        android:title="@string/vibra"
+        android:defaultValue="true"
+        android:layout_width="fill_parent"
+        android:summary="@string/vibras" />
+	
+	<CheckBoxPreference 
+        android:key="ch"
+        android:title="@string/ch"
+        android:defaultValue="true"
+        android:layout_width="fill_parent"
+        android:summary="@string/chs" />
+	
+	<CheckBoxPreference 
+        android:key="bg"
+        android:title="@string/bg"
+        android:defaultValue="true"
+        android:layout_width="fill_parent"
+        android:summary="@string/bgs" />
+	
+	<CheckBoxPreference 
+        android:key="vi"
+        android:title="@string/vi"
+        android:defaultValue="true"
+        android:layout_width="fill_parent"
+        android:summary="@string/vis" />
+	
+	<ListPreference
+        android:key="main"
+        android:title="@string/cmain"
+        android:layout_width="fill_parent"
+        android:defaultValue="0"/>
+	
+	<PreferenceScreen
+	    android:key="opciones2"
+	    android:layout_width="fill_parent"
+	    android:title="@string/du"
+	    android:summary="@string/submenus"/>
+	
+	<PreferenceScreen
+	    android:key="opciones3"
+	    android:layout_width="fill_parent"
+	    android:title="@string/seg"
+	    android:summary="@string/submenus"/>
+	
+	<PreferenceScreen
+	    android:key="opcionesTec"
+	    android:layout_width="fill_parent"
+	    android:title="Opciones Técnicas"
+	    android:summary="@string/submenus"/>
+	
+	<PreferenceScreen
+	    android:key="opAbout"
+	    android:layout_width="fill_parent"
+	    android:title="@string/aboutUs"/>
+
+</PreferenceScreen>

@@ -1,0 +1,145 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    
+    <!-- ICS style Spinner -->
+    <style name="spinner_style">
+        
+        <item name="android:dividerHeight">3dp</item>
+        <item name="android:scrollbars">none</item>
+        <item name="android:scrollbarAlwaysDrawVerticalTrack">false</item>
+        <item name="android:scrollbarTrackVertical">@android:color/transparent</item>
+        <item name="android:dropDownSelector">@drawable/bordeexterior</item>
+        <!-- <item name="android:dropDownSelector">@color/verdeDisoft3</item>  -->
+        
+    </style>
+    
+    <!-- ICS style Spinner test 2 -->
+    <style name="spinner_style2">
+        
+        <item name="android:dividerHeight">3dp</item>
+        <item name="android:scrollbars">none</item>
+        <item name="android:scrollbarAlwaysDrawVerticalTrack">false</item>
+        <item name="android:scrollbarTrackVertical">@android:color/transparent</item>
+        <item name="android:dropDownSelector">@drawable/bordeexterior</item>
+        <!-- <item name="android:dropDownSelector">@color/verdeDisoft3</item>  -->
+        
+    </style>
+
+     <style name="Theme.MyTheme" parent="Theme.AppCompat.Light">
+         <item name="popupMenuStyle">@style/Widget.MyTheme.ListPopupWindow</item>
+         <item name="actionBarStyle">@style/Widget.MyTheme.ActionBar</item>
+         <item name="actionBarTabStyle">@style/MyTheme.ActionBar.TabView</item>
+         <item name="actionBarTabTextStyle">@style/MyTheme.ActionBar.Tab.Text</item>
+		 <item name="android:panelFullBackground">@color/azulDisoft1</item>
+		 <item name="homeAsUpIndicator">@drawable/navigation_previous_item_light_mini</item>
+		 <item name="android:checkboxStyle">@style/CheckBoxdisoft</item>
+		 <!-- <item name="android:checkboxStyle">@style/CheckBoxAppTheme</item> -->
+         <!-- <item name="actionBarWidgetTheme">@style/MyStyle</item> -->
+         </style>
+
+     <style name="Widget.MyTheme.ListPopupWindow" parent="Widget.AppCompat.ListPopupWindow">
+	    <item name="android:popupBackground">@drawable/azbordeexterior</item>
+	    <item name="android:textColor">@android:color/white</item>
+	 </style>
+	 <!-- <item name="android:popupBackground">@color/verdeDisoft3</item> -->
+	 <style name="Widget.MyTheme.ActionBar" parent="Widget.AppCompat.ActionBar">
+	  	<item name="background">@drawable/azbackground</item>
+	  	<item name="titleTextStyle">@style/MyTheme.ActionBar.TitleTextStyle</item>
+	  	<item name="subtitleTextStyle">@style/MyTheme.ActionBar.SubtitleTextStyle</item>
+	  	<!-- <item name="splitActionBarTextStyle">@style/MyTheme.ActionBar.SubtitleTextStyle</item> -->
+	</style>
+	<!-- Color de texto menu overflow
+	<style name="MyStyle" parent="Widget">
+	    <item name="android:textColor">@android:color/white</item>
+	</style>
+	 -->
+  	<style name="MyTheme.ActionBar.TitleTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+    	<item name="android:textColor">@android:color/white</item>
+  	</style>
+  	<style name="MyTheme.ActionBar.SubtitleTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle">
+    	<item name="android:textColor">@android:color/white</item>
+  	</style>
+  	<style name="MyTheme.ActionBar.TabView" parent="Widget.AppCompat.ActionBar.TabView">
+    	<item name="android:background">@drawable/tabdisoft2</item>
+    </style>
+    
+    <style name="MyTheme.ActionBar.Tab.Text" parent="Widget.AppCompat.ActionBar.TabText">
+    	<item name="android:textAppearance">@android:style/TextAppearance.Medium</item>
+    	<item name="android:textColor">@android:color/white</item>
+	</style>
+    
+   	<style name="newRatingBar2" parent="@android:style/Widget.RatingBar">
+       	<item name="android:progressDrawable">@drawable/newratingbar2</item>
+       	<item name="android:minHeight">32dip</item>
+      	<item name="android:maxHeight">32dip</item>
+    </style>
+    
+   <!-- <style name="CheckBoxAppTheme" parent="@android:Widget.CompoundButton.CheckBox">
+      <item name="android:button">@drawable/cbdisoft</item>
+  	</style> -->
+    
+    <!-- Propiedades anteriores
+    <item name="android:dropDownSelector">@android:color/white</item>
+    <item name="android:showDividers">beginning|middle|end</item>
+    <item name="android:alignmentMode">alignBounds</item>
+    <item name="android:requiresFadingEdge">none</item>
+     -->
+     
+  <style name="CheckBoxdisoft" parent="android:Widget.CompoundButton.CheckBox">
+      <item name="android:button">@drawable/btn_check_holo_light</item>
+  </style>
+
+  <style name="Buttondisoft" parent="android:Widget.Button">
+	  <item name="android:background">@drawable/btn_default_holo_light</item>
+	  <item name="android:minHeight">48dip</item>
+	  <item name="android:minWidth">64dip</item>
+	  <item name="android:textColor">#000000</item>
+  	</style>
+
+  	<style name="ImageButtondisoft" parent="android:Widget.ImageButton">
+	  <item name="android:background">@drawable/btn_default_holo_light</item>
+  	</style>
+
+  	<style name="ListViewdisoft" parent="android:Widget.ListView">
+      <item name="android:listSelector">@drawable/list_selector_holo_light</item>
+  	</style>
+
+  	<style name="ListViewdisoft.White" parent="android:Widget.ListView.White">
+      <item name="android:listSelector">@drawable/list_selector_holo_light</item>
+  	</style>
+
+  	<style name="SpinnerItemdisoft" parent="android:TextAppearance.Widget.TextView.SpinnerItem">
+      <item name="android:textColor">#000000</item>
+  	</style>
+  	
+  	<style name="EditText" parent="android:Widget.EditText">
+	  <item name="android:background">@drawable/apptheme_edit_text_holo_light</item>
+	  <item name="android:textColor">#000</item>
+  </style>
+  
+  	<style name="AlertDialogTheme" parent="android:Theme.Dialog">
+  	    <item name="android:textAppearance">@android:style/TextAppearance.Medium</item>
+    	<item name="android:textSize">10sp</item>
+	</style>
+	
+  	<style name="TestModeABS">
+  	    <item name="background">@drawable/rdbackground</item>
+        <item name="android:background">@drawable/rdbackground</item>
+	</style>
+</resources>

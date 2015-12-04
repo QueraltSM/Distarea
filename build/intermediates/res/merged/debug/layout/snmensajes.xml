@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@color/azulDisoft3"
+ 	android:paddingLeft="4dp"
+    android:paddingRight="15dp"
+    android:paddingTop="13dp"
+    android:paddingBottom="13dp">
+ 
+    <ImageButton
+        android:id="@+id/menos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/navigation_expand"/>
+
+    <EditText
+        android:id="@+id/snmensajes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="50"
+        android:ems="3"
+        android:inputType="number"
+        android:gravity="center" />
+    
+    <ImageButton
+        android:id="@+id/mas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/navigation_collapse"/>
+    
+</LinearLayout>

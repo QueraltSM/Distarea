@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="55dp"
+    android:gravity="right|center_vertical"
+    android:orientation="vertical"
+    android:animateLayoutChanges="true"
+    android:background="@android:color/white"
+    android:clickable="true"
+    android:id="@+id/linea">
+ 	<!-- android:paddingLeft="4dp"
+    android:paddingRight="15dp"
+    android:paddingTop="13dp"
+    android:paddingBottom="13dp" -->
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="right|center_vertical">
+
+    <TextView
+        android:id="@+id/nombreart"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:gravity="left"
+        android:paddingLeft="5px"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/black" />
+    
+     <LinearLayout
+         android:id="@+id/campofecha"
+         android:layout_width="100dp"
+         android:layout_height="wrap_content"
+         android:layout_gravity="right|center_vertical"
+         android:layout_margin="0px"
+         android:gravity="right|center_vertical"
+         android:orientation="horizontal"
+         android:padding="0px"
+         android:visibility="gone" >
+        
+    <TextView
+        android:id="@+id/fechaart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:layout_weight="1"
+        android:singleLine="true"
+        android:gravity="right"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/black"
+        android:paddingLeft="5dp"
+        android:paddingRight="0dp"/>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:layout_margin="0px"
+        android:gravity="right|center_vertical"
+        android:orientation="horizontal"
+        android:padding="0px" >
+        
+    <TextView
+        android:id="@+id/undart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:layout_weight="1"
+        android:singleLine="true"
+        android:gravity="right|center_vertical"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/black"
+        android:paddingRight="6dp"
+        android:paddingLeft="5dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:layout_margin="0px"
+        android:gravity="right|center_vertical"
+        android:orientation="horizontal"
+        android:padding="0px" >
+    
+    <TextView
+        android:id="@+id/tipoart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:layout_weight="1"
+        android:singleLine="true"
+        android:gravity="left|center_vertical"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/black"
+        android:paddingLeft="5dp"
+        android:paddingRight="0dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:layout_margin="0px"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:padding="0px" >
+    
+    <TextView
+        android:id="@+id/precioart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:layout_weight="0.6"
+        android:singleLine="true"
+        android:gravity="right|center_vertical"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/black"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"/>
+    
+    <ImageButton
+        android:id="@+id/tienenota"
+        android:layout_width="30dip"
+        android:layout_height="30dip"
+        android:layout_gravity="center"
+        android:layout_weight="0.1"
+        android:gravity="center_vertical"
+        android:src="@drawable/content_new_event"
+        android:background="@drawable/botonfino"
+        android:padding="0px"/>
+    
+    <CheckBox
+        android:id="@+id/cb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:gravity="center_vertical"
+        android:adjustViewBounds="true"/>
+    
+    </LinearLayout>
+    
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/lineanota"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_gravity="left"
+        android:orientation="horizontal"
+        android:gravity="left|center_vertical"
+        android:visibility="gone">
+
+        <TextView
+        	android:id="@+id/nota"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:gravity="left"
+        	android:paddingLeft="10dp"
+        	android:paddingRight="10dp"
+        	android:textAppearance="?android:attr/textAppearanceMedium"
+			    		android:singleLine="true"
+			    		android:scrollHorizontally="true"
+			    		android:ellipsize="marquee"
+			    		android:marqueeRepeatLimit="marquee_forever"
+			    		android:lines="1"
+        	android:textColor="@android:color/black" />
+
+    </LinearLayout>
+    
+</LinearLayout>

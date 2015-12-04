@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:orientation="vertical" >
+	
+	<PreferenceScreen
+	    android:key="borrest"
+	    android:layout_width="fill_parent"
+	    android:title="@string/optionsAvXMLRemoveEstablishment"
+	    android:summary="@string/optionsAvXMLRemoveEstablishmentSummary"/>
+	
+	<PreferenceScreen
+	    android:key="resetvcdate"
+	    android:layout_width="fill_parent"
+	    android:title="@string/optionsAvXMLResetDate"
+	    android:summary="@string/optionsAvXMLResetDateSummary"/>
+	
+	<PreferenceScreen
+	    android:key="descargacnae"
+	    android:layout_width="fill_parent"
+	    android:title="@string/optionsAvXMLDownloadCNAE"
+	    android:summary="@string/optionsAvXMLDownloadCNAESummary"/>
+	
+	<CheckBoxPreference 
+        android:key="solicitacli"
+        android:title="@string/optionsAvXMLClientRequest"
+        android:defaultValue="false"
+        android:layout_width="fill_parent"
+        android:summaryOff="@string/optionsAvXMLClientRequestSummary" />
+	
+	<PreferenceScreen
+	    android:key="redescargaclif"
+	    android:layout_width="fill_parent"
+	    android:title="Descargar Clientes"
+	    android:summary="Borra y descarga los clientes del Operador seleccionado" />
+	
+	<!-- <PreferenceScreen
+	    android:key="syncest"
+	    android:layout_width="fill_parent"
+	    android:title="Sincronizar mensajes de Establecimiento"
+	    android:summary="Busca si tienes un Establecimiento del que recibir mensajes"/>  -->
+	
+</PreferenceScreen>

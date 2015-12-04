@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical" 
+    android:gravity="center_horizontal"
+    android:id="@+id/base">
+    
+    <ScrollView
+        android:id="@+id/part"
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:visibility="gone">
+    	
+        <LinearLayout
+        	android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:orientation="vertical"
+        	android:id="@+id/englobe">
+
+    <TextView
+        android:text="@string/txtregrecpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:background="@drawable/test3az"
+        android:paddingBottom="3dp"/>
+
+     	<RadioGroup
+     	    android:id="@+id/recpass"
+     	    android:layout_width="wrap_content"
+        	android:layout_height="wrap_content">
+     	    <RadioButton 
+     	        android:id="@+id/rademail"
+     	        android:text="@string/rademail"
+     	        android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:checked="true"/>
+     	    <EditText
+	     	    android:id="@+id/email"
+	     	    android:layout_width="fill_parent"
+	         	android:layout_height="wrap_content"
+	         	android:textColor="@android:color/black"
+	         	android:inputType="textEmailAddress"/>
+     	    
+     	    <RadioButton 
+     	        android:id="@+id/radprs"
+     	        android:text="@string/radprs"
+     	        android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"/>
+     	    <Spinner
+     	        android:id="@+id/preguntas"
+     	        android:layout_width="fill_parent"
+     	        android:layout_height="wrap_content"
+     	        android:spinnerMode="dropdown"
+	        	android:drawSelectorOnTop="true"
+        		android:entries="@array/preguntas"
+        		android:visibility="gone"/>
+     	    <EditText
+	     	    android:id="@+id/respuesta"
+	     	    android:layout_width="fill_parent"
+	         	android:layout_height="wrap_content"
+	         	android:inputType="text"
+	         	android:textColor="@android:color/black"
+	         	android:visibility="gone"/>
+     	</RadioGroup>
+
+      	</LinearLayout>
+     
+     </ScrollView>
+     
+    <ScrollView
+        android:id="@+id/emp"
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:visibility="gone">
+    	
+        <LinearLayout
+        	android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:orientation="vertical"
+        	android:id="@+id/englobeemp">
+     	
+            <!-- Espacio extra -->
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:text="@string/txtregrecpassemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:background="@drawable/test3az"
+        android:paddingBottom="3dp"/>
+    
+    <!-- Espacio extra -->
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal"
+        android:id="@+id/lineaemail">
+    
+    	<TextView
+     	        android:id="@+id/txtemail"
+     	        android:text="@string/mail"
+     	        android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"/>
+     	    <EditText
+	     	    android:id="@+id/email2"
+	     	    android:layout_width="fill_parent"
+	         	android:layout_height="wrap_content"
+	         	android:textColor="@android:color/black"
+	         	android:inputType="textEmailAddress"/>
+     	</LinearLayout>
+     	
+    <!-- Espacio extra -->
+    	<TextView 
+        	android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"/>
+    	
+    	<TextView
+     	    android:id="@+id/txtcnae"
+     	    android:layout_width="wrap_content"
+     	    android:layout_height="wrap_content"
+     	    android:text="@string/txtCNAEempresa"
+     	    android:background="@drawable/test3az"/>
+    	
+    	<!-- Espacio extra -->
+    	<TextView 
+        	android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"/>
+     	
+     	<LinearLayout
+     		android:id="@+id/listarecpass"
+     		android:orientation="vertical"
+         	android:layout_width="fill_parent"
+         	android:layout_height="fill_parent"
+         	android:drawSelectorOnTop="false"
+		 	android:textSize="18sp"/>
+     	
+	</LinearLayout>
+	
+	</ScrollView>
+
+</LinearLayout>

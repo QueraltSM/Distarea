@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@drawable/bordeexterior"
+    android:id="@+id/basedialog" >
+		
+		<LinearLayout
+		    android:id="@+id/ley_mensajeprivado"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal"
+		    android:visibility="gone" >
+		
+			<TextView 
+			    android:layout_width="wrap_content"
+		      	android:layout_height="wrap_content"
+		      	android:textColor="@android:color/black"
+		      	android:textStyle="italic"
+		      	android:text="@string/ley_pulse"/>
+			
+			<ImageView
+			    android:layout_width="24dp"
+		      	android:layout_height="24dp"
+		      	android:paddingTop="-2dp"
+		      	android:paddingLeft="2dp"
+		      	android:paddingRight="2dp"
+		      	android:src="@drawable/content_email"/>
+			
+			<TextView 
+			    android:layout_width="wrap_content"
+		      	android:layout_height="wrap_content"
+		      	android:textColor="@android:color/black"
+		      	android:textStyle="italic"
+		      	android:text="@string/ley_mensajeprivado"/>
+		
+		</LinearLayout>
+		
+		<LinearLayout
+		    android:id="@+id/ley_mensajeasesoria"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal"
+		    android:visibility="gone" >
+		
+			<TextView 
+			    android:layout_width="wrap_content"
+		      	android:layout_height="wrap_content"
+		      	android:textColor="@android:color/black"
+		      	android:textStyle="italic"
+		      	android:text="@string/ley_pulse"/>
+			
+			<ImageView
+			    android:layout_width="24dp"
+		      	android:layout_height="24dp"
+		      	android:paddingTop="-2dp"
+		      	android:paddingLeft="2dp"
+		      	android:paddingRight="2dp"
+		      	android:src="@drawable/content_email_clip"/>
+			
+			<TextView 
+			    android:layout_width="wrap_content"
+		      	android:layout_height="wrap_content"
+		      	android:textColor="@android:color/black"
+		      	android:textStyle="italic"
+		      	android:text="@string/ley_mensajeasesoria"/>
+		
+		</LinearLayout>
+		
+		<LinearLayout
+		    android:id="@+id/ley_reservasuno"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal"
+		    android:visibility="gone" >
+		
+			<TextView 
+			    android:layout_width="wrap_content"
+		      	android:layout_height="wrap_content"
+		      	android:textColor="@android:color/black"
+		      	android:textStyle="italic"
+		      	android:text="@string/ley_pulse"/>
+			
+			<ImageView
+			    android:layout_width="24dp"
+		      	android:layout_height="24dp"
+		      	android:paddingTop="-2dp"
+		      	android:paddingLeft="2dp"
+		      	android:paddingRight="2dp"
+		      	android:src="@drawable/tennis2"/>
+			
+			<TextView 
+			    android:layout_width="wrap_content"
+		      	android:layout_height="wrap_content"
+		      	android:textColor="@android:color/black"
+		      	android:textStyle="italic"
+		      	android:text="@string/ley_reservasuno"/>
+		
+		</LinearLayout>
+		
+		<LinearLayout
+		    android:id="@+id/ley_reservavarios"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal"
+		    android:visibility="gone" >
+		
+			<TextView 
+			    android:layout_width="wrap_content"
+		      	android:layout_height="wrap_content"
+		      	android:textColor="@android:color/black"
+		      	android:textStyle="italic"
+		      	android:text="@string/ley_pulse"/>
+			
+			<ImageView
+			    android:layout_width="24dp"
+		      	android:layout_height="24dp"
+		      	android:paddingTop="-2dp"
+		      	android:paddingLeft="2dp"
+		      	android:paddingRight="2dp"
+		      	android:src="@drawable/tennis2"/>
+			
+			<TextView 
+			    android:layout_width="wrap_content"
+		      	android:layout_height="wrap_content"
+		      	android:textColor="@android:color/black"
+		      	android:textStyle="italic"
+		      	android:text="@string/ley_reservavarios"/>
+		
+		</LinearLayout>
+		
+		<LinearLayout
+		    android:id="@+id/ley_lapiz"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal"
+		    android:visibility="gone" >
+		
+			<TextView 
+			    android:layout_width="wrap_content"
+		      	android:layout_height="wrap_content"
+		      	android:textColor="@android:color/black"
+		      	android:textStyle="italic"
+		      	android:text="@string/ley_pulse"/>
+			
+			<ImageView
+			    android:layout_width="24dp"
+		      	android:layout_height="24dp"
+		      	android:paddingTop="-2dp"
+		      	android:paddingLeft="2dp"
+		      	android:paddingRight="2dp"
+		      	android:src="@drawable/content_edit"/>
+			
+			<TextView 
+			    android:layout_width="wrap_content"
+		      	android:layout_height="wrap_content"
+		      	android:textColor="@android:color/black"
+		      	android:textStyle="italic"
+		      	android:text="@string/ley_lapiz"/>
+		
+		</LinearLayout>
+		
+		<LinearLayout
+		    android:id="@+id/ley_reloj"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal"
+		    android:visibility="gone" >
+		
+			<TextView 
+			    android:layout_width="wrap_content"
+		      	android:layout_height="wrap_content"
+		      	android:textColor="@android:color/black"
+		      	android:textStyle="italic"
+		      	android:text="@string/ley_pulse"/>
+			
+			<ImageView
+			    android:layout_width="24dp"
+		      	android:layout_height="24dp"
+		      	android:paddingTop="-2dp"
+		      	android:paddingLeft="2dp"
+		      	android:paddingRight="2dp"
+		      	android:src="@drawable/device_access_alarms"/>
+			
+			<TextView 
+			    android:layout_width="wrap_content"
+		      	android:layout_height="wrap_content"
+		      	android:textColor="@android:color/black"
+		      	android:textStyle="italic"
+		      	android:text="@string/ley_reloj"/>
+		
+		</LinearLayout>
+		
+		<LinearLayout
+		    android:id="@+id/ley_carrito"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal"
+		    android:visibility="gone" >
+		
+			<TextView 
+			    android:layout_width="wrap_content"
+		      	android:layout_height="wrap_content"
+		      	android:textColor="@android:color/black"
+		      	android:textStyle="italic"
+		      	android:text="@string/ley_pulse"/>
+			
+			<ImageView
+			    android:layout_width="24dp"
+		      	android:layout_height="24dp"
+		      	android:paddingTop="-2dp"
+		      	android:paddingLeft="2dp"
+		      	android:paddingRight="2dp"
+		      	android:src="@drawable/shop_cart"/>
+			
+			<TextView 
+			    android:layout_width="wrap_content"
+		      	android:layout_height="wrap_content"
+		      	android:textColor="@android:color/black"
+		      	android:textStyle="italic"
+		      	android:text="@string/ley_carrito"/>
+		
+		</LinearLayout>
+		
+		<LinearLayout
+		    android:id="@+id/ley_mas"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal"
+		    android:visibility="gone" >
+		
+			<TextView 
+			    android:layout_width="wrap_content"
+		      	android:layout_height="wrap_content"
+		      	android:textColor="@android:color/black"
+		      	android:textStyle="italic"
+		      	android:text="@string/ley_pulse"/>
+			
+			<ImageView
+			    android:layout_width="24dp"
+		      	android:layout_height="24dp"
+		      	android:paddingTop="-2dp"
+		      	android:paddingLeft="2dp"
+		      	android:paddingRight="2dp"
+		      	android:src="@drawable/content_new"/>
+			
+			<TextView 
+			    android:layout_width="wrap_content"
+		      	android:layout_height="wrap_content"
+		      	android:textColor="@android:color/black"
+		      	android:textStyle="italic"
+		      	android:text="@string/ley_mas"/>
+		
+		</LinearLayout>
+		
+		<LinearLayout
+		    android:id="@+id/ley_mas2"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal"
+		    android:visibility="gone" >
+		
+			<TextView 
+			    android:layout_width="wrap_content"
+		      	android:layout_height="wrap_content"
+		      	android:textColor="@android:color/black"
+		      	android:textStyle="italic"
+		      	android:text="@string/ley_pulse"/>
+			
+			<ImageView
+			    android:layout_width="24dp"
+		      	android:layout_height="24dp"
+		      	android:paddingTop="-2dp"
+		      	android:paddingLeft="2dp"
+		      	android:paddingRight="2dp"
+		      	android:src="@drawable/content_new"/>
+			
+			<TextView 
+			    android:layout_width="wrap_content"
+		      	android:layout_height="wrap_content"
+		      	android:textColor="@android:color/black"
+		      	android:textStyle="italic"
+		      	android:text="@string/ley_mas2"/>
+		
+		</LinearLayout>
+		
+		<TextView
+		    android:id="@+id/ley_datosestablecimiento" 
+		    android:layout_width="wrap_content"
+	      	android:layout_height="wrap_content"
+	      	android:textColor="@android:color/black"
+	      	android:text="@string/ley_datosestablecimiento"
+	      	android:textStyle="italic"
+	      	android:visibility="gone"/>
+
+		<LinearLayout
+		    android:id="@+id/ley_qr"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal"
+		    android:visibility="visible" >
+		
+			<TextView 
+			    android:layout_width="wrap_content"
+		      	android:layout_height="wrap_content"
+		      	android:textColor="@android:color/black"
+		      	android:textStyle="italic"
+		      	android:text="@string/ley_pulse"/>
+			
+			<ImageView
+			    android:layout_width="24dp"
+		      	android:layout_height="24dp"
+		      	android:paddingTop="-2dp"
+		      	android:paddingLeft="2dp"
+		      	android:paddingRight="2dp"
+		      	android:src="@drawable/qr"/>
+			
+			<TextView 
+			    android:layout_width="wrap_content"
+		      	android:layout_height="wrap_content"
+		      	android:textColor="@android:color/black"
+		      	android:textStyle="italic"
+		      	android:text="@string/ley_qr"/>
+		
+		</LinearLayout>
+		
+</LinearLayout>

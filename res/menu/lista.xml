@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/nuevoart"
+        android:orderInCategory="200"
+        app:showAsAction="always"
+        android:title="Añadir artículo"
+        android:icon="@drawable/content_new_light" />
+    
+    <item
+        android:id="@+id/desmarcar"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        android:title="Desmarcar todos"
+        android:icon="@drawable/empty_checkbox_light" />
+
+</menu>

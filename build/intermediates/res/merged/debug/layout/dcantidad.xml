@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?><LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal" >
+        
+	    <EditText
+	        android:id="@+id/etcantidad"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:inputType="number"
+	        android:selectAllOnFocus="true"
+	        android:singleLine="true"
+	        android:text="1"
+	        android:textColor="@android:color/black" />
+	    
+	    <TextView
+	        android:id="@+id/tvcantidad"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:singleLine="true"
+	        android:textColor="@android:color/black" />
+	    
+    </LinearLayout>
+    
+    <CheckBox
+        android:id="@+id/favorito"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center"
+	    android:text="Favorito"
+	    android:textColor="@android:color/black"
+	    android:checked="false" 
+	    android:visibility="gone"/>
+
+</LinearLayout>

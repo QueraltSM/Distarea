@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Sherlock.Light.DarkActionBar.Disoft"
+           parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="actionBarStyle">@style/Widget.Styled.ActionBar</item>
+        <item name="*android:actionModeShareDrawable">@drawable/social_share_light</item>
+        <item name="android:editTextStyle">@style/EditText</item>
+    </style>
+    <style name="Widget.Styled.ActionBar"
+           parent="Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="background">@drawable/azbackground</item>
+        <item name="android:background">@drawable/azbackground</item>
+    </style>
+    <style name="CheckBox" parent="Widget.AppCompat.CompoundButton.CheckBox">
+    	<item name="android:checkboxStyle">@style/CheckBoxdisoft</item>
+    	<item name="android:buttonStyle">@style/Buttondisoft</item>
+    	<item name="android:imageButtonStyle">@style/ImageButtondisoft</item>
+    	<item name="android:listViewStyle">@style/ListViewdisoft</item>
+    	<item name="android:listViewWhiteStyle">@style/ListViewdisoft.White</item>
+	    <item name="android:spinnerItemStyle">@style/SpinnerItemdisoft</item>
+  	</style>
+  	
+  	
+    <!-- <item name="android:listChoiceIndicatorMultiple">@style/CheckBoxAppTheme</item>
+    	<item name="android:checkboxStyle">@style/CheckBoxAppTheme</item> -->
+
+</resources>

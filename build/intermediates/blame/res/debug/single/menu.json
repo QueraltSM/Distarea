@@ -1,0 +1,78 @@
+[
+    {
+        "merged": "C:\\Distarea\\Distarea\\build\\intermediates\\res\\merged\\debug\\menu\\listaestablecimientos.xml",
+        "source": "C:\\Distarea\\Distarea\\res\\menu\\listaestablecimientos.xml"
+    },
+    {
+        "merged": "C:\\Distarea\\Distarea\\build\\intermediates\\res\\merged\\debug\\menu\\ayuda.xml",
+        "source": "C:\\Distarea\\Distarea\\res\\menu\\ayuda.xml"
+    },
+    {
+        "merged": "C:\\Distarea\\Distarea\\build\\intermediates\\res\\merged\\debug\\menu\\chatof.xml",
+        "source": "C:\\Distarea\\Distarea\\res\\menu\\chatof.xml"
+    },
+    {
+        "merged": "C:\\Distarea\\Distarea\\build\\intermediates\\res\\merged\\debug\\menu\\listaestablecimientossinv14.xml",
+        "source": "C:\\Distarea\\Distarea\\res\\menu\\listaestablecimientossinv14.xml"
+    },
+    {
+        "merged": "C:\\Distarea\\Distarea\\build\\intermediates\\res\\merged\\debug\\menu\\listaarticulos2.xml",
+        "source": "C:\\Distarea\\Distarea\\res\\menu\\listaarticulos2.xml"
+    },
+    {
+        "merged": "C:\\Distarea\\Distarea\\build\\intermediates\\res\\merged\\debug\\menu\\listaestablecimientosv14.xml",
+        "source": "C:\\Distarea\\Distarea\\res\\menu\\listaestablecimientosv14.xml"
+    },
+    {
+        "merged": "C:\\Distarea\\Distarea\\build\\intermediates\\res\\merged\\debug\\menu\\estrellita2.xml",
+        "source": "C:\\Distarea\\Distarea\\res\\menu\\estrellita2.xml"
+    },
+    {
+        "merged": "C:\\Distarea\\Distarea\\build\\intermediates\\res\\merged\\debug\\menu\\chat.xml",
+        "source": "C:\\Distarea\\Distarea\\res\\menu\\chat.xml"
+    },
+    {
+        "merged": "C:\\Distarea\\Distarea\\build\\intermediates\\res\\merged\\debug\\menu\\listaanterior.xml",
+        "source": "C:\\Distarea\\Distarea\\res\\menu\\listaanterior.xml"
+    },
+    {
+        "merged": "C:\\Distarea\\Distarea\\build\\intermediates\\res\\merged\\debug\\menu\\lista.xml",
+        "source": "C:\\Distarea\\Distarea\\res\\menu\\lista.xml"
+    },
+    {
+        "merged": "C:\\Distarea\\Distarea\\build\\intermediates\\res\\merged\\debug\\menu\\listaarticulos.xml",
+        "source": "C:\\Distarea\\Distarea\\res\\menu\\listaarticulos.xml"
+    },
+    {
+        "merged": "C:\\Distarea\\Distarea\\build\\intermediates\\res\\merged\\debug\\menu\\listacompra.xml",
+        "source": "C:\\Distarea\\Distarea\\res\\menu\\listacompra.xml"
+    },
+    {
+        "merged": "C:\\Distarea\\Distarea\\build\\intermediates\\res\\merged\\debug\\menu\\chatofp.xml",
+        "source": "C:\\Distarea\\Distarea\\res\\menu\\chatofp.xml"
+    },
+    {
+        "merged": "C:\\Distarea\\Distarea\\build\\intermediates\\res\\merged\\debug\\menu\\mensajes.xml",
+        "source": "C:\\Distarea\\Distarea\\res\\menu\\mensajes.xml"
+    },
+    {
+        "merged": "C:\\Distarea\\Distarea\\build\\intermediates\\res\\merged\\debug\\menu\\listacomprav14.xml",
+        "source": "C:\\Distarea\\Distarea\\res\\menu\\listacomprav14.xml"
+    },
+    {
+        "merged": "C:\\Distarea\\Distarea\\build\\intermediates\\res\\merged\\debug\\menu\\conversaciones.xml",
+        "source": "C:\\Distarea\\Distarea\\res\\menu\\conversaciones.xml"
+    },
+    {
+        "merged": "C:\\Distarea\\Distarea\\build\\intermediates\\res\\merged\\debug\\menu\\conversacionesv14.xml",
+        "source": "C:\\Distarea\\Distarea\\res\\menu\\conversacionesv14.xml"
+    },
+    {
+        "merged": "C:\\Distarea\\Distarea\\build\\intermediates\\res\\merged\\debug\\menu\\estrellita.xml",
+        "source": "C:\\Distarea\\Distarea\\res\\menu\\estrellita.xml"
+    },
+    {
+        "merged": "C:\\Distarea\\Distarea\\build\\intermediates\\res\\merged\\debug\\menu\\listaest.xml",
+        "source": "C:\\Distarea\\Distarea\\res\\menu\\listaest.xml"
+    }
+]

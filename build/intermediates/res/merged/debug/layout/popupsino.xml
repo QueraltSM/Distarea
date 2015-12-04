@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/azulDisoft3"
+    android:padding="10dip"
+    android:id="@+id/popup" >
+    
+    <LinearLayout 
+        android:id="@+id/cajatexto"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+	
+		<TextView
+		    android:id="@+id/texto"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center"/>
+		
+	</LinearLayout>
+	
+	    <ScrollView
+	        android:id="@+id/sv"
+	        android:layout_width="fill_parent"
+	        android:layout_height="0dip"
+	        android:layout_weight="1"
+	        android:fillViewport="true"
+	        android:visibility="gone">
+	
+	    </ScrollView>
+
+    <LinearLayout 
+        android:id="@+id/botones"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        
+        <ImageButton
+            android:id="@+id/si"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:src="@drawable/navigation_accept"
+        	android:padding="0dp"
+        	android:layout_margin="0dp"
+            android:background="@drawable/botonfino"/>
+
+        <ImageButton
+            android:id="@+id/no"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:src="@drawable/navigation_cancel"
+        	android:padding="0dp"
+        	android:layout_margin="0dp"
+            android:background="@drawable/botonfino"/>        
+   
+    </LinearLayout>
+
+</LinearLayout>

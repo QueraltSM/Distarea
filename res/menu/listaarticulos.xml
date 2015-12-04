@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+		android:id="@+id/menuSearch"
+		app:actionViewClass="android.support.v7.widget.SearchView"
+		app:showAsAction="ifRoom|collapseActionView"
+		android:icon="@drawable/action_search_light"
+		android:orderInCategory="100"
+        android:title="Buscar artículo"
+        android:visible="false"/>
+    
+    <!-- <item
+		android:id="@+id/help"
+		android:showAsAction="always"
+		android:icon="@drawable/action_help_light"
+		android:orderInCategory="150"
+        android:title="Ayuda"/>  -->
+
+</menu>

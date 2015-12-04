@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical" 
+    android:gravity="center_horizontal"
+    android:id="@+id/base">
+    
+    <ScrollView
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent">
+    	
+        <LinearLayout
+        	android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:orientation="vertical"
+        	android:id="@+id/englobe">
+
+    <TextView 
+        android:text="@string/regfintxt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top|center_horizontal"/>
+    
+    <LinearLayout
+         android:id="@+id/tablafin0"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:gravity="left"
+         android:background="@android:color/background_light"
+         android:orientation="horizontal">
+     
+     	<TextView 
+     	    android:id="@+id/txtuser"
+     	    android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:textStyle="bold"
+        	android:text="@string/txtuser"/>
+     	
+     	<TextView 
+     	    android:id="@+id/userfin"
+     	    android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"/>
+
+     </LinearLayout>
+     
+    <LinearLayout
+         android:id="@+id/tablafin0_5"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:gravity="left"
+         android:background="@android:color/background_light"
+         android:orientation="horizontal">
+     
+     	<TextView 
+     	    android:id="@+id/txtpass"
+     	    android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:textStyle="bold"
+        	android:text="@string/txtpass"/>
+     	
+     	<TextView 
+     	    android:id="@+id/passfin"
+     	    android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"/>
+
+     </LinearLayout>
+    
+    <!-- Espacio extra -->
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    
+     <LinearLayout
+         android:id="@+id/tablafin0_75"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:gravity="left"
+         android:background="@android:color/background_light"
+         android:orientation="horizontal">
+     
+     	<TextView 
+     	    android:id="@+id/txtpais"
+     	    android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:textStyle="bold"
+        	android:text="País: "/>
+     	
+     	<TextView 
+     	    android:id="@+id/pais"
+     	    android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"/>
+
+     </LinearLayout>
+     
+     <LinearLayout
+         android:id="@+id/tablafin0_99"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:gravity="left"
+         android:background="@android:color/background_light"
+         android:orientation="horizontal">
+     
+     	<TextView 
+     	    android:id="@+id/txtnemp"
+     	    android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:textStyle="bold"
+        	android:text="@string/txtnemp"/>
+     	
+     	<TextView 
+     	    android:id="@+id/nempfin"
+     	    android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"/>
+
+     </LinearLayout>
+        
+     <LinearLayout
+         android:id="@+id/tablafin1"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:gravity="left"
+         android:background="@android:color/background_light"
+         android:orientation="horizontal">
+     
+     	<TextView 
+     	    android:id="@+id/txtcp"
+     	    android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:textStyle="bold"
+        	android:text="@string/txtcp"/>
+     	
+     	<TextView 
+     	    android:id="@+id/cpfin"
+     	    android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"/>
+
+     </LinearLayout>
+     
+     <LinearLayout
+         android:id="@+id/tablafin2"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:gravity="left"
+         android:background="@android:color/background_light"
+         android:orientation="horizontal">
+     
+     	<TextView 
+     	    android:id="@+id/txtrecpass"
+     	    android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:textStyle="bold"
+        	android:text="@string/txtrecpass"/>
+     	
+     	<TextView 
+     	    android:id="@+id/recpassfin"
+     	    android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"/>
+
+     </LinearLayout>
+     
+     <LinearLayout
+         android:id="@+id/tablafin3"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:gravity="left"
+         android:background="@android:color/background_light"
+         android:orientation="horizontal">
+     
+     	<TextView 
+     	    android:id="@+id/txtrecpassc1"
+     	    android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:textStyle="bold"/>
+     	
+     	<TextView 
+     	    android:id="@+id/recpassc1"
+     	    android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"/>
+
+     </LinearLayout>
+     
+     <LinearLayout
+         android:id="@+id/tablafin3_5"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:gravity="left"
+         android:background="@android:color/background_light"
+         android:orientation="horizontal"
+         android:visibility="gone">
+     
+     	<TextView 
+     	    android:id="@+id/txtrs"
+     	    android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:textStyle="bold"
+        	android:text="@string/txtrs"/>
+     	
+     	<TextView 
+     	    android:id="@+id/rsfin"
+     	    android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"/>
+
+     </LinearLayout>
+     
+     <LinearLayout
+         android:id="@+id/tablafin4"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:gravity="left"
+         android:background="@android:color/background_light"
+         android:orientation="horizontal">
+     
+     	<TextView 
+     	    android:id="@+id/txtnombre"
+     	    android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:textStyle="bold"
+        	android:text="@string/txtnombre"/>
+     	
+     	<TextView 
+     	    android:id="@+id/nombrefin"
+     	    android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"/>
+
+     </LinearLayout>
+     
+     <LinearLayout
+         android:id="@+id/tablafin5"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:gravity="left"
+         android:background="@android:color/background_light"
+         android:orientation="horizontal">
+     
+     	<TextView 
+     	    android:id="@+id/txttlf"
+     	    android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:textStyle="bold"
+        	android:text="@string/txttlf"/>
+     	
+     	<TextView 
+     	    android:id="@+id/tlffin"
+     	    android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"/>
+
+     </LinearLayout>
+     
+     <LinearLayout
+         android:id="@+id/tablafin5_5"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:gravity="left"
+         android:background="@android:color/background_light"
+         android:orientation="horizontal">
+     
+     	<TextView 
+     	    android:id="@+id/txtdir"
+     	    android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:textStyle="bold"
+        	android:text="Dirección: "/>
+     	
+     	<TextView 
+     	    android:id="@+id/dirfin"
+     	    android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"/>
+
+     </LinearLayout>
+     
+     <LinearLayout
+         android:id="@+id/tablafin6"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:gravity="left"
+         android:background="@android:color/background_light"
+         android:orientation="horizontal">
+     
+     	<TextView 
+     	    android:id="@+id/txttc"
+     	    android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:textStyle="bold"
+        	android:text="@string/txttc"/>
+     	
+     	<TextView 
+     	    android:id="@+id/tcfin"
+     	    android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"/>
+
+     </LinearLayout>
+     
+     <LinearLayout
+         android:id="@+id/tablafin7"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:gravity="left"
+         android:background="@android:color/background_light"
+         android:orientation="horizontal">
+     
+     	<TextView 
+     	    android:id="@+id/txtms"
+     	    android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:textStyle="bold"
+        	android:text="@string/txtms"/>
+     	
+     	<TextView 
+     	    android:id="@+id/msfin"
+     	    android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"/>
+
+     </LinearLayout>
+
+     <LinearLayout
+         android:id="@+id/tablafin9"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:gravity="left"
+         android:background="@android:color/background_light"
+         android:orientation="horizontal">
+     
+     	<TextView 
+     	    android:id="@+id/txtmoneda"
+     	    android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:textStyle="bold"
+        	android:text="@string/txtmoneda"/>
+     	
+     	<TextView 
+     	    android:id="@+id/monedafin"
+     	    android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"/>
+
+     </LinearLayout>
+     
+    <LinearLayout
+         android:id="@+id/tablafin10"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:gravity="left"
+         android:background="@android:color/background_light"
+         android:orientation="horizontal">
+     
+     	<TextView 
+     	    android:id="@+id/txtinteres"
+     	    android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:textStyle="bold"
+        	android:text="@string/txtinteres"/>
+     	
+     	<TextView 
+     	    android:id="@+id/interesfin"
+     	    android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"/>
+
+     </LinearLayout>
+     
+    <LinearLayout 
+        android:layout_width="wrap_content"
+       	android:layout_height="wrap_content"
+       	android:orientation="horizontal">
+     
+	    <CheckBox 
+	        android:id="@+id/tyc"
+	        android:layout_width="wrap_content"
+	     	android:layout_height="wrap_content"
+	     	android:layout_gravity="center_vertical"/>
+	    
+	    <TextView
+	        android:id="@+id/terminos"
+	        android:layout_width="wrap_content"
+	     	android:layout_height="wrap_content"
+	     	android:layout_marginBottom="15px"/>
+    
+	</LinearLayout>
+	
+    <!-- Espacio extra -->
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+     <Button
+     	    android:id="@+id/finalizar"
+     	    android:layout_width="fill_parent"
+     	    android:layout_height="wrap_content"
+     	    android:text="@string/finalizar"
+     	    android:background="@drawable/botondisoft"/>
+     
+     </LinearLayout>
+     
+  </ScrollView>
+     
+</LinearLayout>

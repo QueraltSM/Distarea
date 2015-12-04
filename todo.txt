@@ -1,0 +1,5 @@
+Nuevo fichero de texto creado el 30 de Noviembre de 2015
+Registro de ideas sueltas y tareas pendientes
+
+TODO Revisar en ListaCompra, funcionamiento de la clase OnItemClickListener del mAdapter (IcsSpinner),
+TODO para que funcione al hacer click las cosas.
