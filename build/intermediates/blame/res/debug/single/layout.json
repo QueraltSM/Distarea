@@ -168,6 +168,10 @@
         "source": "C:\\Distarea\\Distarea\\res\\layout\\tiendavirtual.xml"
     },
     {
+        "merged": "C:\\Distarea\\Distarea\\build\\intermediates\\res\\merged\\debug\\layout\\zxing_barcode_scanner.xml",
+        "source": "C:\\Distarea\\Distarea\\build\\intermediates\\exploded-aar\\com.journeyapps\\zxing-android-embedded\\3.0.3\\res\\layout\\zxing_barcode_scanner.xml"
+    },
+    {
         "merged": "C:\\Distarea\\Distarea\\build\\intermediates\\res\\merged\\debug\\layout\\dmodoregistro.xml",
         "source": "C:\\Distarea\\Distarea\\res\\layout\\dmodoregistro.xml"
     },
@@ -276,12 +280,12 @@
         "source": "C:\\Distarea\\Distarea\\res\\layout\\popupadd.xml"
     },
     {
-        "merged": "C:\\Distarea\\Distarea\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_time.xml",
-        "source": "C:\\Distarea\\Distarea\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\layout\\notification_template_part_time.xml"
-    },
-    {
         "merged": "C:\\Distarea\\Distarea\\build\\intermediates\\res\\merged\\debug\\layout\\mensajes.xml",
         "source": "C:\\Distarea\\Distarea\\res\\layout\\mensajes.xml"
+    },
+    {
+        "merged": "C:\\Distarea\\Distarea\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_time.xml",
+        "source": "C:\\Distarea\\Distarea\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\layout\\notification_template_part_time.xml"
     },
     {
         "merged": "C:\\Distarea\\Distarea\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_icon.xml",
@@ -306,6 +310,10 @@
     {
         "merged": "C:\\Distarea\\Distarea\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_big_media_narrow.xml",
         "source": "C:\\Distarea\\Distarea\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\layout\\notification_template_big_media_narrow.xml"
+    },
+    {
+        "merged": "C:\\Distarea\\Distarea\\build\\intermediates\\res\\merged\\debug\\layout\\zxing_capture.xml",
+        "source": "C:\\Distarea\\Distarea\\build\\intermediates\\exploded-aar\\com.journeyapps\\zxing-android-embedded\\3.0.3\\res\\layout\\zxing_capture.xml"
     },
     {
         "merged": "C:\\Distarea\\Distarea\\build\\intermediates\\res\\merged\\debug\\layout\\lvlistaanterior.xml",

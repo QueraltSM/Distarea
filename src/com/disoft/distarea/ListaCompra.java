@@ -109,7 +109,7 @@ import com.disoft.distarea.models.Est;
 import com.disoft.distarea.models.Msj;
 import com.disoft.distarea.models.Ped;
 import com.google.android.gms.common.ConnectionResult;
-import com.google.zxing.integration.android.IntentIntegrator;
+//import com.google.zxing.integration.android.IntentIntegrator;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
@@ -4906,8 +4906,9 @@ public class ListaCompra extends AppCompatActivity implements AdapterView.OnItem
         	if(success){
         		if (sharedPrefs.getBoolean("ch", true)) ll.performHapticFeedback(1);
         		//BeepManager bm = new BeepManager(ListaCompra.this);
-				IntentIntegrator ii = new IntentIntegrator(ListaCompra.this);
-				ii.initiateScan();
+//				IntentIntegrator ii = new IntentIntegrator(ListaCompra.this);
+//				ii.initiateScan();
+//				IntentIntegrator.initiateScan(ListaCompra.this);
         		switch(tipo){
         		case 0:
         			final AlertDialog.Builder adb = new AlertDialog.Builder(ListaCompra.this);

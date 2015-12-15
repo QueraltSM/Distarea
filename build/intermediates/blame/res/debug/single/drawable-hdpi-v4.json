@@ -180,12 +180,12 @@
         "source": "C:\\Distarea\\Distarea\\res\\drawable-hdpi\\images_slideshow.png"
     },
     {
-        "merged": "C:\\Distarea\\Distarea\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\location_map.png",
-        "source": "C:\\Distarea\\Distarea\\res\\drawable-hdpi\\location_map.png"
-    },
-    {
         "merged": "C:\\Distarea\\Distarea\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\btn_default_disabled_focused_holo_light.9.png",
         "source": "C:\\Distarea\\Distarea\\res\\drawable-hdpi\\btn_default_disabled_focused_holo_light.9.png"
+    },
+    {
+        "merged": "C:\\Distarea\\Distarea\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\location_map.png",
+        "source": "C:\\Distarea\\Distarea\\res\\drawable-hdpi\\location_map.png"
     },
     {
         "merged": "C:\\Distarea\\Distarea\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\location_place.png",

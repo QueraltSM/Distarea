@@ -68,11 +68,11 @@
         "source": "C:\\Distarea\\Distarea\\res\\menu\\conversacionesv14.xml"
     },
     {
-        "merged": "C:\\Distarea\\Distarea\\build\\intermediates\\res\\merged\\debug\\menu\\estrellita.xml",
-        "source": "C:\\Distarea\\Distarea\\res\\menu\\estrellita.xml"
-    },
-    {
         "merged": "C:\\Distarea\\Distarea\\build\\intermediates\\res\\merged\\debug\\menu\\listaest.xml",
         "source": "C:\\Distarea\\Distarea\\res\\menu\\listaest.xml"
+    },
+    {
+        "merged": "C:\\Distarea\\Distarea\\build\\intermediates\\res\\merged\\debug\\menu\\estrellita.xml",
+        "source": "C:\\Distarea\\Distarea\\res\\menu\\estrellita.xml"
     }
 ]
