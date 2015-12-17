@@ -10,6 +10,7 @@ import java.util.regex.Pattern;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.OnSharedPreferenceChangeListener;
+import android.content.res.Configuration;
 import android.graphics.PorterDuff;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -22,11 +23,13 @@ import android.preference.PreferenceManager;
 import android.preference.Preference.OnPreferenceClickListener;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.app.AppCompatDelegate;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.PopupWindow;
@@ -43,6 +46,7 @@ public class Opciones3 extends PreferenceActivity implements OnSharedPreferenceC
 	ListPreference recpass, ps; EditTextPreference mail, rs; CheckBoxPreference ms; 
 	private OnSharedPreferenceChangeListener ospclrecpass, ospclmail, ospclps, ospclrs, ospclms;
 	String asteriscos="********************", rp; int flagms = 0, cambios = 0;
+	private AppCompatDelegate delegado;
 
 	@Override protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -246,5 +250,61 @@ public class Opciones3 extends PreferenceActivity implements OnSharedPreferenceC
 						"WHERE id="+sharedPrefs.getInt("id",0));
 				st.close(); conn.close(); }catch(SQLException e){e.printStackTrace();}
     	return true; }}
+
+	private AppCompatDelegate getDelegado() {
+		if (delegado == null) {
+			delegado = AppCompatDelegate.create(this, null);
+		}
+		return delegado;
+	}
+
+	@Override
+	protected void onPostCreate(Bundle savedInstanceState) {
+		super.onPostCreate(savedInstanceState);
+		getDelegado().onPostCreate(savedInstanceState);
+	}
+
+	/*@Override
+	public void setContentView(View view) {
+		getDelegado().setContentView(view);
+	}*/
+
+	@Override
+	public void setContentView(View view, ViewGroup.LayoutParams params) {
+		getDelegado().setContentView(view, params);
+	}
+
+	@Override
+	public void addContentView(View view, ViewGroup.LayoutParams params) {
+		getDelegado().addContentView(view, params);
+	}
+
+	@Override
+	protected void onPostResume() {
+		super.onPostResume();
+		getDelegado().onPostResume();
+	}
+
+	@Override
+	protected void onTitleChanged(CharSequence title, int color) {
+		super.onTitleChanged(title, color);
+		getDelegado().setTitle(title);
+	}
+
+	@Override
+	public void onConfigurationChanged(Configuration newConfig) {
+		super.onConfigurationChanged(newConfig);
+		getDelegado().onConfigurationChanged(newConfig);
+	}
+
+	@Override
+	protected void onStop() {
+		super.onStop();
+		getDelegado().onStop();
+	}
+
+	public void invalidateOptionsMenu() {
+		getDelegado().invalidateOptionsMenu();
+	}
   
 }

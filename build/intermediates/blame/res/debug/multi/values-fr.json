@@ -989,6 +989,82 @@
                         "endOffset": 334
                     }
                 }
+            },
+            {
+                "to": {
+                    "startLine": 54,
+                    "startColumn": 4,
+                    "startOffset": 7640,
+                    "endColumn": 58,
+                    "endOffset": 7694
+                },
+                "from": {
+                    "file": "C:\\Distarea\\Distarea\\build\\intermediates\\exploded-aar\\com.journeyapps\\zxing-android-embedded\\3.0.3\\res\\values-fr\\values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 195,
+                        "endColumn": 58,
+                        "endOffset": 249
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 55,
+                    "startColumn": 4,
+                    "startOffset": 7699,
+                    "endColumn": 46,
+                    "endOffset": 7741
+                },
+                "from": {
+                    "file": "C:\\Distarea\\Distarea\\build\\intermediates\\exploded-aar\\com.journeyapps\\zxing-android-embedded\\3.0.3\\res\\values-fr\\values.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 254,
+                        "endColumn": 46,
+                        "endOffset": 296
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 56,
+                    "startColumn": 4,
+                    "startOffset": 7746,
+                    "endColumn": 165,
+                    "endOffset": 7907
+                },
+                "from": {
+                    "file": "C:\\Distarea\\Distarea\\build\\intermediates\\exploded-aar\\com.journeyapps\\zxing-android-embedded\\3.0.3\\res\\values-fr\\values.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 301,
+                        "endColumn": 165,
+                        "endOffset": 462
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 57,
+                    "startColumn": 4,
+                    "startOffset": 7912,
+                    "endColumn": 108,
+                    "endOffset": 8016
+                },
+                "from": {
+                    "file": "C:\\Distarea\\Distarea\\build\\intermediates\\exploded-aar\\com.journeyapps\\zxing-android-embedded\\3.0.3\\res\\values-fr\\values.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 467,
+                        "endColumn": 108,
+                        "endOffset": 571
+                    }
+                }
             }
         ]
     }

@@ -252,4 +252,17 @@
         <item name="android:colorControlHighlight">?attr/colorControlHighlight</item>
         <item name="android:colorButtonNormal">?attr/colorButtonNormal</item>
     </style>
+    <style name="Theme.MyTheme" parent="Theme.AppCompat.Light">
+                <item name="android:popupMenuStyle">@style/Widget.MyTheme.ListPopupWindow</item>
+                <item name="android:actionBarStyle">@style/Widget.MyTheme.ActionBar</item>
+                <item name="android:actionBarTabStyle">@style/MyTheme.ActionBar.TabView</item>
+                <item name="android:actionBarTabTextStyle">@style/MyTheme.ActionBar.Tab.Text</item>
+                <item name="colorPrimary">@color/azulDisoft2</item>
+                <item name="android:textColorPrimary">@color/abc_primary_text_material_dark</item>
+                <item name="android:textColorPrimaryInverse">@color/abc_primary_text_material_light
+                </item>
+                <item name="android:statusBarColor">@color/azulDisoft2</item>
+                <item name="android:windowBackground">@android:color/white</item>
+                <item name="android:colorBackground">@color/azulDisoft3</item>
+        </style>
 </resources>

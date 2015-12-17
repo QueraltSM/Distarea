@@ -7,6 +7,7 @@
 	<RingtonePreference
         android:key="tono"
         android:title="@string/tono"
+        android:icon="@drawable/device_access_volume_on"
         android:layout_width="fill_parent"
         android:ringtoneType="notification" />
 	
@@ -27,6 +28,7 @@
 	<CheckBoxPreference 
         android:key="bg"
         android:title="@string/bg"
+        android:icon="@drawable/images_slideshow"
         android:defaultValue="true"
         android:layout_width="fill_parent"
         android:summary="@string/bgs" />
@@ -34,6 +36,7 @@
 	<CheckBoxPreference 
         android:key="vi"
         android:title="@string/vi"
+        android:icon="@drawable/content_picture"
         android:defaultValue="true"
         android:layout_width="fill_parent"
         android:summary="@string/vis" />
@@ -41,18 +44,21 @@
 	<ListPreference
         android:key="main"
         android:title="@string/cmain"
+        android:icon="@drawable/home"
         android:layout_width="fill_parent"
         android:defaultValue="0"/>
 	
 	<PreferenceScreen
 	    android:key="opciones2"
 	    android:layout_width="fill_parent"
+        android:icon="@drawable/social_person"
 	    android:title="@string/du"
 	    android:summary="@string/submenus"/>
 	
 	<PreferenceScreen
 	    android:key="opciones3"
 	    android:layout_width="fill_parent"
+        android:icon="@drawable/alerts_and_states_warning"
 	    android:title="@string/seg"
 	    android:summary="@string/submenus"/>
 	
@@ -60,11 +66,13 @@
 	    android:key="opcionesTec"
 	    android:layout_width="fill_parent"
 	    android:title="Opciones Técnicas"
+        android:icon="@drawable/action_settings"
 	    android:summary="@string/submenus"/>
 	
 	<PreferenceScreen
 	    android:key="opAbout"
 	    android:layout_width="fill_parent"
-	    android:title="@string/aboutUs"/>
+	    android:title="@string/aboutUs"
+        android:icon="@drawable/action_about"/>
 
 </PreferenceScreen>

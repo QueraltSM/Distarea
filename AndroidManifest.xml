@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.disoft.distarea"
     android:versionCode="29"
-    android:versionName="2.2.6.3 (Beta)"
+    android:versionName="2.3 (Beta)"
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-sdk
@@ -138,16 +138,21 @@
         <activity android:name=".ListaEst" />
         <activity android:name=".Establecimiento" />
         <activity android:name=".Geolocalizacion" />
-        <activity android:name=".Opciones" />
-        <activity android:name=".Opciones2" />
-        <activity android:name=".Opciones3" />
-        <activity android:name=".OpcionesTec" />
-        <activity android:name=".OpcionesAv" />
+        <activity android:name=".Opciones"
+            android:theme="@style/Theme.MyTheme.Opciones"/>
+        <activity android:name=".Opciones2"
+            android:theme="@style/Theme.MyTheme.Opciones" />
+        <activity android:name=".Opciones3"
+            android:theme="@style/Theme.MyTheme.Opciones" />
+        <activity android:name=".OpcionesTec"
+            android:theme="@style/Theme.MyTheme.Opciones" />
+        <activity android:name=".OpcionesAv"
+            android:theme="@style/Theme.MyTheme.Opciones" />
         <activity android:name=".OpCNAE" />
         <activity android:name=".OpAbout" />
         <activity android:name=".Ayuda" />
 
-        <activity android:name="com.google.zxing.client.android.CaptureActivity"
+        <!-- <activity android:name="com.google.zxing.client.android.CaptureActivity"
 
   android:configChanges="orientation|keyboardHidden"
 
@@ -156,7 +161,7 @@
     <action android:name="com.google.zxing.client.android.SCAN"/>
     <category android:name="android.intent.category.DEFAULT"/>
   </intent-filter>
-</activity> 
+</activity> -->
     </application>
 
 </manifest>

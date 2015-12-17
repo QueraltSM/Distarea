@@ -12,6 +12,7 @@ import android.app.ProgressDialog;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.OnSharedPreferenceChangeListener;
+import android.content.res.Configuration;
 import android.graphics.PorterDuff;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -24,11 +25,13 @@ import android.preference.PreferenceActivity;
 import android.preference.PreferenceManager;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.app.AppCompatDelegate;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.PopupWindow;
 import android.widget.TextView;
@@ -40,8 +43,7 @@ import com.actionbarsherlock.view.MenuItem;*/
 import com.disoft.distarea.extras.DatabaseHandler;
 import com.disoft.distarea.models.Est;
 
-public class Opciones2 extends PreferenceActivity implements
-		OnSharedPreferenceChangeListener {
+public class Opciones2 extends PreferenceActivity{
 	SharedPreferences sharedPrefs; DatabaseHandler db;
 	EditTextPreference nombre, pass, cp, seudonimo, mail, tel, dir, nemp, codsuc;
 	ListPreference moneda, tipo, pais; TextView info; View v; 
@@ -49,17 +51,20 @@ public class Opciones2 extends PreferenceActivity implements
 	private OnSharedPreferenceChangeListener /*ospclnombre, ospclpass,*/ ospclcp, 
 	ospclmoneda, ospcltipo, ospclseudonimo, ospclmail, ospcltel, ospcldir, ospclpais,
 	ospclnemp, ospclcodsuc;
+	private AppCompatDelegate delegado;
 
 	@Override protected void onCreate(Bundle savedInstanceState) {
+		getDelegado().installViewFactory();
+		getDelegado().onCreate(savedInstanceState);
 		super.onCreate(savedInstanceState);
 		AppCompatActivity apa = new AppCompatActivity();
 		ActionBar ab = apa.getSupportActionBar();
 		ab.setDisplayOptions(ActionBar.DISPLAY_SHOW_TITLE
 				| ActionBar.DISPLAY_SHOW_HOME | ActionBar.DISPLAY_HOME_AS_UP);
 		ab.setTitle(getString(R.string.opciones)); ab.setSubtitle(R.string.subop2);
-		ab.setIcon(R.drawable.action_settings); 
+//		ab.setIcon(R.drawable.action_settings);
 		addPreferencesFromResource(R.xml.opciones2);
-		setContentView(R.layout.opciones); v = findViewById(R.id.base);
+		getDelegado().setContentView(R.layout.opciones); v = findViewById(R.id.base);
 		sharedPrefs = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
 		nuevotipo = sharedPrefs.getString("tipo","");
 		db = new DatabaseHandler(this);
@@ -337,7 +342,7 @@ public class Opciones2 extends PreferenceActivity implements
   	    	  }});
 	}
 
-	@Override public void onSharedPreferenceChanged(SharedPreferences sp, String s) {flag=1;}
+	//@Override public void onSharedPreferenceChanged(SharedPreferences sp, String s) {flag=1;}
 
 	@Override public boolean onOptionsItemSelected(MenuItem item) {
 		if (sharedPrefs.getBoolean("ch", true)) v.performHapticFeedback(1);
@@ -516,4 +521,60 @@ public class Opciones2 extends PreferenceActivity implements
 				}catch(Exception e){e.printStackTrace();}
 			return true;
 		}}
+
+	private AppCompatDelegate getDelegado() {
+		if (delegado == null) {
+			delegado = AppCompatDelegate.create(this, null);
+		}
+		return delegado;
+	}
+
+	@Override
+	protected void onPostCreate(Bundle savedInstanceState) {
+		super.onPostCreate(savedInstanceState);
+		getDelegado().onPostCreate(savedInstanceState);
+	}
+
+	/*@Override
+	public void setContentView(View view) {
+		getDelegado().setContentView(view);
+	}*/
+
+	@Override
+	public void setContentView(View view, ViewGroup.LayoutParams params) {
+		getDelegado().setContentView(view, params);
+	}
+
+	@Override
+	public void addContentView(View view, ViewGroup.LayoutParams params) {
+		getDelegado().addContentView(view, params);
+	}
+
+	@Override
+	protected void onPostResume() {
+		super.onPostResume();
+		getDelegado().onPostResume();
+	}
+
+	@Override
+	protected void onTitleChanged(CharSequence title, int color) {
+		super.onTitleChanged(title, color);
+		getDelegado().setTitle(title);
+	}
+
+	@Override
+	public void onConfigurationChanged(Configuration newConfig) {
+		super.onConfigurationChanged(newConfig);
+		getDelegado().onConfigurationChanged(newConfig);
+	}
+
+	@Override
+	protected void onStop() {
+		super.onStop();
+		getDelegado().onStop();
+	}
+
+	public void invalidateOptionsMenu() {
+		getDelegado().invalidateOptionsMenu();
+	}
 }

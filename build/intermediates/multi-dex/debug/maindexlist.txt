@@ -7,6 +7,7 @@ org/apache/http/cookie/Cookie.class
 android/support/v4/app/FragmentManagerState.class
 com/google/android/gms/fitness/Fitness.class
 com/google/android/gms/ads/internal/purchase/zzk.class
+com/google/zxing/common/BitMatrix.class
 com/google/android/gms/internal/zzhj.class
 com/disoft/distarea/Chat$16.class
 com/google/android/gms/common/internal/safeparcel/zza$zza.class
@@ -178,6 +179,7 @@ org/apache/http/HttpClientConnection.class
 org/apache/http/impl/io/ChunkedOutputStream.class
 com/google/android/gms/auth/api/signin/internal/zzh.class
 com/disoft/distarea/ListaArticulos$15.class
+com/journeyapps/barcodescanner/CaptureManager.class
 com/google/android/gms/wearable/CapabilityApi.class
 com/google/android/gms/auth/api/signin/GoogleSignInOptions.class
 com/disoft/distarea/ListaAnterior$6$2.class
@@ -233,6 +235,7 @@ org/apache/http/impl/cookie/BrowserCompatSpec.class
 com/google/android/gms/wearable/ChannelApi$OpenChannelResult.class
 com/google/android/gms/wallet/MaskedWallet.class
 com/disoft/distarea/extras/SharedPreferencesController.class
+com/google/zxing/client/android/R.class
 org/apache/http/impl/client/RoutedRequest.class
 android/support/v4/app/FragmentTransaction.class
 com/google/android/gms/internal/zzif.class
@@ -440,6 +443,7 @@ com/google/android/gms/analytics/HitBuilders$AppViewBuilder.class
 com/disoft/distarea/OpcionesAv$compruebaCliente.class
 org/apache/http/impl/io/HttpRequestWriter.class
 org/apache/http/impl/auth/AuthSchemeBase.class
+com/google/zxing/client/android/R$layout.class
 org/apache/http/impl/auth/NTLMScheme.class
 com/disoft/distarea/Opciones2$10.class
 com/google/android/gms/common/internal/zzab.class
@@ -554,9 +558,11 @@ com/disoft/distarea/extras/ViewPagerAdapterMensajes.class
 com/google/android/gms/ads/internal/zzq.class
 com/google/android/gms/common/api/Status.class
 android/support/v4/view/GravityCompat.class
+com/journeyapps/barcodescanner/CaptureActivity.class
 android/support/v4/app/NotificationCompat.class
 org/apache/http/impl/DefaultHttpServerConnection.class
 com/google/android/gms/internal/zzdb.class
+com/google/zxing/EncodeHintType.class
 com/google/android/gms/internal/zzca.class
 com/disoft/distarea/ListaAnterior$18.class
 com/google/android/gms/internal/zzhc.class
@@ -1132,7 +1138,9 @@ android/support/v4/view/LayoutInflaterFactory.class
 com/google/android/gms/internal/zzdo.class
 com/google/android/gms/internal/zzdw.class
 org/apache/http/protocol/ResponseDate.class
+com/journeyapps/barcodescanner/CompoundBarcodeView.class
 org/apache/http/auth/UsernamePasswordCredentials.class
+com/google/zxing/client/android/R$id.class
 com/google/android/gms/auth/api/signin/SignInAccount.class
 android/support/annotation/StyleRes.class
 com/disoft/distarea/R$id.class
@@ -1253,6 +1261,7 @@ com/google/android/gms/analytics/internal/Command.class
 com/disoft/distarea/ListaArticulos$ViewHolder.class
 org/apache/http/impl/io/HttpResponseParser.class
 com/disoft/distarea/ListaCompra$21.class
+com/google/zxing/integration/android/IntentIntegrator.class
 android/support/v4/app/FragmentManagerImpl$4.class
 com/disoft/distarea/ListaAnterior$10.class
 com/disoft/distarea/TiendaVirtual$actualizaPrecios.class
@@ -1401,6 +1410,7 @@ android/support/annotation/NonNull.class
 com/google/android/gms/internal/zzji.class
 com/google/android/gms/gcm/PeriodicTask.class
 com/google/android/gms/wearable/CapabilityApi$RemoveLocalCapabilityResult.class
+com/google/zxing/client/result/EmailAddressParsedResult.class
 org/apache/http/impl/cookie/BestMatchSpec.class
 com/google/android/gms/wallet/fragment/BuyButtonAppearance.class
 com/google/android/gms/wearable/CapabilityApi$CapabilityListener.class

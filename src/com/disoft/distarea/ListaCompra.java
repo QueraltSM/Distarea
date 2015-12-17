@@ -109,6 +109,7 @@ import com.disoft.distarea.models.Est;
 import com.disoft.distarea.models.Msj;
 import com.disoft.distarea.models.Ped;
 import com.google.android.gms.common.ConnectionResult;
+import com.google.zxing.integration.android.IntentIntegrator;
 //import com.google.zxing.integration.android.IntentIntegrator;
 
 import java.io.BufferedInputStream;
@@ -262,7 +263,8 @@ public class ListaCompra extends AppCompatActivity implements AdapterView.OnItem
 			if (db.getReadableDatabase().getVersion() == 5)
 				db.onUpgrade(db.getReadableDatabase(), 5, 6);
 			ab = getSupportActionBar();
-			ab.setIcon(R.drawable.ic_launcher2);
+			//ab.setIcon(R.drawable.ic_launcher2);
+//			ab.setBackgroundDrawable(getResources().getDrawable(R.drawable.azbackground));
 			try {
 				version = getBaseContext().getPackageManager().getPackageInfo(getBaseContext()
 						.getPackageName(), 0).versionName;
@@ -330,6 +332,7 @@ public class ListaCompra extends AppCompatActivity implements AdapterView.OnItem
 		ab.setTitle(getString(R.string.menu));
 		ab.setDisplayOptions(ActionBar.DISPLAY_SHOW_TITLE | ActionBar.DISPLAY_SHOW_HOME);
 		if (mNameList[position].equals(getString(R.string.seleccionar))) {
+			ab.setIcon(R.drawable.ic_launcher2);
 			e = null; //Vacío e para que no entre en otros establecimientos al volver a Seleccionar
 			mIcsSpinner.setOnLongClickListener(new OnLongClickListener() {
 				@SuppressLint("NewApi")
@@ -467,6 +470,7 @@ public class ListaCompra extends AppCompatActivity implements AdapterView.OnItem
 				}
 			});
 		} else if (eids[position] < 0) {// XXX Lista
+			ab.setIcon(null);
 			mIcsSpinner.setOnLongClickListener(null);
 			eidactual = eids[position];
 			flagvc = 0;
@@ -751,6 +755,7 @@ public class ListaCompra extends AppCompatActivity implements AdapterView.OnItem
 				}
 			}
 		} else { // XXX Pedidos
+			ab.setIcon(null);
 			mIcsSpinner.setOnLongClickListener(new OnLongClickListener() {
 				@Override
 				public boolean onLongClick(View v) {
@@ -1145,11 +1150,15 @@ public class ListaCompra extends AppCompatActivity implements AdapterView.OnItem
 			i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP|Intent.FLAG_ACTIVITY_NEW_TASK);
 			startActivity(i); finish(); }
 		else {if(android.os.Build.VERSION.SDK_INT >= 14){
-			if (item.getItemId() == R.id.scanner){
-				try{Intent intent = new Intent("com.google.zxing.client.android.SCAN");
+			if (item.getItemId() == R.id.scanner) {
+				/*try{Intent intent = new Intent("com.google.zxing.client.android.SCAN");
 					intent.setPackage("com.disoft.distarea");
 					intent.putExtra("SCAN_MODE","QR_CODE_MODE");
 					startActivityForResult(intent, 10);
+				} catch (Exception e) {e.printStackTrace();}*/
+				try{
+					IntentIntegrator integrator = new IntentIntegrator(ListaCompra.this);
+					integrator.initiateScan();
 				} catch (Exception e) {e.printStackTrace();}
 				// return true;
 			}else if(item.getItemId() == R.id.offline){
@@ -1210,6 +1219,7 @@ public class ListaCompra extends AppCompatActivity implements AdapterView.OnItem
 		startActivity(i); finish(); }}
 
 	@Override public void onActivityResult(int requestCode, int resultCode, Intent intent) {
+		super.onActivityResult(requestCode,resultCode,intent);
 		if (requestCode == 0) { // Llamada desde añadir a un pedido
 
 			if (resultCode == RESULT_OK) {
@@ -1268,7 +1278,8 @@ public class ListaCompra extends AppCompatActivity implements AdapterView.OnItem
 	  				.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
 	  			artpedobs.setText(text.get(0).substring(0,1).toUpperCase(spanish)
 	    			+ text.get(0).substring (1)); }}
-		else if (requestCode == 10) { //Escanear QR en ListaCompra (multiusos)
+		//else if (requestCode == 10) { //Escanear QR en ListaCompra (multiusos)
+		else if (requestCode == IntentIntegrator.REQUEST_CODE){
 			if (resultCode == RESULT_OK && null != intent) {
 				new trataQR(intent.getStringExtra("SCAN_RESULT")).execute();}}
 

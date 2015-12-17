@@ -49,7 +49,13 @@
 		 <item name="android:panelFullBackground">@color/azulDisoft1</item>
 		 <item name="homeAsUpIndicator">@drawable/navigation_previous_item_light_mini</item>
 		 <item name="android:checkboxStyle">@style/CheckBoxdisoft</item>
-		 <!-- <item name="android:checkboxStyle">@style/CheckBoxAppTheme</item> -->
+         <item name="colorPrimary">@color/azulDisoft2</item>
+         <item name="android:textColorPrimary">@color/abc_primary_text_material_dark</item>
+         <item name="android:textColorPrimaryInverse">@color/abc_primary_text_material_light
+         </item>
+         <item name="android:windowBackground">@android:color/white</item>
+         <item name="android:colorBackground">@color/azulDisoft3</item>
+         <!-- <item name="android:checkboxStyle">@style/CheckBoxAppTheme</item> -->
          <!-- <item name="actionBarWidgetTheme">@style/MyStyle</item> -->
          </style>
 
@@ -142,4 +148,10 @@
   	    <item name="background">@drawable/rdbackground</item>
         <item name="android:background">@drawable/rdbackground</item>
 	</style>
+
+    <style name="Theme.MyTheme.Opciones" parent="Theme.MyTheme" >
+        <item name="android:textColorPrimary">@color/abc_primary_text_material_light</item>
+        <item name="android:textColorPrimaryInverse">@color/abc_primary_text_material_dark</item>
+        <item name="android:colorBackground">@android:color/white</item>
+    </style>
 </resources>

@@ -24,13 +24,13 @@
 -keep class com.disoft.distarea.OpCNAE { <init>(); }
 -keep class com.disoft.distarea.OpAbout { <init>(); }
 -keep class com.disoft.distarea.Ayuda { <init>(); }
--keep class com.google.zxing.client.android.CaptureActivity { <init>(); }
 -keep class com.google.android.gms.ads.AdActivity { <init>(); }
 -keep class com.google.android.gms.ads.purchase.InAppPurchaseActivity { <init>(); }
 -keep class com.google.android.gms.auth.api.signin.internal.SignInHubActivity { <init>(); }
 -keep class com.google.android.gms.measurement.AppMeasurementContentProvider { <init>(); }
 -keep class com.google.android.gms.measurement.AppMeasurementReceiver { <init>(); }
 -keep class com.google.android.gms.measurement.AppMeasurementService { <init>(); }
+-keep class com.journeyapps.barcodescanner.CaptureActivity { <init>(); }
 -keep public class * extends android.app.backup.BackupAgent {
     <init>();
 }

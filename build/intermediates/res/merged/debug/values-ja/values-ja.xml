@@ -52,4 +52,8 @@
     <string msgid="5441529851481176817" name="mr_system_route_name">"システム"</string>
     <string msgid="7498112907524977311" name="mr_user_route_category_name">"端末"</string>
     <string msgid="4184147110658930238" name="wallet_buy_button_place_holder">"Googleで購入"</string>
+    <string name="zxing_app_name">QRコードスキャナー</string>
+    <string name="zxing_button_ok">OK</string>
+    <string name="zxing_msg_camera_framework_bug">Androidのカメラに問題が発生しました。デバイスを再起動する必要があります。</string>
+    <string name="zxing_msg_default_status">QRコードを画面の読み取り範囲内に写すとスキャンします。</string>
 </resources>

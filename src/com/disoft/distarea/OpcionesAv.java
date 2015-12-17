@@ -19,6 +19,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.OnSharedPreferenceChangeListener;
+import android.content.res.Configuration;
 import android.graphics.PorterDuff;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
@@ -31,6 +32,7 @@ import android.preference.PreferenceActivity;
 import android.preference.PreferenceManager;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.app.AppCompatDelegate;
 import android.text.InputType;
 import android.util.Log;
 import android.view.Gravity;
@@ -39,6 +41,7 @@ import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
@@ -61,6 +64,7 @@ public class OpcionesAv extends PreferenceActivity implements OnSharedPreference
 	Preference redescargaclif;
 	View v, popupView; PopupWindow popupWindow; DatabaseHandler db; Locale spanish = new Locale("es", "ES");
 	SimpleDateFormat postgrestyle = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss",spanish);
+	private AppCompatDelegate delegado;
 
 	@Override protected void onCreate(Bundle savedInstanceState) {
 	      super.onCreate(savedInstanceState);
@@ -500,4 +504,60 @@ public class OpcionesAv extends PreferenceActivity implements OnSharedPreference
     		}catch (SQLException e){ e.printStackTrace(); }  
         	}return true;
 		}}
+
+	private AppCompatDelegate getDelegado() {
+		if (delegado == null) {
+			delegado = AppCompatDelegate.create(this, null);
+		}
+		return delegado;
+	}
+
+	@Override
+	protected void onPostCreate(Bundle savedInstanceState) {
+		super.onPostCreate(savedInstanceState);
+		getDelegado().onPostCreate(savedInstanceState);
+	}
+
+	/*@Override
+	public void setContentView(View view) {
+		getDelegado().setContentView(view);
+	}*/
+
+	@Override
+	public void setContentView(View view, ViewGroup.LayoutParams params) {
+		getDelegado().setContentView(view, params);
+	}
+
+	@Override
+	public void addContentView(View view, ViewGroup.LayoutParams params) {
+		getDelegado().addContentView(view, params);
+	}
+
+	@Override
+	protected void onPostResume() {
+		super.onPostResume();
+		getDelegado().onPostResume();
+	}
+
+	@Override
+	protected void onTitleChanged(CharSequence title, int color) {
+		super.onTitleChanged(title, color);
+		getDelegado().setTitle(title);
+	}
+
+	@Override
+	public void onConfigurationChanged(Configuration newConfig) {
+		super.onConfigurationChanged(newConfig);
+		getDelegado().onConfigurationChanged(newConfig);
+	}
+
+	@Override
+	protected void onStop() {
+		super.onStop();
+		getDelegado().onStop();
+	}
+
+	public void invalidateOptionsMenu() {
+		getDelegado().invalidateOptionsMenu();
+	}
 }

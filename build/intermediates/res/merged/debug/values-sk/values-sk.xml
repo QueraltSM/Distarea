@@ -52,4 +52,8 @@
     <string msgid="5441529851481176817" name="mr_system_route_name">"Systém"</string>
     <string msgid="7498112907524977311" name="mr_user_route_category_name">"Zariadenia"</string>
     <string msgid="4184147110658930238" name="wallet_buy_button_place_holder">"Kúpiť cez Google"</string>
+    <string name="zxing_app_name">Barcode Scanner</string>
+    <string name="zxing_button_ok">OK</string>
+    <string name="zxing_msg_camera_framework_bug">Ospravedlňujeme sa, fotoaparát narazil na problém. Možno bude potrebné reštartovať zariadenie.</string>
+    <string name="zxing_msg_default_status">Umiestnite čiarový kód do vnútra obdĺžnika hľadáčiku pre skenovanie</string>
 </resources>

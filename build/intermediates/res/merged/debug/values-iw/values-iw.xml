@@ -52,4 +52,8 @@
     <string msgid="5441529851481176817" name="mr_system_route_name">"מערכת"</string>
     <string msgid="7498112907524977311" name="mr_user_route_category_name">"מכשירים"</string>
     <string msgid="4184147110658930238" name="wallet_buy_button_place_holder">"קנה בעזרת Google"</string>
+    <string name="zxing_app_name">סורק ברקודים</string>
+    <string name="zxing_button_ok">אישור</string>
+    <string name="zxing_msg_camera_framework_bug">סליחה, מצלמת האנדרואיד נתקלה בבעיה. ייתכן שיהיה עליך להפעיל מחדש את המכשיר.</string>
+    <string name="zxing_msg_default_status">הצב ברקוד בתוך המלבן כדי לסרוק אותו.</string>
 </resources>

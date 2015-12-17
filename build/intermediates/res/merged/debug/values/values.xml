@@ -269,6 +269,16 @@
     <color name="wallet_hint_foreground_holo_light">#808080</color>
     <color name="wallet_holo_blue_light">#ff33b5e5</color>
     <color name="wallet_link_text_light">#0000ee</color>
+    <color name="zxing_custom_possible_result_points">#903A89CF</color>
+    <color name="zxing_custom_result_view">#b0000000</color>
+    <color name="zxing_custom_viewfinder_laser">#1976D2</color>
+    <color name="zxing_custom_viewfinder_mask">#60000000</color>
+    <color name="zxing_possible_result_points">#c0ffbd21</color>
+    <color name="zxing_result_view">#b0000000</color>
+    <color name="zxing_status_text">#ffffffff</color>
+    <color name="zxing_transparent">#00000000</color>
+    <color name="zxing_viewfinder_laser">#ffcc0000</color>
+    <color name="zxing_viewfinder_mask">#60000000</color>
     <declare-styleable name="ActionBar"><attr name="navigationMode"><enum name="normal" value="0"/><enum name="listMode" value="1"/><enum name="tabMode" value="2"/></attr><attr name="displayOptions"><flag name="none" value="0"/><flag name="useLogo" value="0x1"/><flag name="showHome" value="0x2"/><flag name="homeAsUp" value="0x4"/><flag name="showTitle" value="0x8"/><flag name="showCustom" value="0x10"/><flag name="disableHome" value="0x20"/></attr><attr name="title"/><attr format="string" name="subtitle"/><attr format="reference" name="titleTextStyle"/><attr format="reference" name="subtitleTextStyle"/><attr format="reference" name="icon"/><attr format="reference" name="logo"/><attr format="reference" name="divider"/><attr format="reference" name="background"/><attr format="reference|color" name="backgroundStacked"/><attr format="reference|color" name="backgroundSplit"/><attr format="reference" name="customNavigationLayout"/><attr name="height"/><attr format="reference" name="homeLayout"/><attr format="reference" name="progressBarStyle"/><attr format="reference" name="indeterminateProgressStyle"/><attr format="dimension" name="progressBarPadding"/><attr name="homeAsUpIndicator"/><attr format="dimension" name="itemPadding"/><attr format="boolean" name="hideOnContentScroll"/><attr format="dimension" name="contentInsetStart"/><attr format="dimension" name="contentInsetEnd"/><attr format="dimension" name="contentInsetLeft"/><attr format="dimension" name="contentInsetRight"/><attr format="dimension" name="elevation"/><attr format="reference" name="popupTheme"/></declare-styleable>
     <declare-styleable name="ActionBarLayout"><attr name="android:layout_gravity"/></declare-styleable>
     <declare-styleable name="ActionMenuItemView"><attr name="android:minWidth"/></declare-styleable>
@@ -302,6 +312,8 @@
     <declare-styleable name="ViewStubCompat"><attr name="android:layout"/><attr name="android:inflatedId"/><attr name="android:id"/></declare-styleable>
     <declare-styleable name="WalletFragmentOptions"><attr format="enum" name="appTheme"><enum name="holo_dark" value="0"/><enum name="holo_light" value="1"/></attr><attr format="enum" name="environment"><enum name="production" value="1"/><enum name="test" value="3"/><enum name="sandbox" value="0"/><enum name="strict_sandbox" value="2"/></attr><attr format="reference" name="fragmentStyle"/><attr format="enum" name="fragmentMode"><enum name="buyButton" value="1"/><enum name="selectionDetails" value="2"/></attr></declare-styleable>
     <declare-styleable name="WalletFragmentStyle"><attr format="dimension" name="buyButtonHeight"><enum name="match_parent" value="-1"/><enum name="wrap_content" value="-2"/></attr><attr format="dimension" name="buyButtonWidth"><enum name="match_parent" value="-1"/><enum name="wrap_content" value="-2"/></attr><attr format="enum" name="buyButtonText"><enum name="buy_with" value="5"/><enum name="logo_only" value="6"/><enum name="donate_with" value="7"/><enum name="buy_with_google" value="1"/><enum name="buy_now" value="2"/><enum name="book_now" value="3"/><enum name="donate_with_google" value="4"/></attr><attr format="enum" name="buyButtonAppearance"><enum name="google_wallet_classic" value="1"/><enum name="google_wallet_grayscale" value="2"/><enum name="google_wallet_monochrome" value="3"/><enum name="android_pay_dark" value="4"/><enum name="android_pay_light" value="5"/><enum name="android_pay_light_with_border" value="6"/><enum name="classic" value="1"/><enum name="grayscale" value="2"/><enum name="monochrome" value="3"/></attr><attr format="reference" name="maskedWalletDetailsTextAppearance"/><attr format="reference" name="maskedWalletDetailsHeaderTextAppearance"/><attr format="reference|color" name="maskedWalletDetailsBackground"/><attr format="reference" name="maskedWalletDetailsButtonTextAppearance"/><attr format="reference|color" name="maskedWalletDetailsButtonBackground"/><attr format="color" name="maskedWalletDetailsLogoTextColor"/><attr format="enum" name="maskedWalletDetailsLogoImageType"><enum name="google_wallet_classic" value="1"/><enum name="google_wallet_monochrome" value="2"/><enum name="android_pay" value="3"/><enum name="classic" value="1"/><enum name="monochrome" value="2"/></attr></declare-styleable>
+    <declare-styleable name="zxing_finder"><attr format="color" name="zxing_possible_result_points"/><attr format="color" name="zxing_result_view"/><attr format="color" name="zxing_viewfinder_laser"/><attr format="color" name="zxing_viewfinder_mask"/></declare-styleable>
+    <declare-styleable name="zxing_view"><attr format="reference" name="zxing_scanner_layout"/></declare-styleable>
     <dimen name="abc_action_bar_content_inset_material">16dp</dimen>
     <dimen name="abc_action_bar_default_height_material">56dp</dimen>
     <dimen name="abc_action_bar_default_padding_material">4dp</dimen>
@@ -388,6 +400,13 @@
     <item name="progress_horizontal" type="id"/>
     <item name="split_action_bar" type="id"/>
     <item name="up" type="id"/>
+    <item name="zxing_back_button" type="id"/>
+    <item name="zxing_camera_error" type="id"/>
+    <item name="zxing_decode" type="id"/>
+    <item name="zxing_decode_failed" type="id"/>
+    <item name="zxing_decode_succeeded" type="id"/>
+    <item name="zxing_possible_result_points" type="id"/>
+    <item name="zxing_prewiew_size_ready" type="id"/>
     <integer name="abc_config_activityDefaultDur">220</integer>
     <integer name="abc_config_activityShortDur">150</integer>
     <integer name="abc_max_action_buttons">2</integer>
@@ -964,6 +983,10 @@
     <string name="xpp2"> pedidos pendientes.\n</string>
     <string name="yaexiste">"El nombre del artículo ya existe. Revise la lista de artículos, si quiere pedirlo de nuevo"</string>
     <string name="ycontel">, y su teléfono de contacto es</string>
+    <string name="zxing_app_name">Barcode Scanner</string>
+    <string name="zxing_button_ok">OK</string>
+    <string name="zxing_msg_camera_framework_bug">Sorry, the Android camera encountered a problem. You may need to restart the device.</string>
+    <string name="zxing_msg_default_status">Place a barcode inside the viewfinder rectangle to scan it.</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
     <style name="AlertDialogTheme" parent="android:Theme.Dialog">
@@ -2212,9 +2235,20 @@
 		 <item name="android:panelFullBackground">@color/azulDisoft1</item>
 		 <item name="homeAsUpIndicator">@drawable/navigation_previous_item_light_mini</item>
 		 <item name="android:checkboxStyle">@style/CheckBoxdisoft</item>
-		 <!-- <item name="android:checkboxStyle">@style/CheckBoxAppTheme</item> -->
+         <item name="colorPrimary">@color/azulDisoft2</item>
+         <item name="android:textColorPrimary">@color/abc_primary_text_material_dark</item>
+         <item name="android:textColorPrimaryInverse">@color/abc_primary_text_material_light
+         </item>
+         <item name="android:windowBackground">@android:color/white</item>
+         <item name="android:colorBackground">@color/azulDisoft3</item>
+         <!-- <item name="android:checkboxStyle">@style/CheckBoxAppTheme</item> -->
          <!-- <item name="actionBarWidgetTheme">@style/MyStyle</item> -->
          </style>
+    <style name="Theme.MyTheme.Opciones" parent="Theme.MyTheme">
+        <item name="android:textColorPrimary">@color/abc_primary_text_material_light</item>
+        <item name="android:textColorPrimaryInverse">@color/abc_primary_text_material_dark</item>
+        <item name="android:colorBackground">@android:color/white</item>
+    </style>
     <style name="Theme.Sherlock.Light.DarkActionBar.Disoft" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="actionBarStyle">@style/Widget.Styled.ActionBar</item>
         <item name="*android:actionModeShareDrawable">@drawable/social_share_light</item>
@@ -2403,4 +2437,6 @@
         <!-- <item name="android:dropDownSelector">@color/verdeDisoft3</item>  -->
         
     </style>
+    <style name="zxing_CaptureTheme" parent="android:Theme.Black.NoTitleBar.Fullscreen">
+  </style>
 </resources>

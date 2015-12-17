@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.disoft.distarea"
     android:versionCode="29"
-    android:versionName="2.2.6.3 (Beta)" >
+    android:versionName="2.3 (Beta)" >
 
     <uses-sdk
         android:minSdkVersion="9"
@@ -138,6 +138,24 @@
  <!-- Optional permission for App measurement to run. -->
     <uses-permission android:name="android.permission.WAKE_LOCK" />
 
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" />
+ <!-- TODO replace above two with next line after Android 4.2 -->
+    <!-- <uses-feature android:name="android.hardware.camera.any"/> -->
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.screen.landscape"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.wifi"
+        android:required="false" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher2"
@@ -200,24 +218,37 @@
         <activity android:name="com.disoft.distarea.ListaEst" />
         <activity android:name="com.disoft.distarea.Establecimiento" />
         <activity android:name="com.disoft.distarea.Geolocalizacion" />
-        <activity android:name="com.disoft.distarea.Opciones" />
-        <activity android:name="com.disoft.distarea.Opciones2" />
-        <activity android:name="com.disoft.distarea.Opciones3" />
-        <activity android:name="com.disoft.distarea.OpcionesTec" />
-        <activity android:name="com.disoft.distarea.OpcionesAv" />
+        <activity
+            android:name="com.disoft.distarea.Opciones"
+            android:theme="@style/Theme.MyTheme.Opciones" />
+        <activity
+            android:name="com.disoft.distarea.Opciones2"
+            android:theme="@style/Theme.MyTheme.Opciones" />
+        <activity
+            android:name="com.disoft.distarea.Opciones3"
+            android:theme="@style/Theme.MyTheme.Opciones" />
+        <activity
+            android:name="com.disoft.distarea.OpcionesTec"
+            android:theme="@style/Theme.MyTheme.Opciones" />
+        <activity
+            android:name="com.disoft.distarea.OpcionesAv"
+            android:theme="@style/Theme.MyTheme.Opciones" />
         <activity android:name="com.disoft.distarea.OpCNAE" />
         <activity android:name="com.disoft.distarea.OpAbout" />
         <activity android:name="com.disoft.distarea.Ayuda" />
-        <activity
-            android:name="com.google.zxing.client.android.CaptureActivity"
-            android:configChanges="orientation|keyboardHidden"
-            android:windowSoftInputMode="stateAlwaysHidden" >
-            <intent-filter>
-                <action android:name="com.google.zxing.client.android.SCAN" />
 
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
+        <!--
+<activity android:name="com.google.zxing.client.android.CaptureActivity"
+
+  android:configChanges="orientation|keyboardHidden"
+
+  android:windowSoftInputMode="stateAlwaysHidden">
+  <intent-filter>
+    <action android:name="com.google.zxing.client.android.SCAN"/>
+    <category android:name="android.intent.category.DEFAULT"/>
+  </intent-filter>
+</activity>
+        -->
         <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
         <activity
             android:name="com.google.android.gms.ads.AdActivity"
@@ -249,6 +280,14 @@
             android:name="com.google.android.gms.measurement.AppMeasurementService"
             android:enabled="true"
             android:exported="false" />
+
+        <activity
+            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+            android:clearTaskOnLaunch="true"
+            android:screenOrientation="sensorLandscape"
+            android:stateNotNeeded="true"
+            android:theme="@style/zxing_CaptureTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" />
     </application>
 
 </manifest>

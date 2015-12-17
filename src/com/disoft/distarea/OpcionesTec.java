@@ -9,6 +9,7 @@ import java.io.OutputStream;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.res.Configuration;
 import android.net.Uri;
 import android.os.Bundle;
 import android.preference.Preference;
@@ -18,8 +19,10 @@ import android.preference.PreferenceManager;
 import android.preference.PreferenceScreen;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.app.AppCompatDelegate;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Toast;
 
 /*import com.actionbarsherlock.app.ActionBar;
@@ -31,6 +34,7 @@ public class OpcionesTec extends PreferenceActivity {
 	PreferenceScreen cuentadrive;
 	SharedPreferences sharedPrefs;
 	View v;
+	private AppCompatDelegate delegado;
 
 	
 	@Override protected void onCreate(Bundle savedInstanceState) {
@@ -168,4 +172,60 @@ public class OpcionesTec extends PreferenceActivity {
 			AccountManager.get(getBaseContext()).invalidateAuthToken("com.google", authToken);
 		} catch (Exception e) {e.printStackTrace();}
 	return true;}}*/
+
+	private AppCompatDelegate getDelegado() {
+		if (delegado == null) {
+			delegado = AppCompatDelegate.create(this, null);
+		}
+		return delegado;
+	}
+
+	@Override
+	protected void onPostCreate(Bundle savedInstanceState) {
+		super.onPostCreate(savedInstanceState);
+		getDelegado().onPostCreate(savedInstanceState);
+	}
+
+	/*@Override
+	public void setContentView(View view) {
+		getDelegado().setContentView(view);
+	}*/
+
+	@Override
+	public void setContentView(View view, ViewGroup.LayoutParams params) {
+		getDelegado().setContentView(view, params);
+	}
+
+	@Override
+	public void addContentView(View view, ViewGroup.LayoutParams params) {
+		getDelegado().addContentView(view, params);
+	}
+
+	@Override
+	protected void onPostResume() {
+		super.onPostResume();
+		getDelegado().onPostResume();
+	}
+
+	@Override
+	protected void onTitleChanged(CharSequence title, int color) {
+		super.onTitleChanged(title, color);
+		getDelegado().setTitle(title);
+	}
+
+	@Override
+	public void onConfigurationChanged(Configuration newConfig) {
+		super.onConfigurationChanged(newConfig);
+		getDelegado().onConfigurationChanged(newConfig);
+	}
+
+	@Override
+	protected void onStop() {
+		super.onStop();
+		getDelegado().onStop();
+	}
+
+	public void invalidateOptionsMenu() {
+		getDelegado().invalidateOptionsMenu();
+	}
 }

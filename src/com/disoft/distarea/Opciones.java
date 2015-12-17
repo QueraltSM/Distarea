@@ -38,27 +38,28 @@ import com.actionbarsherlock.view.MenuItem;*/
 import com.disoft.distarea.extras.DatabaseHandler;
 import com.disoft.distarea.models.Est;
 
-//public class Opciones extends AppCompatActivity extends PreferenceActivity{
-public class Opciones extends PreferenceActivity implements OnSharedPreferenceChangeListener {
+public class Opciones extends PreferenceActivity{
+//public class Opciones extends PreferenceActivity implements OnSharedPreferenceChangeListener {
 	SharedPreferences sharedPrefs; LayoutInflater layoutInflater;
 	private OnSharedPreferenceChangeListener ospcltono, ospclmain;
 	View v, popupView; PopupWindow popupWindow;  
 	DatabaseHandler db; ListPreference main;
-	AppCompatDelegate delegado;
+	private AppCompatDelegate delegado;
 
 	@Override 
 	protected void onCreate(Bundle savedInstanceState) {
 		getDelegado().installViewFactory();
 		getDelegado().onCreate(savedInstanceState);
 		super.onCreate(savedInstanceState);
+		addPreferencesFromResource(R.xml.opciones);
+		getDelegado().setContentView(R.layout.opciones);
 
 		ActionBar ab = getDelegado().getSupportActionBar();
 		db = new DatabaseHandler(this);
-		ab.setDisplayOptions(ActionBar.DISPLAY_SHOW_TITLE|ActionBar.DISPLAY_SHOW_HOME |ActionBar.DISPLAY_HOME_AS_UP);
+		ab.setDisplayOptions(ActionBar.DISPLAY_SHOW_TITLE | ActionBar.DISPLAY_SHOW_HOME | ActionBar.DISPLAY_HOME_AS_UP);
 		ab.setTitle(getString(R.string.opciones));
-		ab.setIcon(R.drawable.action_settings);
-		addPreferencesFromResource(R.xml.opciones);
-		setContentView(R.layout.opciones);
+//		ab.setIcon(R.drawable.action_settings);
+
 		findViewById(R.id.info).setVisibility(View.GONE);
 		v = findViewById(R.id.base);
 		sharedPrefs = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
@@ -89,7 +90,8 @@ public class Opciones extends PreferenceActivity implements OnSharedPreferenceCh
 	    sharedPrefs.registerOnSharedPreferenceChangeListener(ospcltono);
 	    
 	    //Establecimiento inicial
-	    main = (ListPreference) findPreference("main"); 
+	    main = (ListPreference) findPreference("main");
+
 	    //Preparación del desplegable
 	    List<String> entradas = new ArrayList<String>(); 
 	    List<String> numeros = new ArrayList<String>();
@@ -144,7 +146,7 @@ public class Opciones extends PreferenceActivity implements OnSharedPreferenceCh
                   return true;}
 	    	  }});
 	      
-	      Preference myPref2 = findPreference("opciones3");
+	      final Preference myPref2 = findPreference("opciones3");
 	      myPref2.setOnPreferenceClickListener(new OnPreferenceClickListener() {
 	    	  @Override public boolean onPreferenceClick(Preference preference) {
 	    		  if(sharedPrefs.getBoolean("ch",true)) v.performHapticFeedback(1);
@@ -217,8 +219,6 @@ public class Opciones extends PreferenceActivity implements OnSharedPreferenceCh
       intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
       startActivity(intent); }
 
-	@Override public void onSharedPreferenceChanged(SharedPreferences sp, String s) {}
-
 	private AppCompatDelegate getDelegado() {
 		if (delegado == null) {
 			delegado = AppCompatDelegate.create(this, null);
@@ -232,10 +232,10 @@ public class Opciones extends PreferenceActivity implements OnSharedPreferenceCh
 		getDelegado().onPostCreate(savedInstanceState);
 	}
 
-	@Override
+	/*@Override
 	public void setContentView(View view) {
 		getDelegado().setContentView(view);
-	}
+	}*/
 
 	@Override
 	public void setContentView(View view, ViewGroup.LayoutParams params) {

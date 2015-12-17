@@ -52,4 +52,8 @@
     <string msgid="5441529851481176817" name="mr_system_route_name">"Sistem"</string>
     <string msgid="7498112907524977311" name="mr_user_route_category_name">"Naprave"</string>
     <string msgid="4184147110658930238" name="wallet_buy_button_place_holder">"Nakup z Googlom"</string>
+    <string name="zxing_app_name">Barcode Scanner</string>
+    <string name="zxing_button_ok">V redu</string>
+    <string name="zxing_msg_camera_framework_bug">Oprostite, Android kamera je naletela na težave. Mogoče boste morali ponovno zagnati napravo.</string>
+    <string name="zxing_msg_default_status">Za branje postavite črtno kodo znotraj iskala.</string>
 </resources>
