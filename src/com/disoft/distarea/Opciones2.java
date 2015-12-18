@@ -57,8 +57,7 @@ public class Opciones2 extends PreferenceActivity{
 		getDelegado().installViewFactory();
 		getDelegado().onCreate(savedInstanceState);
 		super.onCreate(savedInstanceState);
-		AppCompatActivity apa = new AppCompatActivity();
-		ActionBar ab = apa.getSupportActionBar();
+		ActionBar ab = getDelegado().getSupportActionBar();
 		ab.setDisplayOptions(ActionBar.DISPLAY_SHOW_TITLE
 				| ActionBar.DISPLAY_SHOW_HOME | ActionBar.DISPLAY_HOME_AS_UP);
 		ab.setTitle(getString(R.string.opciones)); ab.setSubtitle(R.string.subop2);

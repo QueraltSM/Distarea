@@ -14,7 +14,7 @@ import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.internal.widget.ListViewCompat;
+//import android.support.v7.internal.widget.ListViewCompat;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -35,7 +35,7 @@ import com.disoft.distarea.extras.DatabaseHandler;
 
 public class OpCNAE extends AppCompatActivity {
 	SharedPreferences sharedPrefs; DatabaseHandler db;
-  View v; ListViewCompat lv; Menu menu; ActionBar ab; String save, original;
+  View v; ListView lv; Menu menu; ActionBar ab; String save, original;
   String[] CNAE, nCNAE, idCNAE, cbCNAE; int desmarcados=0, tipo=2; //Tipo puesto a 2 para que salgan todos
 	ArrayList<String> checkpos = new ArrayList<String>();
 
@@ -46,7 +46,7 @@ public class OpCNAE extends AppCompatActivity {
     ab.setTitle(getString(R.string.opciones));
     ab.setIcon(R.drawable.action_settings);
     setContentView(R.layout.opcnae); v = findViewById(R.id.base);
-    lv = (ListViewCompat)findViewById(android.R.id.list);
+    lv = (ListView)findViewById(android.R.id.list);
     sharedPrefs = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
     if(sharedPrefs.getString("tipo","P").equals("E"))
     	ab.setSubtitle(getString(R.string.opCNAEBusineddActivities));

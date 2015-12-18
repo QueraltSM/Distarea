@@ -31,7 +31,7 @@ import android.os.SystemClock;
 import android.preference.PreferenceManager;
 import android.provider.Settings;
 import android.speech.RecognizerIntent;
-import android.support.v7.internal.widget.AdapterViewCompat;
+//import android.support.v7.internal.widget.AdapterViewCompat;
 import android.support.v7.widget.ActionMenuView;
 import android.support.v7.widget.Toolbar;
 import android.text.Editable;
@@ -2567,10 +2567,14 @@ public class ListaCompra extends AppCompatActivity implements AdapterView.OnItem
 			escanear.setOnClickListener(new OnClickListener() {
 				@Override public void onClick(View v) {
 					if (sharedPrefs.getBoolean("ch", true)) v.performHapticFeedback(1);
-					try{Intent intent = new Intent("com.google.zxing.client.android.SCAN");
+					/*try{Intent intent = new Intent("com.google.zxing.client.android.SCAN");
 						intent.setPackage("com.disoft.distarea");
 						intent.putExtra("SCAN_MODE","QR_CODE_MODE,PRODUCT_MODE");
 						startActivityForResult(intent, 1);
+					} catch (Exception e) {e.printStackTrace();}*/
+					try{
+						IntentIntegrator integrator = new IntentIntegrator(ListaCompra.this);
+						integrator.initiateScan();
 					} catch (Exception e) {e.printStackTrace();}
 			}});
 			ImageButton editar = (ImageButton) popupView.findViewById(R.id.popartpededi);
@@ -3344,11 +3348,17 @@ public class ListaCompra extends AppCompatActivity implements AdapterView.OnItem
 				scan.setOnClickListener(new OnClickListener() {
 					@Override public void onClick(View v) {
 						if (sharedPrefs.getBoolean("ch", true)) v.performHapticFeedback(1);
-						try {Intent intent = new Intent("com.google.zxing.client.android.SCAN");
+						/*try {Intent intent = new Intent("com.google.zxing.client.android.SCAN");
 							intent.setPackage("com.disoft.distarea");
 							intent.putExtra("SCAN_MODE","QR_CODE_MODE,PRODUCT_MODE");
 							startActivityForResult(intent, 0);
-						} catch (Exception e) {e.printStackTrace();} }});
+						} catch (Exception e) {e.printStackTrace();}*/
+						try{
+							IntentIntegrator integrator = new IntentIntegrator(ListaCompra.this);
+							integrator.initiateScan();
+						} catch (Exception e) {e.printStackTrace();}
+					}});
+
 						// Se reciben los datos (onActivityResult)
 				//new parallelCount(list, web, loading).execute();
 				//int contador = //db.getArticulosCount();
@@ -3718,7 +3728,8 @@ public class ListaCompra extends AppCompatActivity implements AdapterView.OnItem
 				((LinearLayout)findViewById(R.id.lineaest)).getVisibility()==View.GONE &&
 				((LinearLayout)findViewById(R.id.lineaped)).getVisibility()==View.GONE){
 			((TextView)findViewById(R.id.nhn)).setVisibility(View.VISIBLE);
-		}
+		}else
+			((TextView)findViewById(R.id.nhn)).setVisibility(View.GONE);
 	}}
 
 	public void ordenadores() {

@@ -12,7 +12,7 @@
                     "endOffset": 469
                 },
                 "from": {
-                    "file": "C:\\Distarea\\Distarea\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-v11\\values-v11.xml"
+                    "file": "C:\\Distarea\\Distarea\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v11\\values-v11.xml"
                 }
             },
             {
@@ -25,7 +25,7 @@
                     "endOffset": 894
                 },
                 "from": {
-                    "file": "C:\\Distarea\\Distarea\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-v11\\values-v11.xml"
+                    "file": "C:\\Distarea\\Distarea\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v11\\values-v11.xml"
                 }
             },
             {
@@ -38,7 +38,7 @@
                     "endOffset": 1322
                 },
                 "from": {
-                    "file": "C:\\Distarea\\Distarea\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-v11\\values-v11.xml"
+                    "file": "C:\\Distarea\\Distarea\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v11\\values-v11.xml"
                 }
             },
             {
@@ -51,7 +51,7 @@
                     "endOffset": 1748
                 },
                 "from": {
-                    "file": "C:\\Distarea\\Distarea\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-v11\\values-v11.xml"
+                    "file": "C:\\Distarea\\Distarea\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v11\\values-v11.xml"
                 }
             },
             {
@@ -61,122 +61,184 @@
                     "startOffset": 1753,
                     "endLine": 31,
                     "endColumn": 12,
-                    "endOffset": 2177
+                    "endOffset": 2175
                 },
                 "from": {
-                    "file": "C:\\Distarea\\Distarea\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-v11\\values-v11.xml"
+                    "file": "C:\\Distarea\\Distarea\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v11\\values-v11.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 32,
                     "startColumn": 4,
-                    "startOffset": 2182,
+                    "startOffset": 2180,
                     "endLine": 37,
                     "endColumn": 12,
-                    "endOffset": 2602
+                    "endOffset": 2600
                 },
                 "from": {
-                    "file": "C:\\Distarea\\Distarea\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-v11\\values-v11.xml"
+                    "file": "C:\\Distarea\\Distarea\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v11\\values-v11.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 38,
                     "startColumn": 4,
-                    "startOffset": 2607,
+                    "startOffset": 2605,
                     "endColumn": 88,
-                    "endOffset": 2691
+                    "endOffset": 2689
                 },
                 "from": {
-                    "file": "C:\\Distarea\\Distarea\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-v11\\values-v11.xml"
+                    "file": "C:\\Distarea\\Distarea\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v11\\values-v11.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 39,
                     "startColumn": 4,
-                    "startOffset": 2696,
+                    "startOffset": 2694,
                     "endColumn": 100,
-                    "endOffset": 2792
+                    "endOffset": 2790
                 },
                 "from": {
-                    "file": "C:\\Distarea\\Distarea\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-v11\\values-v11.xml"
+                    "file": "C:\\Distarea\\Distarea\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v11\\values-v11.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 40,
                     "startColumn": 4,
-                    "startOffset": 2797,
+                    "startOffset": 2795,
                     "endLine": 44,
                     "endColumn": 12,
-                    "endOffset": 3200
+                    "endOffset": 3198
                 },
                 "from": {
-                    "file": "C:\\Distarea\\Distarea\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-v11\\values-v11.xml"
+                    "file": "C:\\Distarea\\Distarea\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v11\\values-v11.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 45,
                     "startColumn": 4,
-                    "startOffset": 3205,
+                    "startOffset": 3203,
                     "endLine": 49,
                     "endColumn": 12,
-                    "endOffset": 3620
+                    "endOffset": 3618
                 },
                 "from": {
-                    "file": "C:\\Distarea\\Distarea\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-v11\\values-v11.xml"
+                    "file": "C:\\Distarea\\Distarea\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v11\\values-v11.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 50,
                     "startColumn": 4,
-                    "startOffset": 3625,
+                    "startOffset": 3623,
                     "endLine": 51,
                     "endColumn": 12,
-                    "endOffset": 3727
+                    "endOffset": 3725
                 },
                 "from": {
-                    "file": "C:\\Distarea\\Distarea\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-v11\\values-v11.xml"
+                    "file": "C:\\Distarea\\Distarea\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v11\\values-v11.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 52,
                     "startColumn": 4,
-                    "startOffset": 3732,
+                    "startOffset": 3730,
                     "endLine": 53,
                     "endColumn": 12,
-                    "endOffset": 3856
+                    "endOffset": 3854
                 },
                 "from": {
-                    "file": "C:\\Distarea\\Distarea\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-v11\\values-v11.xml"
+                    "file": "C:\\Distarea\\Distarea\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v11\\values-v11.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 54,
                     "startColumn": 4,
-                    "startOffset": 3861,
-                    "endLine": 58,
+                    "startOffset": 3859,
+                    "endLine": 57,
                     "endColumn": 12,
-                    "endOffset": 4220
+                    "endOffset": 4097
                 },
                 "from": {
-                    "file": "C:\\Distarea\\Distarea\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-v11\\values-v11.xml"
+                    "file": "C:\\Distarea\\Distarea\\res\\values-v11\\styles.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 58,
+                    "startColumn": 4,
+                    "startOffset": 4102,
+                    "endColumn": 70,
+                    "endOffset": 4168
+                },
+                "from": {
+                    "file": "C:\\Distarea\\Distarea\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v11\\values-v11.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 59,
                     "startColumn": 4,
-                    "startOffset": 4225,
-                    "endLine": 62,
+                    "startOffset": 4173,
+                    "endColumn": 82,
+                    "endOffset": 4251
+                },
+                "from": {
+                    "file": "C:\\Distarea\\Distarea\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v11\\values-v11.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 60,
+                    "startColumn": 4,
+                    "startOffset": 4256,
+                    "endLine": 110,
                     "endColumn": 12,
-                    "endOffset": 4463
+                    "endOffset": 7959
+                },
+                "from": {
+                    "file": "C:\\Distarea\\Distarea\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v11\\values-v11.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 111,
+                    "startColumn": 4,
+                    "startOffset": 7964,
+                    "endLine": 162,
+                    "endColumn": 12,
+                    "endOffset": 11807
+                },
+                "from": {
+                    "file": "C:\\Distarea\\Distarea\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v11\\values-v11.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 163,
+                    "startColumn": 4,
+                    "startOffset": 11812,
+                    "endColumn": 90,
+                    "endOffset": 11898
+                },
+                "from": {
+                    "file": "C:\\Distarea\\Distarea\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v11\\values-v11.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 164,
+                    "startColumn": 4,
+                    "startOffset": 11903,
+                    "endLine": 172,
+                    "endColumn": 12,
+                    "endOffset": 12473
                 },
                 "from": {
                     "file": "C:\\Distarea\\Distarea\\res\\values-v11\\styles.xml"
@@ -184,83 +246,33 @@
             },
             {
                 "to": {
-                    "startLine": 63,
+                    "startLine": 173,
                     "startColumn": 4,
-                    "startOffset": 4468,
-                    "endColumn": 70,
-                    "endOffset": 4534
-                },
-                "from": {
-                    "file": "C:\\Distarea\\Distarea\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-v11\\values-v11.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 64,
-                    "startColumn": 4,
-                    "startOffset": 4539,
-                    "endColumn": 82,
-                    "endOffset": 4617
-                },
-                "from": {
-                    "file": "C:\\Distarea\\Distarea\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-v11\\values-v11.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 65,
-                    "startColumn": 4,
-                    "startOffset": 4622,
-                    "endLine": 115,
+                    "startOffset": 12478,
+                    "endLine": 178,
                     "endColumn": 12,
-                    "endOffset": 8366
-                },
-                "from": {
-                    "file": "C:\\Distarea\\Distarea\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-v11\\values-v11.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 116,
-                    "startColumn": 4,
-                    "startOffset": 8371,
-                    "endLine": 167,
-                    "endColumn": 12,
-                    "endOffset": 12255
-                },
-                "from": {
-                    "file": "C:\\Distarea\\Distarea\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-v11\\values-v11.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 168,
-                    "startColumn": 4,
-                    "startOffset": 12260,
-                    "endLine": 177,
-                    "endColumn": 12,
-                    "endOffset": 12879
+                    "endOffset": 12836
                 },
                 "from": {
                     "file": "C:\\Distarea\\Distarea\\res\\values-v11\\styles.xml",
                     "position": {
-                        "startLine": 6,
+                        "startLine": 26,
                         "startColumn": 4,
-                        "startOffset": 183,
-                        "endLine": 15,
+                        "startOffset": 1231,
+                        "endLine": 31,
                         "endColumn": 12,
-                        "endOffset": 811
+                        "endOffset": 1595
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 178,
+                    "startLine": 179,
                     "startColumn": 4,
-                    "startOffset": 12884,
-                    "endLine": 180,
+                    "startOffset": 12841,
+                    "endLine": 181,
                     "endColumn": 12,
-                    "endOffset": 13078
+                    "endOffset": 13035
                 },
                 "from": {
                     "file": "C:\\Distarea\\Distarea\\res\\values-v11\\styles.xml"
@@ -268,12 +280,12 @@
             },
             {
                 "to": {
-                    "startLine": 181,
+                    "startLine": 182,
                     "startColumn": 4,
-                    "startOffset": 13083,
-                    "endLine": 182,
+                    "startOffset": 13040,
+                    "endLine": 183,
                     "endColumn": 10,
-                    "endOffset": 13178
+                    "endOffset": 13135
                 },
                 "from": {
                     "file": "C:\\Distarea\\Distarea\\build\\intermediates\\exploded-aar\\com.journeyapps\\zxing-android-embedded\\3.0.3\\res\\values-v11\\values.xml"

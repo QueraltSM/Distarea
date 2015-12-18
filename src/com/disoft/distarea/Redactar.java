@@ -30,12 +30,13 @@ import android.provider.MediaStore;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.content.CursorLoader;
-import android.support.v7.internal.widget.AdapterViewCompat;
+//import android.support.v7.internal.widget.AdapterViewCompat;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ImageButton;
@@ -56,7 +57,7 @@ import com.disoft.distarea.extras.DatabaseHandler;
 import com.disoft.distarea.models.Est;
 import com.disoft.distarea.models.Msj;
 
-public class Redactar extends Fragment implements AdapterViewCompat.OnItemSelectedListener {
+public class Redactar extends Fragment implements AdapterView.OnItemSelectedListener {
 	Locale spanish = new Locale("es", "ES"); File f; DatabaseHandler db;
 	SharedPreferences sharedPrefs; int cuentaficheros=0, emailenviado=0;
 	//public IcsSpinner is, testicss; private IcsAdapter mAdapter, testada;
@@ -174,8 +175,8 @@ public class Redactar extends Fragment implements AdapterViewCompat.OnItemSelect
 			});
 
 		}}
-		@Override public void onItemSelected (AdapterViewCompat < ? > parent, View view,int position, long id) {}
-		@Override public void onNothingSelected (AdapterViewCompat<?> parent){}
+		@Override public void onItemSelected (AdapterView< ? > parent, View view,int position, long id) {}
+		@Override public void onNothingSelected (AdapterView<?> parent){}
 
 	/////////////////
 	//Métodos spinner

@@ -49,16 +49,17 @@ public class Opciones3 extends PreferenceActivity implements OnSharedPreferenceC
 	private AppCompatDelegate delegado;
 
 	@Override protected void onCreate(Bundle savedInstanceState) {
+		getDelegado().installViewFactory();
+		getDelegado().onCreate(savedInstanceState);
 		super.onCreate(savedInstanceState);
-	  AppCompatActivity apa = new AppCompatActivity();
-	  ActionBar ab = apa.getSupportActionBar();
+	  ActionBar ab = getDelegado().getSupportActionBar();
 	  ab.setDisplayOptions(ActionBar.DISPLAY_SHOW_TITLE|ActionBar.DISPLAY_SHOW_HOME
 	  		|ActionBar.DISPLAY_HOME_AS_UP);
 	  ab.setTitle(getString(R.string.opciones));
 	  ab.setSubtitle(getString(R.string.seg));
 	  ab.setIcon(R.drawable.action_settings);
 	  addPreferencesFromResource(R.xml.opciones3);
-	  setContentView(R.layout.opciones);
+	  getDelegado().setContentView(R.layout.opciones);
 	  findViewById(R.id.info).setVisibility(View.GONE);
 	  v = findViewById(R.id.base);
 	  sharedPrefs = PreferenceManager.getDefaultSharedPreferences(getBaseContext());

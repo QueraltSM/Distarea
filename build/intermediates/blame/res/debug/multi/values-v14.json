@@ -12,7 +12,7 @@
                     "endOffset": 326
                 },
                 "from": {
-                    "file": "C:\\Distarea\\Distarea\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-v14\\values-v14.xml"
+                    "file": "C:\\Distarea\\Distarea\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v14\\values-v14.xml"
                 }
             },
             {
@@ -76,7 +76,7 @@
                     "endOffset": 1574
                 },
                 "from": {
-                    "file": "C:\\Distarea\\Distarea\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-v14\\values-v14.xml"
+                    "file": "C:\\Distarea\\Distarea\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v14\\values-v14.xml"
                 }
             },
             {
@@ -88,7 +88,7 @@
                     "endOffset": 1657
                 },
                 "from": {
-                    "file": "C:\\Distarea\\Distarea\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-v14\\values-v14.xml"
+                    "file": "C:\\Distarea\\Distarea\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v14\\values-v14.xml"
                 }
             },
             {
@@ -101,7 +101,7 @@
                     "endOffset": 2067
                 },
                 "from": {
-                    "file": "C:\\Distarea\\Distarea\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-v14\\values-v14.xml"
+                    "file": "C:\\Distarea\\Distarea\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v14\\values-v14.xml"
                 }
             },
             {
@@ -114,7 +114,7 @@
                     "endOffset": 2489
                 },
                 "from": {
-                    "file": "C:\\Distarea\\Distarea\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-v14\\values-v14.xml"
+                    "file": "C:\\Distarea\\Distarea\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v14\\values-v14.xml"
                 }
             },
             {
@@ -126,7 +126,7 @@
                     "endOffset": 2609
                 },
                 "from": {
-                    "file": "C:\\Distarea\\Distarea\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-v14\\values-v14.xml"
+                    "file": "C:\\Distarea\\Distarea\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v14\\values-v14.xml"
                 }
             },
             {
@@ -138,7 +138,7 @@
                     "endOffset": 2672
                 },
                 "from": {
-                    "file": "C:\\Distarea\\Distarea\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-v14\\values-v14.xml"
+                    "file": "C:\\Distarea\\Distarea\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v14\\values-v14.xml"
                 }
             },
             {
@@ -151,7 +151,7 @@
                     "endOffset": 2826
                 },
                 "from": {
-                    "file": "C:\\Distarea\\Distarea\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-v14\\values-v14.xml"
+                    "file": "C:\\Distarea\\Distarea\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v14\\values-v14.xml"
                 }
             },
             {
@@ -163,7 +163,7 @@
                     "endOffset": 2889
                 },
                 "from": {
-                    "file": "C:\\Distarea\\Distarea\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-v14\\values-v14.xml"
+                    "file": "C:\\Distarea\\Distarea\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v14\\values-v14.xml"
                 }
             },
             {
@@ -175,7 +175,7 @@
                     "endOffset": 3021
                 },
                 "from": {
-                    "file": "C:\\Distarea\\Distarea\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-v14\\values-v14.xml"
+                    "file": "C:\\Distarea\\Distarea\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-v14\\values-v14.xml"
                 }
             },
             {
@@ -183,43 +183,9 @@
                     "startLine": 47,
                     "startColumn": 4,
                     "startOffset": 3026,
-                    "endLine": 58,
+                    "endLine": 57,
                     "endColumn": 12,
-                    "endOffset": 3853
-                },
-                "from": {
-                    "file": "C:\\Distarea\\Distarea\\res\\values-v14\\styles.xml",
-                    "position": {
-                        "startLine": 8,
-                        "startColumn": 4,
-                        "startOffset": 233,
-                        "endLine": 19,
-                        "endColumn": 12,
-                        "endOffset": 1071
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 59,
-                    "startColumn": 4,
-                    "startOffset": 3858,
-                    "endLine": 63,
-                    "endColumn": 12,
-                    "endOffset": 4194
-                },
-                "from": {
-                    "file": "C:\\Distarea\\Distarea\\res\\values-v14\\themes.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 64,
-                    "startColumn": 4,
-                    "startOffset": 4199,
-                    "endLine": 69,
-                    "endColumn": 16,
-                    "endOffset": 4611
+                    "endOffset": 3804
                 },
                 "from": {
                     "file": "C:\\Distarea\\Distarea\\res\\values-v14\\styles.xml"
@@ -227,12 +193,33 @@
             },
             {
                 "to": {
-                    "startLine": 70,
+                    "startLine": 58,
                     "startColumn": 4,
-                    "startOffset": 4616,
-                    "endLine": 73,
+                    "startOffset": 3809,
+                    "endLine": 63,
                     "endColumn": 12,
-                    "endOffset": 4855
+                    "endOffset": 4167
+                },
+                "from": {
+                    "file": "C:\\Distarea\\Distarea\\res\\values-v14\\styles.xml",
+                    "position": {
+                        "startLine": 101,
+                        "startColumn": 4,
+                        "startOffset": 5748,
+                        "endLine": 106,
+                        "endColumn": 12,
+                        "endOffset": 6112
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 64,
+                    "startColumn": 4,
+                    "startOffset": 4172,
+                    "endLine": 68,
+                    "endColumn": 12,
+                    "endOffset": 4508
                 },
                 "from": {
                     "file": "C:\\Distarea\\Distarea\\res\\values-v14\\themes.xml"
@@ -240,11 +227,37 @@
             },
             {
                 "to": {
-                    "startLine": 74,
+                    "startLine": 69,
                     "startColumn": 4,
-                    "startOffset": 4860,
+                    "startOffset": 4513,
+                    "endLine": 74,
+                    "endColumn": 16,
+                    "endOffset": 4925
+                },
+                "from": {
+                    "file": "C:\\Distarea\\Distarea\\res\\values-v14\\styles.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 75,
+                    "startColumn": 4,
+                    "startOffset": 4930,
+                    "endLine": 78,
+                    "endColumn": 12,
+                    "endOffset": 5169
+                },
+                "from": {
+                    "file": "C:\\Distarea\\Distarea\\res\\values-v14\\themes.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 79,
+                    "startColumn": 4,
+                    "startOffset": 5174,
                     "endColumn": 48,
-                    "endOffset": 4904
+                    "endOffset": 5218
                 },
                 "from": {
                     "file": "C:\\Distarea\\Distarea\\res\\values-v14\\themes.xml"

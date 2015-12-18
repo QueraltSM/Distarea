@@ -38,15 +38,17 @@ public class OpcionesTec extends PreferenceActivity {
 
 	
 	@Override protected void onCreate(Bundle savedInstanceState) {
+		getDelegado().installViewFactory();
+		getDelegado().onCreate(savedInstanceState);
 		super.onCreate(savedInstanceState);
 		sharedPrefs = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
-		AppCompatActivity apa = new AppCompatActivity();
-		ActionBar ab = apa.getSupportActionBar();
+//		AppCompatActivity apa = new AppCompatActivity();
+		ActionBar ab = getDelegado().getSupportActionBar();
 		//db = new DatabaseHandler(this);
 		ab.setDisplayOptions(ActionBar.DISPLAY_SHOW_TITLE|ActionBar.DISPLAY_SHOW_HOME |ActionBar.DISPLAY_HOME_AS_UP);
-		ab.setTitle("Opciones Técnicas");
+		ab.setTitle("Opciones T?cnicas");
 		ab.setIcon(R.drawable.action_settings);
-		setContentView(R.layout.opciones);
+		getDelegado().setContentView(R.layout.opciones);
 		findViewById(R.id.info).setVisibility(View.GONE);
 		addPreferencesFromResource(R.xml.opcionestec);
 		v = findViewById(R.id.base);

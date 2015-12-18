@@ -67,15 +67,16 @@ public class OpcionesAv extends PreferenceActivity implements OnSharedPreference
 	private AppCompatDelegate delegado;
 
 	@Override protected void onCreate(Bundle savedInstanceState) {
+		getDelegado().installViewFactory();
+		getDelegado().onCreate(savedInstanceState);
 	      super.onCreate(savedInstanceState);
-		  AppCompatActivity apa = new AppCompatActivity();
-	      ActionBar ab = apa.getSupportActionBar(); db = new DatabaseHandler(this);
+	      ActionBar ab = getDelegado().getSupportActionBar(); db = new DatabaseHandler(this);
 	      ab.setDisplayOptions(ActionBar.DISPLAY_SHOW_TITLE|ActionBar.DISPLAY_SHOW_HOME
 	        |ActionBar.DISPLAY_HOME_AS_UP);
 	      ab.setTitle("Configuración"); ab.setSubtitle(getString(R.string.optionsAvAdvancedOptions));
 	      ab.setIcon(R.drawable.action_settings);
 	      addPreferencesFromResource(R.xml.opcionesav);
-	      setContentView(R.layout.opciones);
+	      getDelegado().setContentView(R.layout.opciones);
 	      findViewById(R.id.info).setVisibility(View.GONE);
 	      v = findViewById(R.id.base);
 	      sharedPrefs = PreferenceManager.getDefaultSharedPreferences(getBaseContext());

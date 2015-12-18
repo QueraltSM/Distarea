@@ -50,7 +50,7 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.internal.widget.AdapterViewCompat;
+//import android.support.v7.internal.widget.AdapterViewCompat;
 import android.support.v7.widget.SearchView;
 import android.text.InputType;
 import android.text.Spannable;
@@ -100,7 +100,7 @@ import com.disoft.distarea.extras.Automailer;
 import com.disoft.distarea.extras.DatabaseHandler;
 import com.disoft.distarea.models.Est;
 
-public class ListaEstablecimientos extends AppCompatActivity implements AdapterViewCompat.OnItemSelectedListener {
+public class ListaEstablecimientos extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
   SharedPreferences sharedPrefs; DatabaseHandler db; String codigoinv;
   View v, popupView; PopupWindow popupWindow; EditText email;
   ListView lv; CheckBox invita; String[] nestablecimiento; Menu m;
@@ -444,8 +444,8 @@ public class ListaEstablecimientos extends AppCompatActivity implements AdapterV
         return isValid;
     }
 
-	@Override public void onItemSelected(AdapterViewCompat<?> parent, View view, int position, long id) {}
-	@Override public void onNothingSelected(AdapterViewCompat<?> parent) {}
+	@Override public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {}
+	@Override public void onNothingSelected(AdapterView<?> parent) {}
 
 	static class ViewHolder{ TextView item; ImageView icon, icon2, icon3;
   		LinearLayout tramo1, tramo2; int pos;}

@@ -13,6 +13,7 @@ import android.app.DatePickerDialog;
 import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.content.ActivityNotFoundException;
+import android.content.ClipData;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -35,6 +36,7 @@ import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Environment;
 import android.preference.PreferenceManager;
 import android.provider.DocumentsContract;
 import android.provider.MediaStore;
@@ -98,6 +100,7 @@ import com.disoft.distarea.extras.Table;
 import com.disoft.distarea.models.CliF;
 import com.disoft.distarea.models.Est;
 import com.disoft.distarea.models.Msj;
+import com.nononsenseapps.filepicker.FilePickerActivity;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -393,10 +396,16 @@ public class Chat extends AppCompatActivity implements GoogleDriveCallback{
 			}
 			}
 		}else if (item.getItemId() == R.id.adjarc){
-			if (Build.VERSION.SDK_INT <19) //Comprobación si es KitKat o anterior:
-				startActivityForResult(new Intent(Intent.ACTION_GET_CONTENT).setType("*/*"),1);
+			/*if (Build.VERSION.SDK_INT <19) //Comprobación si es KitKat o anterior:
+				startActivityForResult(new Intent(Intent.ACTION_GET_CONTENT).setType("*//*"),1);
 			else startActivityForResult(new Intent(Intent.ACTION_OPEN_DOCUMENT)
-					.addCategory(Intent.CATEGORY_OPENABLE).setType("*/*"),1);
+					.addCategory(Intent.CATEGORY_OPENABLE).setType("*//*"),1);*/
+			Intent in = new Intent(getBaseContext(), FilePickerActivity.class);
+			in.putExtra(FilePickerActivity.EXTRA_ALLOW_MULTIPLE, false);
+			in.putExtra(FilePickerActivity.EXTRA_ALLOW_CREATE_DIR, false);
+			in.putExtra(FilePickerActivity.EXTRA_MODE, FilePickerActivity.MODE_FILE);
+			in.putExtra(FilePickerActivity.EXTRA_START_PATH, Environment.getExternalStorageDirectory().getPath());
+			startActivityForResult(in, 1);
 		}else if (item.getItemId() == R.id.adjfot){
 			bypass=getExternalCacheDir()+File.separator+"IMG_"+
 							new SimpleDateFormat("yyyyMMdd").format(Calendar.getInstance().getTime())
@@ -441,10 +450,16 @@ public class Chat extends AppCompatActivity implements GoogleDriveCallback{
 				solofichero=referencia+"_"+anoactual+"_"+idop+"_"+idfoto+"_"+millis;
 				sharedPrefs.edit().putLong("lastmillis", Long.parseLong(millis))
 					.putString("bypass", bypass).commit();
-			if (Build.VERSION.SDK_INT <19) //Comprobación si es KitKat o anterior:
-				startActivityForResult(new Intent(Intent.ACTION_GET_CONTENT).setType("*/*"),7);
+			/*if (Build.VERSION.SDK_INT <19) //Comprobación si es KitKat o anterior:
+				startActivityForResult(new Intent(Intent.ACTION_GET_CONTENT).setType("*//*"),7);
 			else startActivityForResult(new Intent(Intent.ACTION_OPEN_DOCUMENT)
-					.addCategory(Intent.CATEGORY_OPENABLE).setType("*/*"),7);
+					.addCategory(Intent.CATEGORY_OPENABLE).setType("*//*"),7);*/
+				Intent in = new Intent(getBaseContext(), FilePickerActivity.class);
+				in.putExtra(FilePickerActivity.EXTRA_ALLOW_MULTIPLE, false);
+				in.putExtra(FilePickerActivity.EXTRA_ALLOW_CREATE_DIR, false);
+				in.putExtra(FilePickerActivity.EXTRA_MODE, FilePickerActivity.MODE_FILE);
+				in.putExtra(FilePickerActivity.EXTRA_START_PATH, Environment.getExternalStorageDirectory().getPath());
+				startActivityForResult(in, 7);
 			}
 			}else if (item.getItemId() == R.id.adjfotplus){
 			if(sharedPrefs.getInt("solicitacliest", 0)==e.getEid()){
@@ -501,7 +516,7 @@ public class Chat extends AppCompatActivity implements GoogleDriveCallback{
 	 
 	@SuppressLint("NewApi")
 	@Override public void onActivityResult(int requestCode, int resultCode, final Intent intent) {
-		if (resultCode == Activity.RESULT_OK){
+		if (resultCode == Activity.RESULT_OK) {
 			final LinearLayout ll = new LinearLayout(getBaseContext());
 			final ImageButton ib = new ImageButton(getBaseContext());
 			final TextView tv = new TextView(getBaseContext());
@@ -513,6 +528,19 @@ public class Chat extends AppCompatActivity implements GoogleDriveCallback{
 					LinearLayout.LayoutParams.MATCH_PARENT, 1.0f);
 			tv.setLayoutParams(param);
 			tv.setGravity(Gravity.CENTER_VERTICAL);
+			Uri uri = null;
+			if(requestCode == 1 || requestCode == 7){
+				if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
+					ClipData clip = intent.getClipData();
+					if (clip != null) {
+						for (int i = 0; i < clip.getItemCount(); i++) {
+							uri = clip.getItemAt(i).getUri();
+					}}
+					// For Ice Cream Sandwich
+				} else {
+					ArrayList<String> paths = intent.getStringArrayListExtra(FilePickerActivity.EXTRA_PATHS);
+					if (paths != null) { for (String path : paths) { uri = Uri.parse(path); }}}
+			}
 			if (requestCode > 0 && requestCode<5) { // Adjuntar archivo
 				final String path;
 				if(requestCode==2){
@@ -525,16 +553,16 @@ public class Chat extends AppCompatActivity implements GoogleDriveCallback{
 					SharedPreferences.Editor spe = sharedPrefs.edit();
 					spe.putString("idfoto", idfoto).commit(); 
 				}else path = intent.getData().toString();
-				FileUtils.getPath(getBaseContext(), intent.getData());
+//				FileUtils.getPath(getBaseContext(), intent.getData());
 	  			tv.setText(path.substring(path.lastIndexOf("/")+1));
 	  			if(FileUtils.getMimeType(new File(path)).contains("image")){
-	  				tv.setClickable(true);					
+	  				tv.setClickable(true);
 					tv.setOnClickListener(new OnClickListener(){
-						@Override public void onClick(View arg0) {				
+						@Override public void onClick(View arg0) {
 							ventanaXML(ll,ib,tv,true,path,0);
 						}});
 	  			}
-	  			ib.setOnClickListener(new OnClickListener(){ 
+	  			ib.setOnClickListener(new OnClickListener(){
 	  				public void onClick(View v){
 	  					ladjuntos.removeView(ladjuntos.findViewWithTag(path));
 	  					if(ladjuntos.getChildCount()==0){ adjuntos.setVisibility(View.GONE);
@@ -547,7 +575,8 @@ public class Chat extends AppCompatActivity implements GoogleDriveCallback{
 	  				}
 	  			});
 	  			ll.addView(ib); ll.addView(tv); ll.setTag(path);
-	  			ladjuntos.addView(ll); 
+
+	  			ladjuntos.addView(ll);
 	  			if(cuerpo.getText().toString().equals(""))
 	 				cuerpo.setText(path.substring(path.lastIndexOf("/")+1));
 	  			ficheros.add(path);
@@ -564,9 +593,11 @@ public class Chat extends AppCompatActivity implements GoogleDriveCallback{
 	  			writeFieldsViaVoice(text);
 	  			
 	  		}else if (requestCode == 7){
-	  			if(Build.VERSION.SDK_INT>=19) docUri = intent.getData().toString();
-	  			final String path = FileUtils.getPath(getBaseContext(), intent.getData());
-	  			//final String path = intent.getData().toString();
+//	  			if(Build.VERSION.SDK_INT>=19) docUri = intent.getData().toString();
+				docUri = intent.getData().toString();
+//	  			final String path = FileUtils.getPath(getBaseContext(), intent.getData());
+				final String path = FileUtils.getPath(getBaseContext(), intent.getData());
+						//final String path = intent.getData().toString();
 	  			
 	  			//Intento arreglo selección fichero 3/11
 	  			//Copio origen a destino, para usarlo como criterio.

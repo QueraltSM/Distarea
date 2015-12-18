@@ -44,7 +44,7 @@ import android.preference.PreferenceManager;
 import android.speech.RecognizerIntent;
 import android.support.v4.view.MenuItemCompat;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.internal.widget.AdapterViewCompat;
+//import android.support.v7.internal.widget.AdapterViewCompat;
 import android.text.Editable;
 import android.text.InputType;
 import android.text.TextWatcher;
@@ -99,7 +99,7 @@ import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 
  
-public class ListaArticulos extends AppCompatActivity implements AdapterViewCompat.OnItemSelectedListener {
+public class ListaArticulos extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 	Locale spanish = new Locale("es", "ES");
 	SharedPreferences sharedPrefs; DatabaseHandler db;
 	View v; ListView lv; Menu menu; ImageView sortarticulo; 
@@ -121,8 +121,8 @@ public class ListaArticulos extends AppCompatActivity implements AdapterViewComp
 	SimpleDateFormat sdfdia = new SimpleDateFormat("yyyy-MM-dd",spanish);
 	private Animator mCurrentAnimator; private int mShortAnimationDuration;
 
-	@Override public void onItemSelected(AdapterViewCompat<?> parent, View view, int position, long id) {}
-	@Override public void onNothingSelected(AdapterViewCompat<?> parent) {}
+	@Override public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {}
+	@Override public void onNothingSelected(AdapterView<?> parent) {}
 
 	public static class Fila implements Parcelable {
 	  Art articulo; Ped panterior; ArtEst artest; Double cantidad; //double precio;

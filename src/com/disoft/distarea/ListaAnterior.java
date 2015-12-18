@@ -24,7 +24,7 @@ import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.speech.RecognizerIntent;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.internal.widget.AdapterViewCompat;
+//import android.support.v7.internal.widget.AdapterViewCompat;
 import android.support.v7.widget.SearchView;
 import android.text.Editable;
 import android.text.InputType;
@@ -72,7 +72,7 @@ import com.disoft.distarea.models.Ped;
 
 //TODO Funciona bien el selector, falta que se almacenen los cambios realizados en el anterior, y mandar
 //las casillas marcadas al Intent con el refresh.
-public class ListaAnterior extends AppCompatActivity implements AdapterViewCompat.OnItemSelectedListener {
+public class ListaAnterior extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 	Locale spanish = new Locale("es", "ES"); DatabaseHandler db;
 	SimpleDateFormat sdfdia = new SimpleDateFormat("yyyy-MM-dd",spanish),
 					 sdfes  = new SimpleDateFormat("dd-MM-yyyy",spanish);
@@ -235,8 +235,8 @@ public class ListaAnterior extends AppCompatActivity implements AdapterViewCompa
     intent.putExtra("eid",getIntent().getIntExtra("eid",0));
     startActivity(intent); finish(); }
 
-	@Override public void onItemSelected(AdapterViewCompat<?> parent, View view, int position, long id) {}
-	@Override public void onNothingSelected(AdapterViewCompat<?> parent) {}
+	@Override public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {}
+	@Override public void onNothingSelected(AdapterView<?> parent) {}
 
 	public class Adaptador extends ArrayAdapter<String> {
     public Adaptador(Context context, int textViewResourceId, String[] objects){

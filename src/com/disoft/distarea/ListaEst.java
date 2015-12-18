@@ -30,7 +30,7 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.internal.widget.AdapterViewCompat;
+//import android.support.v7.internal.widget.AdapterViewCompat;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -38,6 +38,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.CheckBox;
 import android.widget.ImageView;
@@ -55,7 +56,7 @@ import android.support.v7.app.ActionBar;
 import com.disoft.distarea.extras.DatabaseHandler;
 import com.disoft.distarea.models.Est;
 
-public class ListaEst extends AppCompatActivity implements AdapterViewCompat.OnItemSelectedListener {
+public class ListaEst extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
  
 	SharedPreferences sharedPrefs;	DatabaseHandler db;
 	View v, popupView;	PopupWindow popupWindow;
@@ -208,9 +209,9 @@ public class ListaEst extends AppCompatActivity implements AdapterViewCompat.OnI
       Intent intent = new Intent(ListaEst.this, ListaEstablecimientos.class);
       startActivity(intent); finish(); }
 
-	@Override public void onItemSelected(AdapterViewCompat<?> parent, View view, int position, long id) {}
+	@Override public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {}
 
-	@Override public void onNothingSelected(AdapterViewCompat<?> parent) {}
+	@Override public void onNothingSelected(AdapterView<?> parent) {}
 
 	public class Adaptador extends ArrayAdapter<String> {
     	public Adaptador(Context context, int textViewResourceId, String[] objects){

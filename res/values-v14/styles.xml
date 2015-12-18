@@ -11,12 +11,11 @@
         <item name="android:actionBarStyle">@style/Widget.MyTheme.ActionBar</item>
         <item name="android:actionBarTabStyle">@style/MyTheme.ActionBar.TabView</item>
         <item name="android:actionBarTabTextStyle">@style/MyTheme.ActionBar.Tab.Text</item>
-        <item name="colorPrimary">@color/azulDisoft2</item>
-        <item name="android:textColorPrimary">@color/abc_primary_text_material_dark</item>
-        <item name="android:textColorPrimaryInverse">@color/abc_primary_text_material_light
-        </item>
         <item name="android:windowBackground">@android:color/white</item>
         <item name="android:colorBackground">@color/azulDisoft3</item>
+        <item name="colorPrimary">@color/azulDisoft2</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
     </style>
     	
    	<style name="Widget.MyTheme.ActionBar" parent="Widget.AppCompat.ActionBar">
@@ -99,5 +98,12 @@
     	<item name="android:textAppearance">@android:style/TextAppearance.Medium</item>
     	<item name="android:textColor">@android:color/white</item>
 	</style>-->
+
+    <style name="Theme.MyTheme.Opciones" parent="Theme.MyTheme" >
+        <item name="android:colorBackground">@android:color/white</item>
+        <item name="colorPrimary">@android:color/white</item>
+        <item name="android:textColorPrimary">@android:color/black</item>
+        <item name="android:textColorSecondary">@android:color/black</item>
+    </style>
 
 </resources>

@@ -39,7 +39,7 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.internal.widget.AdapterViewCompat;
+//import android.support.v7.internal.widget.AdapterViewCompat;
 import android.support.v7.widget.SearchView;
 import android.text.Html;
 import android.text.Spannable;
@@ -75,7 +75,7 @@ import com.disoft.distarea.extras.NotificacionMensajes;
 import com.disoft.distarea.models.Est;
 import com.disoft.distarea.models.Msj;
 
-public class Conversaciones extends AppCompatActivity implements AdapterViewCompat.OnItemSelectedListener {
+public class Conversaciones extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
   SharedPreferences sharedPrefs; DatabaseHandler db; String codigoinv;
   View v, popupView; PopupWindow popupWindow; EditText email; int[] eids, mids;
   ListView lv; CheckBox invita; String[] nestablecimiento, dir, logos; Menu m;
@@ -88,8 +88,8 @@ public class Conversaciones extends AppCompatActivity implements AdapterViewComp
   				   stfmini = new SimpleDateFormat("HH:mm",spanish);
   int margen = 10;//android.R.dimen.activity_horizontal_margin;
 
-	@Override public void onItemSelected(AdapterViewCompat<?> parent, View view, int position, long id) {}
-	@Override public void onNothingSelected(AdapterViewCompat<?> parent) {}
+	@Override public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {}
+	@Override public void onNothingSelected(AdapterView<?> parent) {}
 
   @Override protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState); ab = getSupportActionBar();

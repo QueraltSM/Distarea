@@ -114,8 +114,7 @@
 	    <ScrollView
 	        android:id="@+id/svvc"
 	        android:layout_width="match_parent"
-	        android:layout_height="wrap_content"
-	        android:layout_above="@id/pie2" >
+	        android:layout_height="wrap_content">
 	        
 	        <LinearLayout 
 	            android:id="@+id/wrapper_vc"
