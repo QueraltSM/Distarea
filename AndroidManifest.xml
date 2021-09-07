@@ -4,10 +4,6 @@
     android:versionCode="29"
     android:versionName="2.3 (Beta)"
     xmlns:tools="http://schemas.android.com/tools">
-
-    <uses-sdk
-        android:minSdkVersion="9"
-        android:targetSdkVersion="23" />
     
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -46,48 +42,13 @@
 	    android:required="false" />
 	<uses-feature android:name="android.hardware.camera"
 	    android:required="false"/>
-
-    <supports-screens
-        android:anyDensity="true"
-        android:largeScreens="true"
-        android:normalScreens="true"
-        android:smallScreens="true"
-        android:xlargeScreens="true">
-     <screen android:screenSize="large" android:screenDensity="480" />
-     <screen android:screenSize="xlarge" android:screenDensity="480" />
-
-    <screen android:screenSize="small" android:screenDensity="ldpi" /> 
-    <screen android:screenSize="small" android:screenDensity="mdpi" /> 
-    <screen android:screenSize="small" android:screenDensity="hdpi" /> 
-    <screen android:screenSize="small" android:screenDensity="xhdpi"/>
-
-    <!--all normal size screens -->
-    <screen android:screenSize="normal" android:screenDensity="ldpi" />
-    <screen android:screenSize="normal" android:screenDensity="mdpi" />
-    <screen android:screenSize="normal" android:screenDensity="hdpi" />
-    <screen android:screenSize="normal" android:screenDensity="xhdpi" />
-
-    <!-- all large size screens -->
-    <screen android:screenSize="large" android:screenDensity="ldpi" />
-    <screen android:screenSize="large" android:screenDensity="mdpi" />
-    <screen android:screenSize="large" android:screenDensity="hdpi" />
-    <screen android:screenSize="large" android:screenDensity="xhdpi" />
-
-    <!-- all xlarge size screens -->
-    <screen android:screenSize="xlarge" android:screenDensity="ldpi" />
-    <screen android:screenSize="xlarge" android:screenDensity="mdpi" />
-    <screen android:screenSize="xlarge" android:screenDensity="hdpi" />
-    <screen android:screenSize="xlarge" android:screenDensity="xhdpi" />
-
-    <!-- Special case for Nexus 7 -->
-    <screen android:screenSize="large" android:screenDensity="213" />
-
-</supports-screens>
     
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher2"
         android:label="@string/app_name"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:usesCleartextTraffic"
         android:theme="@style/Theme.MyTheme">
         <!-- android:theme="@style/Theme.Sherlock.Light.DarkActionBar.Disoft" >  -->
         <meta-data

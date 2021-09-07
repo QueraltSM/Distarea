@@ -154,7 +154,7 @@ public class TiendaVirtual extends AppCompatActivity {
     		}catch(Exception e){ e.printStackTrace(); }
     		flagskip=1;
     	}else if(getIntent().getStringExtra("funcion") != null &&
-    			getIntent().getStringExtra("funcion").equals("descarga")) url = page+"desprodt.asp";
+    			getIntent().getStringExtra("funcion").equals("descarga")) url = page+"desprodtok.asp";
     	else if (getIntent().getStringExtra("funcion") != null &&
     			getIntent().getStringExtra("funcion").equals("reservaonline")){
     		if (getIntent().getIntExtra("eid",0) != 0){
@@ -211,7 +211,7 @@ public class TiendaVirtual extends AppCompatActivity {
         if(contador<3)wv.loadUrl(e.getTv());
         else { wv.stopLoading();
         	wv.loadDataWithBaseURL("","<br/><br/><p style=\"text-align: center;\">"+
-        			getString(R.string.error404)+"</p>", "text/html", "UTF-8", "");
+        			getString(R.string.error404)+"description:"+description+"</p>", "text/html", "UTF-8", "");
         } contador++; 
         setProgressBarIndeterminateVisibility(false);
 //        setSupportProgressBarIndeterminateVisibility(false);

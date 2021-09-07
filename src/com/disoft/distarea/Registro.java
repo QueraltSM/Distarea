@@ -933,7 +933,7 @@ public class Registro extends AppCompatActivity {
 	  			.putString("main", est).putBoolean("bg", true)
 	  			.putString("codigoseguro",codigoseguro)
 	  			.putString("fechaalta",sdfdia.format(new Date()))
-	  			.putString("horaalta",sdfhora.format(new Date())).commit();	
+	  			.putString("horaalta",sdfhora.format(new Date())).commit();
 				Statement st = conn.createStatement();
 				st.executeUpdate("INSERT INTO clienteglobal (nombre,codigopostal,tipocliente,"+
 						"mensajesadmitidos,ultimomensaje,mail,telefono,pass,seudonimo,direccion," +

@@ -1950,9 +1950,14 @@ public class Chat extends AppCompatActivity implements GoogleDriveCallback{
 				    	preview.setRotation(180);
 				    else if(orientation == 6)//ExifInterface.ORIENTATION_ROTATE_90
 				        preview.setRotation(90);
-		 			}catch(Exception ex){ preview.setImageBitmap(DocumentsContract.getDocumentThumbnail(getBaseContext().getContentResolver(),
-							Uri.parse(docUri),new Point(512,512),null)); 
-		 		}}else preview.setImageDrawable(getResources().getDrawable(R.drawable.nopreviewavailable));
+		 			}catch(Exception ex){
+						try {
+							preview.setImageBitmap(DocumentsContract.getDocumentThumbnail(getBaseContext().getContentResolver(),
+								   Uri.parse(docUri),new Point(512,512),null));
+						} catch (FileNotFoundException fileNotFoundException) {
+							fileNotFoundException.printStackTrace();
+						}
+					}}else preview.setImageDrawable(getResources().getDrawable(R.drawable.nopreviewavailable));
 		 	}else{
 				try{//XXX foto
 					ExifInterface exif = new ExifInterface(XMLUri);

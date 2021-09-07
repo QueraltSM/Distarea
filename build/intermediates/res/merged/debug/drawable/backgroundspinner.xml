@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <!-- <stroke android:width="2dp" android:color="#CDD29A"/>  -->    
-    <item android:state_pressed="false" android:state_checked="true" android:drawable="@drawable/spinnerdisoft_pressed" />
-    <item android:state_enabled="false" android:drawable="@drawable/spinnerdisoft_disabled" />
-    <item android:state_pressed="true"  android:drawable="@drawable/spinnerdisoft_pressed" />
-    <item android:state_pressed="false" android:state_focused="true" android:drawable="@drawable/spinnerdisoft_focused" />
-    <item android:drawable="@drawable/spinnerdisoft_default" />
-</selector>

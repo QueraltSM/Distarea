@@ -89,7 +89,7 @@
 						[ip] 		= [Inserción manual]
 					- Si clave activación = "activacion3" (Demomovil)
 						[dbdata] 	= "dbdata2" 		(*){/gg_deticport?user=demomovil&password=dismovil}
-						[ip] 		= "ipdemomovil" 	87.106.247.15 
+						[ip] 		= "ipdemomovil" 	82.223.84.100
 						
 					Las conexiones de los 3 acaban siendo
 						Connection conn = DriverManager.getConnection("jdbc:postgresql://"+[ip]+[dbdata]);

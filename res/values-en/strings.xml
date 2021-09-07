@@ -4,7 +4,7 @@
 
 <!--     <string name="app_name">Distarea</string> -->
 <!--     <string name="tvgenerica">"http://facdisinnova.disoft.es/comercio/innova/"</string> -->
-<!--     <string name="dirbbdd">"jdbc:postgresql://87.106.247.15/app_distarea?user=demomovil"&amp;password=dismovil</string> -->
+<!--     <string name="dirbbdd">"jdbc:postgresql://82.223.84.100/app_distarea?user=demomovil"&amp;password=dismovil</string> -->
 <!--     <string name="dirlogos">"http://www.distarea.es/subido/"</string> -->
     
     <!-- Reciclados -->

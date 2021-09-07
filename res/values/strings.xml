@@ -5,7 +5,7 @@
     <string name="app_name">Distarea</string>
     <string name="tvgenerica">"http://efacdis.disoft.es/comercio/innova/"</string>
     <string name="paginaefacdis">"http://efacdis.disoft.es/"</string>
-    <string name="dirbbdd">"jdbc:postgresql://87.106.247.15/app_distarea?user=demomovil"&amp;password=dismovil</string>
+    <string name="dirbbdd">"jdbc:postgresql://82.223.84.100/app_distarea?user=demomovil"&amp;password=dismovil</string>
     <string name="dirlogos">"http://www.distarea.es/subido/"</string>
     <string name="camposest">"app_company.idcompanyapp, idclienteglobal, nombre, telefonocontacto, mailrecepcion, fechaultimamodificacion, activo, comentariovisual, ubicacionmap, comentariointerno, desdefechaci, hastafechaci, tiendavirtual, zonainfluencia, logo, codactivageneral, restringepedidos, usuarioapp, requierefirma, requieretelefono, mailrecepcionmsg, configura"</string>
     <string name="copyrightd">&#169; Disoft Servicios Informáticos, S.L.</string>
@@ -237,7 +237,7 @@
     <string name="mensajes">Mensajes</string>
     <string name="establecimientos">Establecimientos</string>
     <string name="panterior">Pedido anterior</string>
-    <string name="opciones">Configuración</string>
+    <string name="opciones">Configuracion</string>
     <string name="ayuda">Ayuda</string>
     <!-- Tabla -->
     <!-- <string name="articulo">Artículo</string> -->
@@ -462,7 +462,7 @@
 	<string name="options3Watchout">¡Cuidado! No entrar si no se sabe lo que se hace</string>
 	
 	<!-- OpcionesAv.java -->
-	<string name="optionsAvConfiguration">Configuración</string>
+	<string name="optionsAvConfiguration">Configuracion</string>
 	<string name="optionsAvAdvancedOptions">Opciones Avanzadas</string>
 	<string name="optionsAvWarning">¡Atención! Va a eliminar TODOS los establecimientos descargados, y sus pedidos pendientes. Esta información NO se puede recuperar. ¿Está seguro?</string>
 	<string name="optionsAvAllDeleted">Se han borrado todos los establecimientos</string> 
