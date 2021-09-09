@@ -1,0 +1,66 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/disoftserviciosinformaticos/Desktop/Distarea/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v14/values-v14.xml",
+            "map": [
+                {
+                    "source": "/Users/disoftserviciosinformaticos/Desktop/Distarea/res/values-v14/themes.xml",
+                    "from": {
+                        "startLines": "13,2,8,22",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "675,57,415,1208",
+                        "endLines": "20,7,12,22",
+                        "endColumns": "11,12,12,55",
+                        "endOffsets": "1200,409,669,1259"
+                    },
+                    "to": {
+                        "startLines": "7,64,75,79",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "331,4172,4930,5174",
+                        "endLines": "14,68,78,79",
+                        "endColumns": "11,12,12,48",
+                        "endOffsets": "849,4508,5169,5218"
+                    }
+                },
+                {
+                    "source": "/Users/disoftserviciosinformaticos/Desktop/Distarea/res/values-v14/styles.xml",
+                    "from": {
+                        "startLines": "27,36,33,8,101,20",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "1467,1929,1730,233,5748,1034",
+                        "endLines": "31,38,35,18,106,25",
+                        "endColumns": "10,12,12,12,12,16",
+                        "endOffsets": "1722,2128,1923,1021,6112,1451"
+                    },
+                    "to": {
+                        "startLines": "15,20,23,47,58,69",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "854,1110,1312,3026,3809,4513",
+                        "endLines": "19,22,25,57,63,74",
+                        "endColumns": "10,12,12,12,12,16",
+                        "endOffsets": "1105,1307,1503,3804,4167,4925"
+                    }
+                },
+                {
+                    "source": "/Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/b10852762cf4e0e30b2eabae51e1e05e/appcompat-v7-23.1.1/res/values-v14/values-v14.xml",
+                    "from": {
+                        "startLines": "4,11,12,13,19,27,28,29,32,33",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "239,694,765,848,1258,1854,1974,2037,2191,2254",
+                        "endLines": "8,11,12,18,24,27,28,31,32,33",
+                        "endColumns": "12,70,82,12,12,119,62,12,62,131",
+                        "endOffsets": "510,760,843,1253,1675,1969,2032,2186,2249,2381"
+                    },
+                    "to": {
+                        "startLines": "2,26,27,28,34,40,41,42,45,46",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,1508,1579,1662,2072,2494,2614,2677,2831,2894",
+                        "endLines": "6,26,27,33,39,40,41,44,45,46",
+                        "endColumns": "12,70,82,12,12,119,62,12,62,131",
+                        "endOffsets": "326,1574,1657,2067,2489,2609,2672,2826,2889,3021"
+                    }
+                }
+            ]
+        }
+    ]
+}

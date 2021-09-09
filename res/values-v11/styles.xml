@@ -10,8 +10,8 @@
         <item name="android:windowBackground">@android:color/white</item>
         <item name="android:colorBackground">@color/azulDisoft3</item>
         <item name="colorPrimary">@color/azulDisoft2</item>
-        <item name="android:textColorPrimary">@android:color/white</item>
-        <item name="android:textColorSecondary">@android:color/white</item>
+        <item name="android:textColorPrimary">@android:color/black</item>
+        <item name="android:textColorSecondary">@android:color/black</item>
     </style>
 
     <style name="Widget.Styled.ActionBar"
@@ -20,13 +20,13 @@
     </style>
 
     <style name="MyTheme.ActionBar.TitleTextStyle" parent="@android:style/Widget.Holo.Light.ActionBar">
-        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textColor">@android:color/black</item>
         <!-- <item name="textColor">color/white</item> -->
     </style>
 
     <style name="Theme.MyTheme.Opciones" parent="Theme.MyTheme" >
         <item name="android:colorBackground">@android:color/white</item>
-        <item name="colorPrimary">@android:color/white</item>
+        <item name="colorPrimary">@android:color/black</item>
         <item name="android:textColorPrimary">@android:color/black</item>
         <item name="android:textColorSecondary">@android:color/black</item>
     </style>

@@ -49,15 +49,14 @@
         android:label="@string/app_name"
         android:usesCleartextTraffic="true"
         tools:replace="android:usesCleartextTraffic"
-        android:theme="@style/Theme.MyTheme">
-        <!-- android:theme="@style/Theme.Sherlock.Light.DarkActionBar.Disoft" >  -->
+        android:theme="@style/Theme.Sherlock.Light.DarkActionBar.Disoft" >
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
         <service
   			android:name=".extras.NotificacionMensajes"
   			android:icon="@drawable/content_email"
-  			android:label="Mensajería">
+  			android:label="Mensajer\u00EDa">
 		</service> 
 		
         <service android:name=".MyDriveEventService" android:exported="true">

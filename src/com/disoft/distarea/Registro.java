@@ -85,58 +85,6 @@ public class Registro extends AppCompatActivity {
 		nombre = (EditText) findViewById(R.id.nombre); pass = (EditText) findViewById(R.id.pass);
 		pass2 = (EditText) findViewById(R.id.pass2); pais = (Spinner) findViewById(R.id.pais);
 		estado = (TextView) findViewById(R.id.estado);
-
-		/*try{//Intento de detecci�n de n�mero del m�vil a trav�s de alg�n SMS
-			/* Obtener n� de tel�fono a trav�s de Telegram
-			try{
-				AccountManager manager = (AccountManager) getSystemService(Context.ACCOUNT_SERVICE);
-				Account[] list = manager.getAccounts();
-				for(Account account: list){
-				    if(account.type.contains("whatsapp")){
-				        Log.e("TEL",account.name); break; }}
-			}catch(Exception e){}*/
-			/*
-			try{
-				String id="";
-				ArrayList<String> nombrecontacto= new ArrayList<String>();
-				AccountManager manager = (AccountManager) getSystemService(Context.ACCOUNT_SERVICE);
-				Account[] list = manager.getAccounts();
-				for(Account account: list){
-				    if(account.type.equalsIgnoreCase("com.google")){
-				    	Log.e("NOMBRECONTACTO",account.name);
-				    	nombrecontacto.add(account.name); }}
-				Cursor cur = getContentResolver().query(ContactsContract.Contacts.CONTENT_URI, null, null, null, null);
-				if (cur.getCount() > 0) { while (cur.moveToNext()) {
-					//Log.e("NAME",cur.getString(cur.getColumnIndex(ContactsContract.Contacts.DISPLAY_NAME)));
-					for(String n : nombrecontacto){
-					if(cur.getString(cur.getColumnIndex(ContactsContract.Contacts.DISPLAY_NAME)).equalsIgnoreCase(n)
-							)//|| cur.getString(cur.getColumnIndex(ContactsContract.Data.))
-					id = cur.getString(cur .getColumnIndex(ContactsContract.Contacts._ID));
-					//Log.e("ID",id); 
-					Cursor pCur = getContentResolver().query( ContactsContract.CommonDataKinds.Phone.CONTENT_URI, 
-							null, ContactsContract.CommonDataKinds.Phone.CONTACT_ID + " = ?", new String[] { id }, null);
-					while (pCur.moveToNext()) { 
-						String phone = pCur.getString(pCur.getColumnIndex(ContactsContract.CommonDataKinds.Phone.NUMBER));
-						Log.e("TEL",phone); } pCur.close();
-					//Fin intento por nombre
-					
-					Uri uri = Uri.withAppendedPath(ContactsContract.CommonDataKinds.Email.CONTENT_FILTER_URI, Uri.encode(n));					
-					Cursor eCur= getContentResolver().query(uri, new String[] {ContactsContract.Data.CONTACT_ID, ContactsContract.Data.DISPLAY_NAME }, null, null, null);
-						while (eCur.moveToNext()) { 
-							String phone2 = eCur.getString(pCur.getColumnIndex(ContactsContract.CommonDataKinds.Phone.NUMBER));
-							Log.e("TEL",phone2); } eCur.close();
-						}
-				}}cur.close();
-
-				
-
-				
-			}catch(Exception e){e.printStackTrace();}
-		}catch(Exception e){e.printStackTrace();}*/
-		
-		/* Pillar MAC (por si se piensa automatizar de alguna forma
-		WifiManager wm = (WifiManager) getSystemService(Context.WIFI_SERVICE);
-		Toast.makeText(getBaseContext(), wm.getConnectionInfo().getMacAddress(),Toast.LENGTH_LONG).show();*/
 		
 		nombre.addTextChangedListener(new TextWatcher() {@Override public void 
       onTextChanged(CharSequence s, int start, int before, int count) {

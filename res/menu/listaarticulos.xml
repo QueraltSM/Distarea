@@ -7,7 +7,7 @@
 		app:showAsAction="ifRoom|collapseActionView"
 		android:icon="@drawable/action_search_light"
 		android:orderInCategory="100"
-        android:title="Buscar artículo"
+        android:title="Buscar art\u00EDculo"
         android:visible="false"/>
     
     <!-- <item

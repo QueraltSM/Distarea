@@ -201,30 +201,30 @@ public class Establecimiento extends AppCompatActivity {
 	 		if(sharedPrefs.getBoolean("ch",true)) v.performHapticFeedback(1);
 	 		if(isNetworkAvailable()){
 	 		AlertDialog.Builder b = new AlertDialog.Builder(Establecimiento.this);
-			b.setTitle("Descargar Art�culos");
-			b.setMessage("Est� a punto de descargar todos los art�culos disponibles de esta Tienda Virtual." +
-					" Una vez descargados, podr� realizar pedidos desde el m�vil sin necesidad de conectar con" +
+			b.setTitle("Descargar Art\u00EDculos");
+			b.setMessage("Est\u00E1 a punto de descargar todos los art\u00EDculos disponibles de esta Tienda Virtual." +
+					" Una vez descargados, podr\u00E1 realizar pedidos desde el m\u00F3vil sin necesidad de conectar con" +
 					" la tienda, salvo en el momento de enviar el pedido. El proceso de descarga puede llegar a tardar" +
 					" unos minutos, dependiendo de la velocidad de su conexi�n, y la cantidad de art�culos disponibles." +
-					" �Est� seguro de querer continuar?");
+					" ¿Est\u00E1 seguro de querer continuar?");
 			b.setIcon(R.drawable.av_download);
 			LinearLayout checkboxes = new LinearLayout(getBaseContext());
 			final CheckBox cbimagenes = new CheckBox(getBaseContext());
 			checkboxes.setOrientation(LinearLayout.VERTICAL);
-			cbimagenes.setText("Descargar tambi�n im�genes de los art�culos (tardar� a�n m�s).");
+			cbimagenes.setText("Descargar tambi\u00E9n im\u00E1genes de los art\u00E9culos (tardar\u00E1 a\u00F3n m\u00E1s).");
 			cbimagenes.setTextColor(getResources().getColor(android.R.color.black));
 			if(sharedPrefs.getBoolean("vi",true)) cbimagenes.setChecked(true);
 			else cbimagenes.setChecked(false);
 			checkboxes.addView(cbimagenes);
 			final CheckBox cblimpiararticulos = new CheckBox(getBaseContext());
 			if(db.getArticuloEstablecimientoCount(e.getEid())>0){
-				cblimpiararticulos.setText("Borrar todos los art�culos antes.");
+				cblimpiararticulos.setText("Borrar todos los art\u00E9culos antes.");
 				cblimpiararticulos.setOnClickListener(new OnClickListener(){ @Override public void onClick(View v){
 					if(cblimpiararticulos.isChecked()){
 						if(sharedPrefs.getBoolean("ch",true)) v.performHapticFeedback(1);
 						AlertDialog.Builder b = new AlertDialog.Builder(Establecimiento.this);
 						b.setTitle("Borrar art�culos").setIcon(getResources().getDrawable(R.drawable.content_discard))
-						.setMessage("Se borrar�n TODOS los art�culos previamente descargados de este establecimiento." +
+						.setMessage("Se borrar\u00E1n TODOS los art\u00E9culos previamente descargados de este establecimiento." +
 								" Eso incluye el historial de pedidos anteriores, y sus favoritos. Por otro lado, si" +
 								" hubieran art�culos descatalogados, estos dejar�n de aparecer.")
 						.setPositiveButton("Entendido", new DialogInterface.OnClickListener(){ 
@@ -237,7 +237,7 @@ public class Establecimiento extends AppCompatActivity {
 				cblimpiararticulos.setTextColor(getResources().getColor(android.R.color.black));
 				checkboxes.addView(cblimpiararticulos);
 			}
-			b.setPositiveButton("Descargar art�culos", new DialogInterface.OnClickListener() {
+			b.setPositiveButton("Descargar art\u00E9culos", new DialogInterface.OnClickListener() {
 				public void onClick(DialogInterface dialog, int which){
 					dialog.dismiss(); 
 					if(cblimpiararticulos.isChecked()){

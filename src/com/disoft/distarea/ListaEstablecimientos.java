@@ -57,6 +57,7 @@ import android.text.Spannable;
 import android.text.SpannableStringBuilder;
 import android.text.style.ImageSpan;
 import android.text.style.StyleSpan;
+import android.util.Log;
 import android.view.Display;
 import android.view.Gravity;
 import android.view.KeyEvent;
@@ -86,15 +87,6 @@ import android.widget.PopupWindow;
 import android.widget.TextView;
 import android.widget.TextView.BufferType;
 import android.widget.Toast;
-
-//import com.actionbarsherlock.app.ActionBar;
-//import com.actionbarsherlock.app.SherlockListActivity;
-//import com.actionbarsherlock.view.Menu;
-//import com.actionbarsherlock.view.MenuInflater;
-//import com.actionbarsherlock.view.MenuItem;
-//import com.actionbarsherlock.view.MenuItem.OnMenuItemClickListener;
-//import com.actionbarsherlock.view.SubMenu;
-//import com.actionbarsherlock.widget.SearchView;
 import android.support.v7.app.ActionBar;
 import com.disoft.distarea.extras.Automailer;
 import com.disoft.distarea.extras.DatabaseHandler;
@@ -113,10 +105,12 @@ public class ListaEstablecimientos extends AppCompatActivity implements AdapterV
 			 	   sdf = new SimpleDateFormat("yyyyMMdd",spanish);
 
   @Override protected void onCreate(Bundle savedInstanceState) {
-    super.onCreate(savedInstanceState); ab = getSupportActionBar();
+    super.onCreate(savedInstanceState);
+    ab = getSupportActionBar();
     ab.setDisplayOptions(ActionBar.DISPLAY_SHOW_TITLE|ActionBar.DISPLAY_SHOW_HOME|ActionBar.DISPLAY_HOME_AS_UP);
     ab.setTitle(getString(R.string.establecimientos)); ab.setIcon(R.drawable.tienda);
-    setContentView(R.layout.listaestablecimientos); v = findViewById(R.id.base);
+    setContentView(R.layout.listaestablecimientos);
+    v = findViewById(R.id.base);
     lv = (ListView)findViewById(android.R.id.list);
     sharedPrefs = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
     db = new DatabaseHandler(this); establecimientos = db.getEstablecimientosVisibles();
@@ -126,7 +120,7 @@ public class ListaEstablecimientos extends AppCompatActivity implements AdapterV
     	ventanaAniadir();
     if(sharedPrefs.getInt("verest", 0)!=0){
     	SharedPreferences.Editor spe = sharedPrefs.edit(); 
-    	spe.putInt("verest", 0); spe.commit(); }
+    	spe.putInt("verest", 0); spe.apply(); }
     ((TextView)findViewById(R.id.pie)).setSelected(true);}
     
   @Override public boolean onCreateOptionsMenu(Menu menu) {
@@ -470,7 +464,7 @@ public class ListaEstablecimientos extends AppCompatActivity implements AdapterV
             row.setTag(vh); } else  vh = (ViewHolder) row.getTag();
         vh.item.setText(nestablecimiento[position]);
         
-        if(nestablecimiento[position].equals("A�adir establecimiento")){
+        if(nestablecimiento[position].equals("A\u00f1adir establecimiento")){
     	   //vh.icon.setVisibility(View.GONE);
         	vh.icon.setImageDrawable(getResources().getDrawable(R.drawable.content_new));
     	   vh.tramo2.setVisibility(View.INVISIBLE);
@@ -483,7 +477,8 @@ public class ListaEstablecimientos extends AppCompatActivity implements AdapterV
     	   ((FrameLayout)row.findViewById(R.id.icono)).setVisibility(View.VISIBLE);
     	   vh.item.setLayoutParams(new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
     	   vh.item.setGravity(Gravity.LEFT|Gravity.CENTER_HORIZONTAL);
-        if(db.getEstablecimiento(eids[position]).getFav())
+
+        if(db.getEstablecimiento(eids[position])!=null && db.getEstablecimiento(eids[position]).getFav())
         	vh.icon.setImageResource(favorito[1]);
         else vh.icon.setImageResource(favorito[0]);
         //Logo
@@ -562,10 +557,10 @@ public class ListaEstablecimientos extends AppCompatActivity implements AdapterV
   	//nestablecimiento = new String[establecimientos.size()];
   	nestablecimiento = new String[establecimientos.size()+1];
   	eids = new int[establecimientos.size()+1];
-      //Ordenaci�n por nombre
+      //Ordenacion por nombre
   	if(sharedPrefs.getInt("verest",0)>0){
   		SharedPreferences.Editor spe = sharedPrefs.edit();
-			spe.putInt("verest",0); spe.commit();}
+			spe.putInt("verest",0); spe.apply();}
   	List<Est> fav = new ArrayList<Est>(), nofav = new ArrayList<Est>();
   	for(Est e : establecimientos){
   		if(e.getFav()) fav.add(e); else nofav.add(e);}
@@ -577,10 +572,10 @@ public class ListaEstablecimientos extends AppCompatActivity implements AdapterV
       establecimientos.addAll(nofav); int i = 0;
       for(Est es : establecimientos){ 
       	nestablecimiento[i]=es.getNombre(); eids[i]=es.getEid(); i++; }
-      nestablecimiento[i]="A�adir establecimiento"; eids[i]=0;
-      ArrayAdapter<String> adapter = new Adaptador(this,R.layout.lvlistaestablecimientos, nestablecimiento);
-//      setListAdapter(adapter); ListView list = getListView();
-		lv.setAdapter(adapter); ListView list = lv;
+      	nestablecimiento[i]="A\u00f1adir establecimiento"; eids[i]=0;
+      	ArrayAdapter<String> adapter = new Adaptador(this,R.layout.lvlistaestablecimientos, nestablecimiento);
+		lv.setAdapter(adapter);
+		ListView list = lv;
       list.setOnItemClickListener(new OnItemClickListener() {
       	@Override public void onItemClick(AdapterView<?> av, View v, int position, long l){
       		if(sharedPrefs.getBoolean("ch",true)) v.performHapticFeedback(1);
@@ -613,12 +608,10 @@ public class ListaEstablecimientos extends AppCompatActivity implements AdapterV
 			ssb.setSpan(bs3, 383, 390, Spannable.SPAN_INCLUSIVE_INCLUSIVE);
 			limpio.setText(ssb, BufferType.SPANNABLE);
   		}
-  		nestablecimiento=new String[]{"A�adir establecimiento"}; 
+  		nestablecimiento=new String[]{"A\u00f1adir establecimiento"};
   		eids=new int[]{0};
   		ArrayAdapter<String> adapter = new Adaptador(this,R.layout.lvlistaestablecimientos, nestablecimiento);
 		lv.setAdapter(adapter);
-//        setListAdapter(adapter);
-//		ListView list = getListView();
 		ListView list = lv;
         list.setOnItemClickListener(new OnItemClickListener() {
           	@Override public void onItemClick(AdapterView<?> av, View v, int position, long l){
@@ -686,8 +679,7 @@ public class ListaEstablecimientos extends AppCompatActivity implements AdapterV
 			AlertDialog.Builder adb = new AlertDialog.Builder(ListaEstablecimientos.this);
 			LayoutInflater inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 			final View layout = inflater.inflate(R.layout.daddest,null);
-			adb	.setTitle("A�adir Establecimiento").setIcon(R.drawable.social_add_group).setView(layout)
-				.setCancelable(false).setMessage(getString(R.string.textobuscar)+" "+getString(R.string.tbemp));
+			adb.setTitle("A\u00f1adir establecimiento").setIcon(R.drawable.social_add_group).setView(layout).setCancelable(false).setMessage(getString(R.string.textobuscar)+" "+getString(R.string.tbemp));
 			final EditText buscar = (EditText) layout.findViewById(R.id.buscar),
 					 	   codinv = (EditText) layout.findViewById(R.id.codinv);
 			
@@ -704,7 +696,7 @@ public class ListaEstablecimientos extends AppCompatActivity implements AdapterV
 						else { dialog.dismiss();
 							if(!buscar.getText().toString().equals("")) {
 								Intent i = new Intent(ListaEstablecimientos.this, ListaEst.class);
-								i.putExtra("vienede", "a�adir"); i.putExtra("query", buscar.getText().toString().trim());
+								i.putExtra("vienede", "A\\u00F1adir"); i.putExtra("query", buscar.getText().toString().trim());
 								startActivity(i); finish();
 							}else { codigoinv = codinv.getText().toString().trim();
 								new BuscaCodigoInvitacion().execute();}}

@@ -95,7 +95,7 @@
         <service
   			android:name=".extras.NotificacionMensajes"
   			android:icon="@drawable/content_email"
-  			android:label="Mensajería">
+  			android:label="Mensajer\u00EDa">
 		</service> 
 		
         <service android:name=".MyDriveEventService" android:exported="true">

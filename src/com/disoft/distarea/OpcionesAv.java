@@ -206,7 +206,7 @@ public class OpcionesAv extends PreferenceActivity implements OnSharedPreference
 	    				 TextView textolinea1 = new TextView(getBaseContext());
 	    				 campos.setOrientation(LinearLayout.VERTICAL);
 	    				 textolinea1.setTextColor(getResources().getColor(android.R.color.black));
-	    				 textolinea1.setText("Código de empleado:");
+	    				 textolinea1.setText("C\u00F3digo de empleado:");
 	    				 textolinea1.setGravity(Gravity.RIGHT);
 	    				 LinearLayout.LayoutParams lp= new LinearLayout.LayoutParams(
 	    						LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);

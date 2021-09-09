@@ -7,7 +7,7 @@
     <PreferenceScreen
 	    android:key="codigoseguro"
 	    android:layout_width="fill_parent"
-	    android:title="Código seguro"/>
+	    android:title="C\u00F3digo seguro"/>
     
     <EditTextPreference
 	    android:key="nombre"
@@ -70,7 +70,7 @@
         android:key="pais"
         android:title="@string/cpais"
         android:layout_width="fill_parent"
-        android:defaultValue="España" />
+        android:defaultValue="Espa\u00F1a" />
     
     <EditTextPreference
 	    android:key="nemp"

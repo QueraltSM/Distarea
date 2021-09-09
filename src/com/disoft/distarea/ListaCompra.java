@@ -1,4 +1,4 @@
-package com.disoft.distarea;
+ package com.disoft.distarea;
 
 import android.annotation.SuppressLint;
 import android.app.AlarmManager;
@@ -2735,8 +2735,8 @@ public class ListaCompra extends AppCompatActivity implements AdapterView.OnItem
 		if(e.getConfigura() != null && e.getConfigura().contains(",PD,")){
 			if(e.getTv() == null || e.getTv().equals("")){
 				Toast.makeText(getBaseContext(), "No ha sido posible conectar con la tienda virtual de este " +
-						"establecimiento. Por favor, póngase en contacto con el dueño del establecimiento, " +
-						"o espere a que se reestablezca la conexión." , Toast.LENGTH_LONG).show();
+						"establecimiento. Por favor, p\u00F3ngase en contacto con el due\u00F1o del establecimiento, " +
+						"o espere a que se reestablezca la conexi\u00F3n." , Toast.LENGTH_LONG).show();
 			}else{
 			if(db.getAllArticulosEstablecimientoFrom(e.getEid()).size()==0 && e.getConfigura().contains(",V,")){
 			//Popup descarga productos -> Establecimiento
@@ -2744,7 +2744,7 @@ public class ListaCompra extends AppCompatActivity implements AdapterView.OnItem
 			adb.setCancelable(false).setIcon(R.drawable.av_download).setTitle("Descarga artículos")
 				.setMessage("Para poder trabajar con el establecimiento "+e.getNombre()+" debe descargar sus artículos primero. Recomendamos conectar a través de una red Wi-Fi, para evitar un consumo excesivo de datos móviles. ¿Está seguro de querer descargarlos ahora?");
 			final CheckBox cbimagenes = new CheckBox(getBaseContext());
-			cbimagenes.setText("Descargar también imágenes de los artículos (tardará aún más).");
+			cbimagenes.setText("Descargar tambi\u00E9n im\u00E1genes de los art\u00F3culos (tardar\u00EDa a\u00FAn m\u00E1s).");
 			cbimagenes.setTextColor(getResources().getColor(android.R.color.black));
 			if(sharedPrefs.getBoolean("vi",true)) cbimagenes.setChecked(true);
 			else cbimagenes.setChecked(false);
@@ -4761,11 +4761,14 @@ public class ListaCompra extends AppCompatActivity implements AdapterView.OnItem
 		    EditText buscar = (EditText)layout.findViewById(R.id.busqueda);
 		    ImageButton refrescar = (ImageButton)layout.findViewById(R.id.refrescaClientes);
 		    final ListView lv = (ListView) layout.findViewById(R.id.list);
+
+
 		    final ArrayList<String> nomclientes = new ArrayList<String>();
 		    for(CliF cl : clientes) nomclientes.add(cl.getRef()+" "+cl.getNombre());
 
 		    lv.setAdapter(new ArrayAdapter<String>(ListaCompra.this,
 		            android.R.layout.simple_list_item_single_choice,nomclientes));
+
 		    lv.setChoiceMode(ListView.CHOICE_MODE_SINGLE);
 		    lv.setOnItemClickListener(new OnItemClickListener(){
 				@Override public void onItemClick(AdapterView<?> av, View v, int id, long l) {

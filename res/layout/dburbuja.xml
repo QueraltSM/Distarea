@@ -74,7 +74,7 @@
 	        android:layout_height="fill_parent"
 	        android:gravity="left|center_vertical"/>
 	    <TextView 
-	        android:text="Ver sólo mensajes\nde este remitente"
+	        android:text="Ver s\u00F3lo mensajes\nde este remitente"
 	        android:layout_width="fill_parent"
 	        android:layout_height="wrap_content"
 	        android:textAppearance="@android:style/TextAppearance.Large"

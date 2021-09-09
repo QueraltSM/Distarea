@@ -88,7 +88,7 @@
      	    android:layout_width="wrap_content"
         	android:layout_height="wrap_content"
         	android:textStyle="bold"
-        	android:text="País: "/>
+        	android:text="Pa\u00EDs: "/>
      	
      	<TextView 
      	    android:id="@+id/pais"
@@ -264,7 +264,7 @@
      	    android:layout_width="wrap_content"
         	android:layout_height="wrap_content"
         	android:textStyle="bold"
-        	android:text="Dirección: "/>
+        	android:text="Direcci\u00F3n: "/>
      	
      	<TextView 
      	    android:id="@+id/dirfin"

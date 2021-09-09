@@ -21,8 +21,8 @@
     
 	    <ListView
 			android:layout_width="match_parent"
-	         android:layout_height="0dp"
-	         android:layout_weight="1"/>
+			android:layout_height="0dp"
+			android:layout_weight="1"/>
 	    
 	    <TextView 
 	        android:id="@+id/pie"
@@ -30,13 +30,24 @@
 	    	android:layout_height="wrap_content"
 	    	android:layout_gravity="center"
 	    	android:textColor="@android:color/black"
-	        android:text="Toque el nombre de un establecimiento para ver más información del mismo. Toque el icono de la derecha para acceder directamente al establecimiento."
+	        android:text="Toque el nombre de un establecimiento para ver m\u00E1s informaci\u00F3n del mismo. Toque el icono de la derecha para acceder directamente al establecimiento."
 	        android:singleLine="true"
 	        android:ellipsize="marquee" 
 	        android:marqueeRepeatLimit="marquee_forever"
 	        android:focusable="true"
 	        android:focusableInTouchMode="true"   
 	        android:textSize="12sp"/>
+
+
+		 <ListView
+			 android:id="@android:id/list"
+			 android:layout_width="fill_parent"
+			 android:layout_height="wrap_content"
+			 android:layout_weight="1"
+			 android:drawSelectorOnTop="false"
+			 android:scrollingCache="false"
+			 android:animationCache="false"
+			 android:textSize="18sp"/>
 	    
 	    </LinearLayout>
 

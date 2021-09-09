@@ -2,7 +2,7 @@
 <resources>
     <string-array name="moneda">
         <item>(€) Euro</item>
-        <item>($) Dólar</item>
+        <item>($) D\u00F3lar</item>
         <item>(£) Libra</item>
         <item>(¥) Yen</item>
     </string-array>
@@ -53,25 +53,25 @@
     </string-array>
     
     <string-array name="tipodato">
-        <item>Artículo</item>
-        <item>Código de Barras</item>
+        <item>Art\u00EDculo</item>
+        <item>C\u00F3digo de Barras</item>
         <item>Precio</item>
         <item>Importe</item>
         <item>Cantidad</item>
         <item>Tipo de cantidad</item>
-        <item>Observación</item>
+        <item>Observaci\u00F3n</item>
     </string-array>
     
     <string-array name="preguntas">
         <item>¿Segundo apellido de tu madre?</item>
-        <item>¿En qué colegio estudiastes?</item>
-        <item>¿En qué hospital naciste?</item>
+        <item>¿En qu\u00E9 colegio estudiastes?</item>
+        <item>¿En qu\u00E9 hospital naciste?</item>
         <item>¿Nombre de tu primera mascota?</item>
-        <item>¿Cómo se llama tu mejor amigo?</item>
-        <item>¿Cuál es tu comida favorita?</item>
-        <item>¿Cuál es tu color favorito?</item>
-        <item>¿Cuál fue tu primera videoconsola?</item>
-        <item>¿Qué coche tenían tus padres?</item>
+        <item>¿C\u00F3mo se llama tu mejor amigo?</item>
+        <item>¿Cu\u00E1l es tu comida favorita?</item>
+        <item>¿Cu\u00E1l es tu color favorito?</item>
+        <item>¿Cu\u00E1l fue tu primera videoconsola?</item>
+        <item>¿Qu\u00E9 coche ten\u00EDan tus padres?</item>
     </string-array>
     
     <string-array name="preguntasv">
@@ -160,7 +160,7 @@
     
     <string-array name="tipofoto">
         <item>Foto normal</item>
-        <item>Documento asesoría</item>
+        <item>Documento asesor\u00EDa</item>
     </string-array>
     
     <string-array name="palabrasclave">

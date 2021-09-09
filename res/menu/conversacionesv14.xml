@@ -20,7 +20,7 @@
         android:id="@+id/nueva"
         android:orderInCategory="150"
         android:showAsAction="always"
-        android:title="Nueva conversación"
+        android:title="Nueva conversaci\u00F3n"
         android:icon="@drawable/social_add_person" /> -->
 
 </menu>

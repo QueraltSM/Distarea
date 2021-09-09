@@ -139,7 +139,7 @@
 		        android:layout_width="0dp"
 		        android:layout_height="wrap_content"
 		        android:layout_weight="0.7"
-		        android:hint="Día-Mes-Año"
+		        android:hint="D\u00EDa-Mes-A\u00F1o"
 		        android:inputType="text" />
 
 		    <ImageButton
@@ -353,7 +353,7 @@
 				    android:layout_width="100dp"
 				    android:layout_height="wrap_content"
 				    android:textColor="@android:color/black"
-				    android:text="Retención: " />
+				    android:text="Retenci\u00F3n: " />
 				
 				<EditText 
 				    android:id="@+id/retencion"
@@ -374,7 +374,7 @@
 				    android:layout_width="100dp"
 				    android:layout_height="wrap_content"
 				    android:textColor="@android:color/black"
-				    android:text="Implícito: " />
+				    android:text="Impl\u00EDcito: " />
 				
 				<EditText 
 				    android:id="@+id/implicito"

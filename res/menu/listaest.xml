@@ -5,7 +5,7 @@
         android:id="@+id/seleccionar"
         android:orderInCategory="200"
         app:showAsAction="always"
-        android:title="Añadir establecimientos"
+        android:title="A\u00F1adir establecimientos"
         android:icon="@drawable/social_forward_light" />
     
 </menu>

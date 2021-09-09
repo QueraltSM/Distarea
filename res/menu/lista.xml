@@ -5,7 +5,7 @@
         android:id="@+id/nuevoart"
         android:orderInCategory="200"
         app:showAsAction="always"
-        android:title="Añadir artículo"
+        android:title="A\u00F1adir art\u00EDculo"
         android:icon="@drawable/content_new_light" />
     
     <item

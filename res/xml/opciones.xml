@@ -65,7 +65,7 @@
 	<PreferenceScreen
 	    android:key="opcionesTec"
 	    android:layout_width="fill_parent"
-	    android:title="Opciones Técnicas"
+	    android:title="Opciones T\u00E9cnicas"
         android:icon="@drawable/action_settings"
 	    android:summary="@string/submenus"/>
 	

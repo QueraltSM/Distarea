@@ -7,13 +7,13 @@
 		android:showAsAction="ifRoom|collapseActionView"
 		android:icon="@drawable/action_search_light"
 		android:orderInCategory="100"
-        android:title="Buscar artículo"/> -->
+        android:title="Buscar art\u00EDculo"/> -->
     
     <!-- <item
         android:id="@+id/borrar"
         android:orderInCategory="150"
         android:showAsAction="always"
-        android:title="Borrar artículos"
+        android:title="Borrar art\u00EDculos"
         android:icon="@drawable/content_discard_light" /> -->
         
      <item
@@ -22,7 +22,7 @@
          app:showAsAction="ifRoom|collapseActionView"
 		android:icon="@drawable/action_search_light"
 		android:orderInCategory="100"
-        android:title="Buscar artículo"
+        android:title="Buscar art\u00EDculo"
         android:visible="false"/>
     
      <!-- <item
@@ -37,7 +37,7 @@
         android:id="@+id/seleccionar"
         android:orderInCategory="200"
         app:showAsAction="always"
-        android:title="Añadir artículos"
+        android:title="A\u00F1adir art\u00EDculos"
         android:icon="@drawable/social_forward_light"
         android:visible="false" />
     

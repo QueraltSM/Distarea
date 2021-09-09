@@ -21,7 +21,7 @@
         android:id="@+id/scanner"
         android:orderInCategory="100"
         app:showAsAction="always"
-        android:title="Código QR" 
+        android:title="C\u00F3digo QR"
         android:icon="@drawable/qr_dark" />
     
     <item

@@ -194,14 +194,14 @@
         	    android:layout_width="match_parent"
     			android:layout_height="wrap_content"
     			android:textColor="@android:color/black"
-    			android:text="Retención"/>
+    			android:text="Retenci\u00F3n"/>
         
         <CheckBox
         	    android:id="@+id/cb9"
         	    android:layout_width="match_parent"
     			android:layout_height="wrap_content"
     			android:textColor="@android:color/black"
-    			android:text="Implícito"/>
+    			android:text="Impl\u00EDcito"/>
         <CheckBox
         	    android:id="@+id/cbImporteContrapartida"
         	    android:layout_width="match_parent"
@@ -253,7 +253,7 @@
         	    android:layout_width="match_parent"
     			android:layout_height="wrap_content"
     			android:textColor="@android:color/black"
-    			android:text="Descripción"/>
+    			android:text="Descripci\u00F3n"/>
         
     </LinearLayout>
     

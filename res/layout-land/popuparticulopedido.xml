@@ -134,7 +134,7 @@
 		    
 			    <ImageButton
 		            android:id="@+id/avanzado" 
-		            android:contentDescription="Botón más opciones"
+		            android:contentDescription="Bot\u00F3n m\u00E1s opciones"
 		            android:layout_width="wrap_content"
 		        	android:layout_height="wrap_content"
 		        	android:gravity="center"
@@ -213,7 +213,7 @@
 			    
 			    <ImageButton
 		            android:id="@+id/popartpedscan"
-		            android:contentDescription="Botón escanear"
+		            android:contentDescription="Bot\u00F3n escanear"
 		            android:src="@drawable/barcode"
 		            android:layout_height="match_parent"
 		            android:layout_width="wrap_content"
@@ -234,7 +234,7 @@
         
         <ImageButton
             android:id="@+id/popartpededi"
-            android:contentDescription="Botón editar"
+            android:contentDescription="Bot\u00F3n editar"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:layout_width="0dp"
@@ -245,7 +245,7 @@
         
         <ImageButton
             android:id="@+id/popartpedbor"
-            android:contentDescription="Botón borrar"
+            android:contentDescription="Bot\u00F3n borrar"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:layout_width="0dp"
@@ -256,7 +256,7 @@
 
         <ImageButton
             android:id="@+id/popartpedcan"
-            android:contentDescription="Botón cancelar"
+            android:contentDescription="Bot\u00F3n cancelar"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:layout_width="0dp"

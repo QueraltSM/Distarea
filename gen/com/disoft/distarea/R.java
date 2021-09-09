@@ -2854,9 +2854,9 @@ containing a value of this type.
          */
         public static final int enviadopor=0x7f0701c4;
         public static final int enviados=0x7f0701b9;
-        /**  Botón Total 
+        /**  Bot\u00F3n Total 
  popuptotal.xml 
- Botón Total 
+ Bot\u00F3n Total 
  popuptotal.xml 
          */
         public static final int enviarpedido=0x7f0701a4;
@@ -2905,7 +2905,7 @@ containing a value of this type.
         public static final int history_empty_detail=0x7f070053;
         public static final int history_send=0x7f070054;
         public static final int history_title=0x7f070055;
-        /**  <string name="idconsejo">Introduzca un valor que recuerde fácilmente: nº de teléfono, e-mail, apodo,&#8230;</string> 
+        /**  <string name="idconsejo">Introduzca un valor que recuerde f\u00E1cilmente: nº de tel\u00E9fono, e-mail, apodo,&#8230;</string>
          */
         public static final int idconsejo=0x7f07024e;
         public static final int identificate=0x7f070249;
@@ -2964,8 +2964,8 @@ containing a value of this type.
         public static final int menu_history=0x7f07005a;
         public static final int menu_settings=0x7f07005b;
         public static final int menu_share=0x7f07005c;
-        /**  Menú Superior Dcha. 
- Menú Superior Dcha. 
+        /**  Men\u00FA Superior Dcha.
+ Men\u00FA Superior Dcha.
          */
         public static final int menutitle=0x7f07016a;
         public static final int menviado=0x7f0700b8;
@@ -3170,15 +3170,15 @@ containing a value of this type.
         public static final int popartpededi=0x7f07017c;
         public static final int popartpedscan=0x7f070178;
         public static final int popartpedtxtcantidad=0x7f070179;
-        /**  Editar Artículo (LongPress), popuparticulopedido.xml 
- Editar Artículo (LongPress), popuparticulopedido.xml 
+        /**  Editar Art\u00EDculo (LongPress), popuparticulopedido.xml
+ Editar Art\u00EDculo (LongPress), popuparticulopedido.xml
          */
         public static final int popartpedtxtcbarras=0x7f070177;
         public static final int popartpedtxtimporte=0x7f07017b;
         public static final int popartpedtxtprecio=0x7f07017a;
-        /**  Botón Buscar 
+        /**  Bot\u00F3n Buscar 
  popupbuscar.xml 
- Botón Buscar 
+ Bot\u00F3n Buscar 
  popupbuscar.xml 
          */
         public static final int popbuscar=0x7f0701a2;
@@ -3198,8 +3198,8 @@ containing a value of this type.
         public static final int poptipo=0x7f07018b;
         public static final int popunidades=0x7f07018a;
         public static final int popuplistaempresa=0x7f070156;
-        /**  <string name="popuplista">Aquí puede crear una lista para controlar los productos que quiera comprar, sin tener que hacer un pedido a un establecimiento.</string> 
- <string name="popuplista">Aquí puede crear una lista para controlar los productos que quiera comprar, sin tener que hacer un pedido a un establecimiento.</string> 
+        /**  <string name="popuplista">Aqu\u00ED puede crear una lista para controlar los productos que quiera comprar, sin tener que hacer un pedido a un establecimiento.</string>
+ <string name="popuplista">Aqu\u00ED puede crear una lista para controlar los productos que quiera comprar, sin tener que hacer un pedido a un establecimiento.</string>
          */
         public static final int popuplistaparticular=0x7f070155;
         public static final int popupselvacia=0x7f0700f0;
@@ -3370,8 +3370,8 @@ containing a value of this type.
         public static final int terminosycondiciones=0x7f0702a0;
         public static final int texto1about=0x7f07023b;
         public static final int texto2about=0x7f07023d;
-        /**  Añadir Contacto 
- Añadir Contacto 
+        /**  A\u00F1adir Contacto
+ A\u00F1adir Contacto
          */
         public static final int textoaddcontacto=0x7f0700dd;
         public static final int textoayuda=0x7f0700c7;
@@ -3379,13 +3379,13 @@ containing a value of this type.
  Buscar Establectimiento 
          */
         public static final int textobuscar=0x7f07013f;
-        /**  Borrar Artículo (Ambos casos) 
- Borrar Artículo (Ambos casos) 
+        /**  Borrar Art\u00EDculo (Ambos casos)
+ Borrar Art\u00EDculo (Ambos casos)
          */
         public static final int textoconfborart=0x7f07017e;
         public static final int textoconfborartpedant=0x7f07017f;
-        /**  Botón Nuevo Pedido 
- Botón Nuevo Pedido 
+        /**  Bot\u00F3n Nuevo Pedido 
+ Bot\u00F3n Nuevo Pedido 
          */
         public static final int textoconfnuevo=0x7f07019f;
         public static final int textoconfnuevo2=0x7f0701a0;
@@ -3434,11 +3434,11 @@ containing a value of this type.
         public static final int txtinteresempresa=0x7f07028c;
         public static final int txtmoneda=0x7f07028d;
         /**  <string name="ms">Modo Seguro</string> 
- <string name="txtpmsj">¿Quieres permitir publicidad? (Sólo de tus establecimientos cercanos)</string>
+ <string name="txtpmsj">¿Quieres permitir publicidad? (S\u00F3lo de tus establecimientos cercanos)</string>
     <string name="pmsj">Permitir mensajes</string>
     <string name="txtinteresop2">¿Te interesan algunos de estos campos?</string>  
  <string name="ms">Safe mode</string> 
- <string name="txtpmsj">¿Quieres permitir publicidad? (Sólo de tus establecimientos cercanos)</string>
+ <string name="txtpmsj">¿Quieres permitir publicidad? (S\u00F3lo de tus establecimientos cercanos)</string>
     <string name="pmsj">Permitir mensajes</string>
     <string name="txtinteresop2">¿Te interesan algunos de estos campos?</string>  
          */
@@ -3449,7 +3449,7 @@ containing a value of this type.
          */
         public static final int txtmsop2=0x7f070277;
         /**  <string name="txtuser">Nombre de usuario:</string> 
- <string name="txtpass">Contraseña:</string> 
+ <string name="txtpass">Contrase\u00F1a:</string>
  <string name="txtuser">Username:</string> 
  <string name="txtpass">Password:</string> 
          */
@@ -3458,14 +3458,14 @@ containing a value of this type.
         public static final int txtnombreop1=0x7f070274;
         public static final int txtpais=0x7f07024d;
         public static final int txtpass=0x7f0700be;
-        /**  <string name="txtpass">Contraseña:</string> 
+        /**  <string name="txtpass">Contrase\u00F1a:</string>
  <string name="txtuser">Nombre de usuario:</string> 
- <string name="txtpass">Contraseña:</string> 
+ <string name="txtpass">Contrase\u00F1a:</string>
          */
         public static final int txtpass2=0x7f07024c;
         public static final int txtpm=0x7f07028a;
         public static final int txtpopupms=0x7f0701f2;
-        /**  <string name="txtcp">Código Postal:</string> 
+        /**  <string name="txtcp">C\u00F3digo Postal:</string> 
  <string name="txtcp">Postal code:</string> 
          */
         public static final int txtrecpass=0x7f070284;
@@ -3475,8 +3475,8 @@ containing a value of this type.
         public static final int txtregrecpass=0x7f07026f;
         public static final int txtregrecpassemp=0x7f070270;
         public static final int txtrs=0x7f070285;
-        /**   <string name="articulo">Artículo</string> 
-  <string name="articulo">Artículo</string> 
+        /**   <string name="articulo">Art\u00EDculo</string>
+  <string name="articulo">Art\u00EDculo</string>
          */
         public static final int txtsel=0x7f0700fb;
         public static final int txttc=0x7f070288;
@@ -3494,9 +3494,9 @@ containing a value of this type.
         public static final int undefined=0x7f0701f9;
         public static final int unest=0x7f070183;
         /**  Tabla 
- <string name="articulo">Artículo</string> 
+ <string name="articulo">Art\u00EDculo</string>
  Tabla 
- <string name="articulo">Artículo</string> 
+ <string name="articulo">Art\u00EDculo</string>
          */
         public static final int unidades=0x7f070170;
         public static final int unmsj=0x7f070185;
@@ -3507,14 +3507,14 @@ containing a value of this type.
         public static final int userauto=0x7f070136;
         public static final int usernamelength=0x7f070256;
         /**  <string name="nonombre">Inserte su nombre para poder continuar.</string>
-    <string name="nocp">Inserte Código Postal para poder continuar.</string> ESTOS NO SE USAN YA 
+    <string name="nocp">Inserte C\u00F3digo Postal para poder continuar.</string> ESTOS NO SE USAN YA 
  <string name="nonombre">Inserte su nombre para poder continuar.</string>
-    <string name="nocp">Inserte Código Postal para poder continuar.</string> ESTOS NO SE USAN YA 
+    <string name="nocp">Inserte C\u00F3digo Postal para poder continuar.</string> ESTOS NO SE USAN YA 
          */
         public static final int usernametaken=0x7f070234;
         public static final int usernametaken1=0x7f070258;
         public static final int usuario=0x7f07024a;
-        /**  <string name="txtcp">Código Postal:</string> 
+        /**  <string name="txtcp">C\u00F3digo Postal:</string> 
  <string name="txtcp">Postal code:</string> 
          */
         public static final int validar=0x7f070268;
@@ -3603,12 +3603,6 @@ containing a value of this type.
         public static final int MyTheme_ActionBar_SubtitleTextStyle=0x7f060066;
         public static final int MyTheme_ActionBar_Tab_Text=0x7f060068;
         public static final int MyTheme_ActionBar_TabView=0x7f060067;
-        /**  Color de texto menu overflow
-	<style name="MyStyle" parent="Widget">
-	    <item name="android:textColor">@android:color/white</item>
-	</style>
-	 
-         */
         public static final int MyTheme_ActionBar_TitleTextStyle=0x7f060065;
         public static final int Sherlock___TextAppearance_Small=0x7f06004b;
         public static final int Sherlock___Theme=0x7f060056;

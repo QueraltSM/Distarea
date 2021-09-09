@@ -124,7 +124,7 @@
         
         <ImageButton
             android:id="@+id/avanzado" 
-            android:contentDescription="Botón más opciones"
+            android:contentDescription="Bot\u00F3n m\u00E1s opciones"
             android:layout_width="wrap_content"
         	android:layout_height="wrap_content"
         	android:gravity="center"

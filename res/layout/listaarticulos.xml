@@ -69,21 +69,22 @@
 		        android:visibility="visible" />
 		    
 		</RadioGroup>
-		    
-		     <CheckBox
-		         android:id="@+id/buscar"
-		         android:layout_width="match_parent"
-		         android:layout_height="match_parent"
-		         android:layout_marginLeft="-5dp"
-		         android:background="@drawable/botondisoft_fijable"
-		         android:button="@null"
-		         android:drawableTop="@drawable/action_search"
-		         android:gravity="center"
-		         android:paddingLeft="10dp"
-		         android:paddingRight="10dp"
-		         android:paddingTop="4dp" />
-	    
-     </LinearLayout>
+
+
+		 <CheckBox
+			 android:id="@+id/buscar"
+			 android:layout_width="match_parent"
+			 android:layout_height="match_parent"
+			 android:layout_marginLeft="-5dp"
+			 android:background="@drawable/botondisoft_fijable"
+			 android:button="@null"
+			 android:drawableTop="@drawable/action_search"
+			 android:gravity="center"
+			 android:paddingLeft="10dp"
+			 android:paddingTop="4dp"
+			 android:paddingRight="10dp" />
+
+	 </LinearLayout>
 	
 	
     <LinearLayout
@@ -196,7 +197,7 @@
          android:layout_height="wrap_content"
          android:layout_gravity="center"
          android:gravity="center"
-         android:text="El precio no es definitivo hasta enviado el pedido para su comprobación."
+         android:text="El precio no es definitivo hasta enviado el pedido para su comprobaci\u00F3n."
          android:textColor="@android:color/black"
          android:singleLine="true"
          android:ellipsize="marquee" 
