@@ -1,0 +1,437 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:2:1-136:12
+INJECTED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:2:1-136:12
+INJECTED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:2:1-136:12
+INJECTED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:2:1-136:12
+MERGED from [com.nononsenseapps:filepicker:2.4.2] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/6695f85b4eec8d76e02cd9eaf7237b86/filepicker-2.4.2/AndroidManifest.xml:18:1-30:12
+MERGED from [com.android.support:appcompat-v7:23.1.1] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/b10852762cf4e0e30b2eabae51e1e05e/appcompat-v7-23.1.1/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-plus:8.4.0] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/66d4b3a49dd9c602b2ad69a4787a1bad/play-services-plus-8.4.0/AndroidManifest.xml:16:1-20:12
+MERGED from [com.google.android.gms:play-services-drive:8.4.0] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/3a9017ed247cd99197ffd15d9686a816/play-services-drive-8.4.0/AndroidManifest.xml:16:1-20:12
+MERGED from [com.journeyapps:zxing-android-embedded:3.0.3] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/9e60e9cddbdb5357ed90035728afe8d4/zxing-android-embedded-3.0.3/AndroidManifest.xml:17:1-57:12
+MERGED from [com.android.support:multidex:1.0.2] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/dfdbb4460783ffb9c8bba62586e02509/multidex-1.0.2/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:23.0.1] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/0d33c6cfe1be927a8cd8c8b44cefb784/recyclerview-v7-23.0.1/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-base:8.4.0] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/cea8ff9cf23b4daad7de2db450387d7a/play-services-base-8.4.0/AndroidManifest.xml:16:1-19:12
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/e9baadfbdb77db61279b082fd23e0b5f/play-services-basement-8.4.0/AndroidManifest.xml:16:1-26:12
+MERGED from [com.android.support:support-v4:23.1.1] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/b513f07bb6b046a92755daead47edf98/support-v4-23.1.1/AndroidManifest.xml:17:1-24:12
+INJECTED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:2:1-136:12
+INJECTED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:2:1-136:12
+INJECTED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:2:1-136:12
+	package
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:3:5-34
+		INJECTED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml
+		INJECTED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml
+	android:versionName
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:5:5-37
+		INJECTED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml
+		INJECTED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:6:5-51
+	xmlns:android
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:4:5-29
+		INJECTED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml
+		INJECTED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:8:5-66
+	android:name
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:8:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:9:5-79
+	android:name
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:9:22-76
+uses-permission#android.permission.WRITE_INTERNAL_STORAGE
+ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:10:5-81
+	android:name
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:10:22-78
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:11:5-80
+	android:name
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:11:22-78
+uses-permission#android.permission.VIBRATE
+ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:12:5-66
+	android:name
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:12:22-63
+uses-permission#android.permission.GET_ACCOUNTS
+ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:13:5-70
+	android:name
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:13:22-68
+uses-permission#android.permission.READ_CONTACTS
+ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:14:5-71
+	android:name
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:14:22-69
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:15:5-79
+	android:name
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:15:22-77
+uses-permission#android.permission.CAMERA
+ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:16:5-64
+MERGED from [com.journeyapps:zxing-android-embedded:3.0.3] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/9e60e9cddbdb5357ed90035728afe8d4/zxing-android-embedded-3.0.3/AndroidManifest.xml:23:5-65
+MERGED from [com.journeyapps:zxing-android-embedded:3.0.3] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/9e60e9cddbdb5357ed90035728afe8d4/zxing-android-embedded-3.0.3/AndroidManifest.xml:23:5-65
+	android:name
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:16:22-62
+uses-permission#android.permission.CAPTURE_VIDEO_OUTPUT
+ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:17:5-78
+	android:name
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:17:22-76
+uses-permission#android.permission.USE_CREDENTIALS
+ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:18:5-73
+	android:name
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:18:22-71
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:19:5-75
+	android:name
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:19:22-73
+uses-permission#android.permission.GET_TASKS
+ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:20:5-68
+	android:name
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:20:22-65
+uses-permission#android.permission.CALL_PHONE
+ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:22:5-68
+	android:name
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:22:22-66
+uses-feature#android.permission.WRITE_CONTACTS
+ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:24:5-25:29
+	android:required
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:25:3-27
+	android:name
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:24:19-67
+uses-feature#android.permission.CALL_PHONE
+ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:26:5-27:35
+	android:required
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:27:9-33
+	android:name
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:26:19-63
+uses-feature#android.permission.ACCESS_FINE_LOCATION
+ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:28:5-29:29
+	android:required
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:29:3-27
+	android:name
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:28:19-73
+uses-feature#android.permission.ACCESS_COARSE_LOCATION
+ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:30:5-31:35
+	android:required
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:31:9-33
+	android:name
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:30:19-75
+uses-feature#android.permission.READ_PHONE_STATE
+ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:32:2-33:32
+	android:required
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:33:6-30
+	android:name
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:32:16-66
+uses-feature#android.hardware.touchscreen
+ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:37:2-38:33
+	android:required
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:38:6-30
+	android:name
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:37:16-59
+uses-feature#android.hardware.telephony
+ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:39:2-40:33
+	android:required
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:40:6-30
+	android:name
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:39:16-57
+uses-feature#android.hardware.location
+ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:41:2-42:33
+	android:required
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:42:6-30
+	android:name
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:41:16-56
+uses-feature#android.hardware.camera
+ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:43:2-44:32
+MERGED from [com.journeyapps:zxing-android-embedded:3.0.3] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/9e60e9cddbdb5357ed90035728afe8d4/zxing-android-embedded-3.0.3/AndroidManifest.xml:26:5-28:36
+MERGED from [com.journeyapps:zxing-android-embedded:3.0.3] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/9e60e9cddbdb5357ed90035728afe8d4/zxing-android-embedded-3.0.3/AndroidManifest.xml:26:5-28:36
+	android:required
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:44:6-30
+	android:name
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:43:16-54
+application
+ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:46:5-134:19
+MERGED from [com.nononsenseapps:filepicker:2.4.2] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/6695f85b4eec8d76e02cd9eaf7237b86/filepicker-2.4.2/AndroidManifest.xml:28:5-20
+MERGED from [com.nononsenseapps:filepicker:2.4.2] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/6695f85b4eec8d76e02cd9eaf7237b86/filepicker-2.4.2/AndroidManifest.xml:28:5-20
+MERGED from [com.android.support:appcompat-v7:23.1.1] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/b10852762cf4e0e30b2eabae51e1e05e/appcompat-v7-23.1.1/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:23.1.1] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/b10852762cf4e0e30b2eabae51e1e05e/appcompat-v7-23.1.1/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-plus:8.4.0] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/66d4b3a49dd9c602b2ad69a4787a1bad/play-services-plus-8.4.0/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-plus:8.4.0] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/66d4b3a49dd9c602b2ad69a4787a1bad/play-services-plus-8.4.0/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-drive:8.4.0] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/3a9017ed247cd99197ffd15d9686a816/play-services-drive-8.4.0/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-drive:8.4.0] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/3a9017ed247cd99197ffd15d9686a816/play-services-drive-8.4.0/AndroidManifest.xml:19:5-20
+MERGED from [com.journeyapps:zxing-android-embedded:3.0.3] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/9e60e9cddbdb5357ed90035728afe8d4/zxing-android-embedded-3.0.3/AndroidManifest.xml:47:5-55:19
+MERGED from [com.journeyapps:zxing-android-embedded:3.0.3] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/9e60e9cddbdb5357ed90035728afe8d4/zxing-android-embedded-3.0.3/AndroidManifest.xml:47:5-55:19
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/e9baadfbdb77db61279b082fd23e0b5f/play-services-basement-8.4.0/AndroidManifest.xml:20:5-24:19
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/e9baadfbdb77db61279b082fd23e0b5f/play-services-basement-8.4.0/AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.1.1] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/b513f07bb6b046a92755daead47edf98/support-v4-23.1.1/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.1.1] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/b513f07bb6b046a92755daead47edf98/support-v4-23.1.1/AndroidManifest.xml:22:5-20
+	android:label
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:49:9-41
+	android:icon
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:48:9-46
+	android:allowBackup
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:47:9-35
+	android:theme
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:52:9-73
+	tools:replace
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:51:9-53
+	android:usesCleartextTraffic
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:50:9-44
+meta-data#com.google.android.gms.version
+ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:53:9-55:69
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/e9baadfbdb77db61279b082fd23e0b5f/play-services-basement-8.4.0/AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/e9baadfbdb77db61279b082fd23e0b5f/play-services-basement-8.4.0/AndroidManifest.xml:21:9-23:69
+	android:value
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:55:13-66
+	android:name
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:54:13-58
+service#com.disoft.distarea.extras.NotificacionMensajes
+ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:56:9-60:13
+	android:label
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:59:6-37
+	android:icon
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:58:6-44
+	android:name
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:57:6-49
+service#com.disoft.distarea.MyDriveEventService
+ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:62:9-66:16
+	android:exported
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:62:54-77
+	android:name
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:62:18-53
+intent-filter#action:name:com.google.android.gms.drive.events.HANDLE_EVENT
+ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:63:10-65:26
+action#com.google.android.gms.drive.events.HANDLE_EVENT
+ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:64:14-87
+	android:name
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:64:22-85
+receiver#com.disoft.distarea.Autorun
+ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:68:9-73:20
+	android:enabled
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:68:19-41
+	android:exported
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:68:66-90
+	android:permission
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:69:10-72
+	android:name
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:68:42-65
+intent-filter#action:name:android.intent.action.BOOT_COMPLETED
+ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:70:14-72:30
+action#android.intent.action.BOOT_COMPLETED
+ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:71:19-81
+	android:name
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:71:27-78
+activity#com.disoft.distarea.ListaCompra
+ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:75:9-83:20
+	android:label
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:77:13-45
+	android:name
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:76:13-59
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:78:13-82:29
+action#android.intent.action.MAIN
+ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:79:17-69
+	android:name
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:79:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:81:17-77
+	android:name
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:81:27-74
+activity#com.disoft.distarea.VentanaFirma
+ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:84:9-85:52
+	android:screenOrientation
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:85:13-50
+	android:name
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:84:19-47
+activity#com.disoft.distarea.Registro
+ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:86:9-46
+	android:name
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:86:19-43
+activity#com.disoft.distarea.Registro2
+ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:87:9-47
+	android:name
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:87:19-44
+activity#com.disoft.distarea.ListaAnterior
+ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:88:9-51
+	android:name
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:88:19-48
+activity#com.disoft.distarea.ListaArticulos
+ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:89:9-52
+	android:name
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:89:19-49
+activity#com.disoft.distarea.TiendaVirtual
+ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:90:9-92:51
+	android:hardwareAccelerated
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:92:13-48
+	android:configChanges
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:91:13-48
+	android:name
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:90:19-48
+activity#com.disoft.distarea.Mensajes
+ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:93:9-46
+	android:name
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:93:19-43
+activity#com.disoft.distarea.Conversaciones
+ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:94:9-52
+	android:name
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:94:19-49
+activity#com.disoft.distarea.Chat
+ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:95:9-41
+	android:name
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:95:19-39
+activity#com.nononsenseapps.filepicker.FilePickerActivity
+ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:96:9-104:20
+	android:label
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:98:13-45
+	android:theme
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:99:13-51
+	android:name
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:97:13-76
+intent-filter#action:name:android.intent.action.GET_CONTENT+category:name:android.intent.category.DEFAULT
+ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:100:13-103:29
+action#android.intent.action.GET_CONTENT
+ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:101:17-75
+	android:name
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:101:25-73
+category#android.intent.category.DEFAULT
+ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:102:17-75
+	android:name
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:102:27-73
+activity#com.disoft.distarea.Mensaje
+ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:105:9-45
+	android:name
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:105:19-42
+activity#com.disoft.distarea.ListaEstablecimientos
+ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:106:9-59
+	android:name
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:106:19-56
+activity#com.disoft.distarea.ListaEst
+ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:107:9-46
+	android:name
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:107:19-43
+activity#com.disoft.distarea.Establecimiento
+ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:108:9-53
+	android:name
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:108:19-50
+activity#com.disoft.distarea.Geolocalizacion
+ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:109:9-53
+	android:name
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:109:19-50
+activity#com.disoft.distarea.Opciones
+ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:110:9-111:60
+	android:theme
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:111:13-58
+	android:name
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:110:19-43
+activity#com.disoft.distarea.Opciones2
+ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:112:9-113:61
+	android:theme
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:113:13-58
+	android:name
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:112:19-44
+activity#com.disoft.distarea.Opciones3
+ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:114:9-115:61
+	android:theme
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:115:13-58
+	android:name
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:114:19-44
+activity#com.disoft.distarea.OpcionesTec
+ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:116:9-117:61
+	android:theme
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:117:13-58
+	android:name
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:116:19-46
+activity#com.disoft.distarea.OpcionesAv
+ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:118:9-119:61
+	android:theme
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:119:13-58
+	android:name
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:118:19-45
+activity#com.disoft.distarea.OpCNAE
+ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:120:9-44
+	android:name
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:120:19-41
+activity#com.disoft.distarea.OpAbout
+ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:121:9-45
+	android:name
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:121:19-42
+activity#com.disoft.distarea.Ayuda
+ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:122:9-43
+	android:name
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:122:19-40
+uses-sdk
+INJECTED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml
+INJECTED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml
+MERGED from [com.nononsenseapps:filepicker:2.4.2] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/6695f85b4eec8d76e02cd9eaf7237b86/filepicker-2.4.2/AndroidManifest.xml:24:5-26:41
+MERGED from [com.nononsenseapps:filepicker:2.4.2] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/6695f85b4eec8d76e02cd9eaf7237b86/filepicker-2.4.2/AndroidManifest.xml:24:5-26:41
+MERGED from [com.android.support:appcompat-v7:23.1.1] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/b10852762cf4e0e30b2eabae51e1e05e/appcompat-v7-23.1.1/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:23.1.1] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/b10852762cf4e0e30b2eabae51e1e05e/appcompat-v7-23.1.1/AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-plus:8.4.0] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/66d4b3a49dd9c602b2ad69a4787a1bad/play-services-plus-8.4.0/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-plus:8.4.0] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/66d4b3a49dd9c602b2ad69a4787a1bad/play-services-plus-8.4.0/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-drive:8.4.0] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/3a9017ed247cd99197ffd15d9686a816/play-services-drive-8.4.0/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-drive:8.4.0] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/3a9017ed247cd99197ffd15d9686a816/play-services-drive-8.4.0/AndroidManifest.xml:18:5-42
+MERGED from [com.journeyapps:zxing-android-embedded:3.0.3] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/9e60e9cddbdb5357ed90035728afe8d4/zxing-android-embedded-3.0.3/AndroidManifest.xml:19:5-21:41
+MERGED from [com.journeyapps:zxing-android-embedded:3.0.3] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/9e60e9cddbdb5357ed90035728afe8d4/zxing-android-embedded-3.0.3/AndroidManifest.xml:19:5-21:41
+MERGED from [com.android.support:multidex:1.0.2] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/dfdbb4460783ffb9c8bba62586e02509/multidex-1.0.2/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:multidex:1.0.2] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/dfdbb4460783ffb9c8bba62586e02509/multidex-1.0.2/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:23.0.1] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/0d33c6cfe1be927a8cd8c8b44cefb784/recyclerview-v7-23.0.1/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:23.0.1] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/0d33c6cfe1be927a8cd8c8b44cefb784/recyclerview-v7-23.0.1/AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-base:8.4.0] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/cea8ff9cf23b4daad7de2db450387d7a/play-services-base-8.4.0/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-base:8.4.0] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/cea8ff9cf23b4daad7de2db450387d7a/play-services-base-8.4.0/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/e9baadfbdb77db61279b082fd23e0b5f/play-services-basement-8.4.0/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/e9baadfbdb77db61279b082fd23e0b5f/play-services-basement-8.4.0/AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:23.1.1] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/b513f07bb6b046a92755daead47edf98/support-v4-23.1.1/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.1.1] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/b513f07bb6b046a92755daead47edf98/support-v4-23.1.1/AndroidManifest.xml:20:5-43
+INJECTED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml
+INJECTED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml
+		INJECTED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml
+		ADDED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml
+		INJECTED from /Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml
+uses-feature#android.hardware.camera.front
+ADDED from [com.journeyapps:zxing-android-embedded:3.0.3] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/9e60e9cddbdb5357ed90035728afe8d4/zxing-android-embedded-3.0.3/AndroidManifest.xml:29:5-31:36
+	android:required
+		ADDED from [com.journeyapps:zxing-android-embedded:3.0.3] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/9e60e9cddbdb5357ed90035728afe8d4/zxing-android-embedded-3.0.3/AndroidManifest.xml:31:9-33
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:3.0.3] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/9e60e9cddbdb5357ed90035728afe8d4/zxing-android-embedded-3.0.3/AndroidManifest.xml:30:9-53
+uses-feature#android.hardware.camera.autofocus
+ADDED from [com.journeyapps:zxing-android-embedded:3.0.3] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/9e60e9cddbdb5357ed90035728afe8d4/zxing-android-embedded-3.0.3/AndroidManifest.xml:34:5-36:36
+	android:required
+		ADDED from [com.journeyapps:zxing-android-embedded:3.0.3] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/9e60e9cddbdb5357ed90035728afe8d4/zxing-android-embedded-3.0.3/AndroidManifest.xml:36:9-33
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:3.0.3] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/9e60e9cddbdb5357ed90035728afe8d4/zxing-android-embedded-3.0.3/AndroidManifest.xml:35:9-57
+uses-feature#android.hardware.camera.flash
+ADDED from [com.journeyapps:zxing-android-embedded:3.0.3] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/9e60e9cddbdb5357ed90035728afe8d4/zxing-android-embedded-3.0.3/AndroidManifest.xml:37:5-39:36
+	android:required
+		ADDED from [com.journeyapps:zxing-android-embedded:3.0.3] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/9e60e9cddbdb5357ed90035728afe8d4/zxing-android-embedded-3.0.3/AndroidManifest.xml:39:9-33
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:3.0.3] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/9e60e9cddbdb5357ed90035728afe8d4/zxing-android-embedded-3.0.3/AndroidManifest.xml:38:9-53
+uses-feature#android.hardware.screen.landscape
+ADDED from [com.journeyapps:zxing-android-embedded:3.0.3] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/9e60e9cddbdb5357ed90035728afe8d4/zxing-android-embedded-3.0.3/AndroidManifest.xml:40:5-42:36
+	android:required
+		ADDED from [com.journeyapps:zxing-android-embedded:3.0.3] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/9e60e9cddbdb5357ed90035728afe8d4/zxing-android-embedded-3.0.3/AndroidManifest.xml:42:9-33
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:3.0.3] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/9e60e9cddbdb5357ed90035728afe8d4/zxing-android-embedded-3.0.3/AndroidManifest.xml:41:9-57
+uses-feature#android.hardware.wifi
+ADDED from [com.journeyapps:zxing-android-embedded:3.0.3] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/9e60e9cddbdb5357ed90035728afe8d4/zxing-android-embedded-3.0.3/AndroidManifest.xml:43:5-45:36
+	android:required
+		ADDED from [com.journeyapps:zxing-android-embedded:3.0.3] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/9e60e9cddbdb5357ed90035728afe8d4/zxing-android-embedded-3.0.3/AndroidManifest.xml:45:9-33
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:3.0.3] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/9e60e9cddbdb5357ed90035728afe8d4/zxing-android-embedded-3.0.3/AndroidManifest.xml:44:9-45
+activity#com.journeyapps.barcodescanner.CaptureActivity
+ADDED from [com.journeyapps:zxing-android-embedded:3.0.3] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/9e60e9cddbdb5357ed90035728afe8d4/zxing-android-embedded-3.0.3/AndroidManifest.xml:48:9-54:63
+	android:screenOrientation
+		ADDED from [com.journeyapps:zxing-android-embedded:3.0.3] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/9e60e9cddbdb5357ed90035728afe8d4/zxing-android-embedded-3.0.3/AndroidManifest.xml:51:13-56
+	android:clearTaskOnLaunch
+		ADDED from [com.journeyapps:zxing-android-embedded:3.0.3] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/9e60e9cddbdb5357ed90035728afe8d4/zxing-android-embedded-3.0.3/AndroidManifest.xml:50:13-45
+	android:stateNotNeeded
+		ADDED from [com.journeyapps:zxing-android-embedded:3.0.3] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/9e60e9cddbdb5357ed90035728afe8d4/zxing-android-embedded-3.0.3/AndroidManifest.xml:52:13-42
+	android:windowSoftInputMode
+		ADDED from [com.journeyapps:zxing-android-embedded:3.0.3] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/9e60e9cddbdb5357ed90035728afe8d4/zxing-android-embedded-3.0.3/AndroidManifest.xml:54:13-60
+	android:theme
+		ADDED from [com.journeyapps:zxing-android-embedded:3.0.3] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/9e60e9cddbdb5357ed90035728afe8d4/zxing-android-embedded-3.0.3/AndroidManifest.xml:53:13-54
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:3.0.3] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/9e60e9cddbdb5357ed90035728afe8d4/zxing-android-embedded-3.0.3/AndroidManifest.xml:49:13-74

@@ -1,5 +1,7 @@
 package com.disoft.distarea.extras;
 
+import android.util.Log;
+
 import java.util.Date;
 import java.util.Properties;
 
@@ -70,16 +72,15 @@ public class Automailer extends javax.mail.Authenticator {
     CommandMap.setDefaultCommandMap(mc); 
   } 
  
-  public Automailer(String user, String pass) { 
-    this(); 
- 
-    _user = user; 
-    _pass = pass; 
+  public Automailer(String user, String pass) {
+    Log.e("entro automailer", "yes!");
+    this._user = user;
+    this._pass = pass;
   } 
   
   public void setHTML(){ html=1; }
  
-  public boolean send() throws Exception { 
+  public synchronized boolean send() throws Exception {
     Properties props = _setProperties(); 
  
     if(!_user.equals("") && !_pass.equals("") && _to.length > 0 && !_from.equals("") && !_subject.equals("") && !_body.equals("")) { 
@@ -91,14 +92,12 @@ public class Automailer extends javax.mail.Authenticator {
       
       /*InternetAddress[] addressTo = new InternetAddress[_to.length]; 
       */
-      if(!_to.equals("") || !_to.equals(null)){
-    	  InternetAddress[] addressTo = new InternetAddress[_to.length];
-    	  for (int i = 0; i < _to.length; i++) { 
-    	        addressTo[i] = new InternetAddress(_to[i]); 
-    	      } 
-    	  msg.setRecipients(RecipientType.TO, addressTo);
-      }
-      msg.setSubject(_subject); 
+      InternetAddress[] addressTo = new InternetAddress[_to.length];
+      for (int i = 0; i < _to.length; i++) {
+            addressTo[i] = new InternetAddress(_to[i]);
+          }
+      msg.setRecipients(RecipientType.TO, addressTo);
+      msg.setSubject(_subject);
       msg.setSentDate(new Date());
       
       InternetAddress[] addressFrom = new InternetAddress[1]; 
@@ -111,12 +110,13 @@ public class Automailer extends javax.mail.Authenticator {
       else messageBodyPart.setContent(_body, "text/html; charset=utf8");
       _multipart.addBodyPart(messageBodyPart); 
  
-      // Put parts in message 
+      // Put parts in message smtp.gmail.com"
       msg.setContent(_multipart); 
  
       // send email 
-      
+        Log.e("estoy aqui", "siiahsvahjvsasa");
       	Transport.send(msg);
+      Log.e("estoy aqui", "sendt");
       return true; 
     } else { return false; } 
   } 

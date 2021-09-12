@@ -253,58 +253,11 @@ public class ListaArticulos extends AppCompatActivity implements AdapterView.OnI
 			fileparcel = new File(getExternalCacheDir()+File.separator+"parcel"+File.separator+e.getEid());
 			parcel = Parcel.obtain();
 
-			//Leer parcel
-    /*
-    try{ if(fileparcel.exists() && 1==0){
-    		FileInputStream fis = new FileInputStream(getExternalCacheDir()+File.separator+"parcel"+File.separator+e.getEid());
-    		byte[] array = new byte[(int) fis.getChannel().size()];
-    		fis.read(array, 0, array.length); fis.close();
-    		parcel.unmarshall(array, 0, array.length);
-    		parcel.setDataPosition(0);
-    		while(parcel.dataAvail()>0)
-    			filasini.add(Fila.CREATOR.createFromParcel(parcel));
-    		parcel.recycle();
-    		if(filasini!=null){ flagcargado=1; Log.e("CARGAPARCEL","FILELOADED"); }
-    	}else{ Log.e("CARGAPARCEL","NOFILE "+fileparcel.getAbsolutePath());
-    		//Cargar filasini
-    		/*Log.e("EID",""+e.getEid());
-    		Log.e("ARTICULOS",""+db.getAllArticulosAlfa().size());
-    		Log.e("NFILAS",""+db.preparaFilaLA2(e.getEid(),db.getAllArticulosAlfa()).size());
-    		filasini = db.preparaFilaLA2(e.getEid(),db.getAllArticulosAlfa());
-    		for(Fila f : filasini)
-    			Log.e("FILA",""+f.articulo.getAid()+"-"+f.articulo.getArticulo());*/
-
-    /*	}
-    }catch(Exception e){e.printStackTrace();
-    	Log.e("CARGAPARCEL","ERROR");}*/
-		}
-
-		//Quitar los que ya est�n en el pedido [bypassed]
-    /*for(Ped p : db.getAllPedidos(getIntent().getIntExtra("eid",0))){
-    	for(Art a : original){ if(a.getAid()==p.getAid()) { original.remove(a); break; }}}
-    List<ArtEst> aes = db.getAllArticulosEstablecimientoBut(getIntent().getIntExtra("eid",0));
-    if(!aes.isEmpty()) { for(ArtEst ae : aes){ for(Art a : original){
-    	 if(a.getAid()==ae.getAid()) { original.remove(a); break; } }}}*/
-		//Collections.reverse(original);
-
-	/*if(filas.size()>500){
-		todos.setVisibility(View.GONE);
-		familia.performClick();
-	}*/
-
-    /*for(Fila fi : filasini){
-    	File pic = new File(getExternalCacheDir()+File.separator+"articulos"+File.separator+
-				fi.articulo.getAid()+".png");
-    	if(pic.exists()) pics.add(pic.getAbsolutePath());
-    	else pics.add(null);
-    }*/
-
 		//Botones
 		todos.setOnClickListener(new OnClickListener(){
 			@Override public void onClick(View v) {
 				if (sharedPrefs.getBoolean("ch", true))v.performHapticFeedback(1);
 				findViewById(R.id.pestanias).setVisibility(View.GONE);
-				Log.e("Hola!!!!!", "Value of variable: " + "123.....");
 				if(buscar.isChecked()) search.setQueryHint("Buscar en todos");
 				for(Fila fi : filasini){
 					for(int i=0;i<filas.size();i++)
@@ -336,7 +289,6 @@ public class ListaArticulos extends AppCompatActivity implements AdapterView.OnI
 			@Override public void onClick(View v) {
 				if (sharedPrefs.getBoolean("ch", true))v.performHapticFeedback(1);
 				findViewById(R.id.pestanias).setVisibility(View.GONE);
-				Log.e("Hola!!!!!", "Value of variable: " + "123012817212");
 				if(buscar.isChecked()) search.setQueryHint("Buscar en seleccion");
 				for(Fila fi : filasini){
 					for(int i=0;i<filas.size();i++)
@@ -350,13 +302,9 @@ public class ListaArticulos extends AppCompatActivity implements AdapterView.OnI
 				filas = marcadas;
 				prev = filas;
 				mostrarLista(filas);
-			/*if(buscar.isChecked() && !search.getQuery().toString().equals("") &&
-					search.hasFocus()==false)
-				search.setQuery(search.getQuery().toString(),false);*/
 			}});
 
 		//Familias
-
 		familias = db.getAllFamilias(e.getEid());
 		if(!familias.isEmpty()){
 			if(familias.size()>1){
@@ -372,26 +320,13 @@ public class ListaArticulos extends AppCompatActivity implements AdapterView.OnI
 							f.setNombre("   +   ");
 							familias.set(index, f);
 						}
-
 					}
 					if(flagfamotros==0){
 						//Creo Familia, la guardo en la BD, y la pongo en la lista actual
 						Fam otros = new Fam("000", "   +   ", "", e.getEid());
 						db.addFamilia("000", "OTROS", "", e.getEid());
 						familias.add(otros);
-					}/*else{
-    				Fam fam = db.buscaFamilia("000", e.getEid());
-    				int index = familias.indexOf(fam);
-    				if(index>0){
-    				fam.setNombre(" + ");
-    				familias.set(index, fam); }
-    				/*Log.e("INDEX",""+familias.indexOf(fam));
-    				for(Fam fami : familias){
-    					if (fami.getFid()=="000")
-    						fami.setNombre(" + ");
-    						familias.
-    				}
-      				familias.get(familias.indexOf(db.buscaFamilia("000", e.getEid()))).setNombre(" + ");*/
+					}
 				}
 				try{
 					Collections.sort(familias,new Comparator<Fam>(){
@@ -436,43 +371,9 @@ public class ListaArticulos extends AppCompatActivity implements AdapterView.OnI
 					findViewById(R.id.pestanias).setVisibility(View.VISIBLE);
 					if(marca==0) ventanaAdd=0;
 					botones.getChildAt(marca).performClick();
-
-				/*REBOOT
-				if(botones.getCheckedRadioButtonId()!=-1)//{
-					/*if(!((Fam)botones.getChildAt(0).getTag()).getFid().equals("000") && marca!=0)
-						botones.getChildAt(0).performClick();
-				}else if(!((Fam)botones.getChildAt(0).getTag()).getFid().equals("000") && marca!=0)
-					botones.getChildAt(marca).performClick();*/
-					//if(!((Fam)botones.getChildAt(0).getTag()).getFid().equals("000") && marca!=0)
-					/*if(!((Fam)botones.getChildAt(0).getTag()).getFid().equals("000") &&
-							botones.getCheckedRadioButtonId()!=0){
-						//findViewById(botones.getCheckedRadioButtonId()).performClick();
-						botones.getChildAt(botones.getCheckedRadioButtonId()).performClick();
-						Log.e("MOMENTO","Familia onClickListener1");
-						Log.e("PULSACI�N",""+botones.getCheckedRadioButtonId());
-						Log.e("FID",((Fam)botones.getChildAt(botones.getCheckedRadioButtonId()).getTag()).getFid());
-					}else if(!((Fam)botones.getChildAt(0).getTag()).getFid().equals("000")){
-						botones.getChildAt(0).performClick();
-						Log.e("MOMENTO","Familia onClickListener2");
-						Log.e("PULSACI�N","0 (Est�tico)");
-						Log.e("FID",((Fam)botones.getChildAt(botones.getCheckedRadioButtonId()).getTag()).getFid());
-					}else{
-						Log.e("MOMENTO","Familia onClickListener3");
-						//Buscar art�culos por familia
-	    				/*ArrayList<Fila> defamilia = new ArrayList<Fila>();
-	    				for(Fila fi : filasini)
-	    					if(fi.artest != null && fi.artest.fid.equals("000"))
-	    						defamilia.add(fi);
-	    				filas = defamilia;
-	    				mostrarLista(defamilia);*
-						if(!((Fam)botones.getChildAt(0).getTag()).getFid().equals("000") && marca==0)
-							botones.getChildAt(marca).performClick();
-					}*/
 				}});
 
-
-
-			//Creaci�n botones familias
+			//Creacion botones familias
 			for(Fam fa : familias){
 				RadioButton familia = new RadioButton(getBaseContext());
 				familia.setText(fa.getNombre());
@@ -551,16 +452,11 @@ public class ListaArticulos extends AppCompatActivity implements AdapterView.OnI
 				if(buscar.isChecked()){ //Abre buscar
 					if(menu!=null && menu.findItem(R.id.menuSearch)!=null){
 						menu.findItem(R.id.menuSearch).setVisible(true);
-						Log.e("veamos", v.getParent() +"");
 						try{
 							menu.findItem(R.id.menuSearch).expandActionView();
-						}catch(Exception e){
-							Log.e("Hola!!!!!", "Value of variable: " + "ecepion + " + e);
-						}
-						Log.e("Hola!!!!!", "Value of variable: " + "adioooos");
+						}catch(Exception e){ }
 //					try{menu.findItem(R.id.menuSearch).expandActionView();}catch(Exception e){}
 						search.setQueryHint("Buscar en todos");
-						Log.e("Hola!!!!!", "Value of variable: " + "ashsahjsav");
 						//menu.findItem(R.id.help).setVisible(false);
 						if(seleccion.isChecked()) search.setQueryHint("Buscar en seleccion");
 						else if(familia.isChecked() && botones.getCheckedRadioButtonId()!=-1)
@@ -568,42 +464,23 @@ public class ListaArticulos extends AppCompatActivity implements AdapterView.OnI
 								search.setQueryHint("Buscar en OTROS");
 							else
 								search.setQueryHint("Buscar en "+((Fam)botones.getChildAt(marca).getTag()).getNombre());
-
-						Log.e("Hola!!!!!", "Value of variable: " + "mansasbashas");
 					}
 					if(prev.isEmpty()) prev = filas;
-					Log.e("Hola!!!!!", "Value of variable: " + "aaaaaaaa");
 				}else{ //Esconde buscar
 					if(menu!=null && menu.findItem(R.id.menuSearch)!=null){
-						menu.findItem(R.id.menuSearch).setVisible(false); //menu.findItem(R.id.help).setVisible(true);
-						Log.e("Hola!!!!!", "Value of variable: " + "111111");
-						//try{MenuItemCompat.setActionView(menu.findItem(R.id.menuSearch), v).collapseActionView();}catch(Exception e){}
-
+						menu.findItem(R.id.menuSearch).setVisible(false);
 						try{
 							menu.findItem(R.id.menuSearch).collapseActionView();
-						}catch(Exception e){
-							Log.e("Hola!!!!!", "Value of variable: " + "ecepion + " + e);
-						}
-
-						Log.e("Hola!!!!!", "Value of variable: " + "00000");
-//					try{menu.findItem(R.id.menuSearch).collapseActionView();}catch(Exception e){}
+						}catch(Exception e){ }
 						imm.toggleSoftInput(InputMethodManager.RESULT_HIDDEN, 0);
 						imm.hideSoftInputFromInputMethod(null,0);
 						if(todos.isChecked()) todos.performClick();
 						else if(seleccion.isChecked()) seleccion.performClick();
 						else if(familia.isChecked())
-							//botones.getChildAt(botones.getCheckedRadioButtonId()-1).performClick();
-							//if(!((Fam)botones.getChildAt(0).getTag()).getFid().equals("000")){
-							//Entiendo que siempre ser� ventanaAdd=0 aqu�, para que el repulsado de Buscar
-							//no me abra la ventana emergente
 							ventanaAdd=0;
 						botones.getChildAt(marca).performClick();
-						Log.e("MOMENTO","Buscar no pulsado");
-						Log.e("PULSACION",""+marca);
-						Log.e("FID",""+((Fam)botones.getChildAt(marca).getTag()).getFid());
 					}}
 
-				Log.e("Hola!!!!!", "Value of variable: " + "honey");
 				SearchView.OnQueryTextListener queryTextListener = new SearchView.OnQueryTextListener() {
 					public boolean onQueryTextChange(String s) {
 						Log.e("Hola!!!!!", "Value of variable: " + "honey123");
@@ -628,8 +505,6 @@ public class ListaArticulos extends AppCompatActivity implements AdapterView.OnI
 						}
 
 						if(s.length()>=3){
-							Log.e("Hola!!!!!", "Value of variable: " + "honey-adios");
-
 							ArrayList<Fila> busqueda = new ArrayList<Fila>();
 							for(Fila fi : filas)
 								if(fi.articulo.getArticulo().toLowerCase().contains(s.toLowerCase()))
@@ -642,18 +517,13 @@ public class ListaArticulos extends AppCompatActivity implements AdapterView.OnI
 						}return true;
 					}
 					@Override public boolean onQueryTextSubmit(String query) {
-						Log.e("Hola!!!!!", "Value of variable: " + "okey!!!");
 						search.clearFocus();
 						buscar.performClick();
 						return true;} };
 				if (menu!=null && menu.findItem(R.id.menuSearch)!=null) {
-					Log.e("Hola!!!!!", "Value of variable: " + "no es null");
 					search.setOnQueryTextListener(queryTextListener);
-					Log.e("Hola!!!!!", "Value of variable: " + "no es null 1");
 					search.requestFocus();
-					Log.e("Hola!!!!!", "Value of variable: " + "no es null 2");
 					imm.toggleSoftInput(InputMethodManager.SHOW_FORCED, 0);
-					Log.e("Hola!!!!!", "Value of variable: " + "no es null 3");
 				}
 			}});
 
@@ -670,21 +540,14 @@ public class ListaArticulos extends AppCompatActivity implements AdapterView.OnI
 						if(ventanaAdd!=2) ventanaAdd=0;
 						botones.getChildAt(marca).performClick();
 					}else mostrarLista(filas);
-					if(filasini!=null){
-						//new backupParcel(0).execute();
-					}
-				} //Log.e("MUESTRA",c.getTimeInMillis()-t1+"ms");
+					if(filasini!=null){ }
+				}
 			}
 
 			@Override protected Boolean doInBackground(String... params) {
-				//t1 = c.getTimeInMillis();
-				//Log.e("EMPIEZA","0ms");
 				if(e.getEid()>0){
-					//try{filas = db.preparaFilaLA2(e.getEid(), original);}
 					try{filas = db.preparaFilaLA3(e.getEid());}
 					catch(Exception e){ e.printStackTrace();}
-				/*t1 =
-				Log.e("TERMINA",c.getTimeInMillis()-t1+"ms");*/
 					if(filas!=null)
 						return !filas.isEmpty();
 					else return false;
@@ -703,7 +566,6 @@ public class ListaArticulos extends AppCompatActivity implements AdapterView.OnI
 					if(!((Fam)botones.getChildAt(0).getTag()).getFid().equals("000"))
 						botones.getChildAt(0).performClick();
 			}
-//    	search.setQueryHint("Buscar en "+((Fam)botones.getChildAt(0).getTag()).getNombre());
 		} else{
 			loading.setVisibility(View.GONE);
 			articulos.addAll(original);
@@ -723,9 +585,6 @@ public class ListaArticulos extends AppCompatActivity implements AdapterView.OnI
 			mostrarLista(filas);
 		}
 
-		//XXX Ordenadores [Marcado para limpiar]
-
-		Log.e("Jjejeje", "Estoy aqui");
 		sortarticulo = (ImageView) findViewById(R.id.sortarticulo);
 		Matrix matrix = new Matrix();
 		sortarticulo.setVisibility(View.VISIBLE);
@@ -828,7 +687,6 @@ public class ListaArticulos extends AppCompatActivity implements AdapterView.OnI
 		else savedInstanceState.putBoolean("lupa",false);
 		if(search.getQuery().toString()!=null)
 			savedInstanceState.putString("lastsearch",search.getQuery().toString());
-		Log.e("LASTSEARCH",""+search.getQuery().toString());
 		if(flagcargado==1 && !savedInstanceState.containsKey("filas"))
 			savedInstanceState.putParcelableArrayList("filas", filasini);
 		if(ventanaAdd==2){ savedInstanceState.putInt("ventanaAdd",2);
@@ -909,10 +767,7 @@ public class ListaArticulos extends AppCompatActivity implements AdapterView.OnI
 			if(row==null){ //Si no estoy errado, la relaci�n reside en la posici�n en la vista, y la posici�n en la lista
 				vh = new ViewHolder();
 				row = inflater.inflate(R.layout.lvlistaarticulos, parent, false);
-
-				Log.e("Hola!!!!!", "Value of variable: " + "123567");
 				vh.linea = (LinearLayout)row.findViewById(R.id.linea);
-				Log.e("Hola!!!!!", "Value of variable: " + "pues nada");
 				vh.pic = (ImageView)row.findViewById(R.id.pic);
 				vh.item = (TextView)row.findViewById(R.id.nombreart);
 				vh.cantidad = ((TextView)row.findViewById(R.id.cantidad));
@@ -1004,7 +859,7 @@ public class ListaArticulos extends AppCompatActivity implements AdapterView.OnI
 										intent.putExtra("eid", e.getEid());
 										intent.putExtra("catalogo", "&hacer=catalogo&familia="+f.getFid());
 										startActivity(intent); finish();
-									}}).setNegativeButton("Cancelar y seguir aqu�",new DialogInterface.OnClickListener(){
+									}}).setNegativeButton("Cancelar y seguir aqui",new DialogInterface.OnClickListener(){
 							@Override public void onClick(DialogInterface dialog, int which) {
 								dialog.dismiss(); }});
 						adb.create().show();
@@ -1221,14 +1076,12 @@ public class ListaArticulos extends AppCompatActivity implements AdapterView.OnI
 											}
 										}
 									}});
-								Log.e("Hola!!!!!", "Value of variable: " + "siiii");
 								LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
 										LinearLayout.LayoutParams.WRAP_CONTENT,
 										LinearLayout.LayoutParams.WRAP_CONTENT);
 								params.gravity = Gravity.CENTER;
 								favorito.setLayoutParams(params);
 								adb.setView(favorito);
-								Log.e("Hola!!!!!", "Value of variable: " + "nooooo");
 							}
 							adb.create().show();
 						}
@@ -1245,7 +1098,6 @@ public class ListaArticulos extends AppCompatActivity implements AdapterView.OnI
 						if(!vh.cb.isChecked()) vh.cb.setChecked(true);
 						refrescaMarcados();
 						if(filas.get(position).artest!=null)
-							Log.e("AFID",""+filas.get(position).artest.getAfid());
 					}});
 				row.setLongClickable(true);
 				row.setOnLongClickListener(cantidadMenosUno);
@@ -1518,9 +1370,7 @@ public class ListaArticulos extends AppCompatActivity implements AdapterView.OnI
 			artprecio.setInputType(InputType.TYPE_CLASS_NUMBER);
 			((TextView) popupView.findViewById(R.id.moneda)).setText("�"); }
 
-		Log.e("Hola!!!!!", "Value of variable: " + "123");
 		((LinearLayout) popupView.findViewById(R.id.lineaobs)).setVisibility(View.GONE);
-		Log.e("Hola!!!!!", "Value of variable: " + "goone");
 		((EditText) popupView.findViewById(R.id.obs)).setVisibility(View.GONE);
 				/*artobservaciones.setOnFocusChangeListener(new OnFocusChangeListener() {
 					@Override public void onFocusChange(View v, boolean hasFocus) {
@@ -1754,7 +1604,7 @@ public class ListaArticulos extends AppCompatActivity implements AdapterView.OnI
 				}
 				if(!dirparcel.exists()) dirparcel.mkdirs();
 				FileOutputStream fos = new FileOutputStream(getExternalCacheDir()+File.separator+"parcel"+File.separator+e.getEid());
-				Log.e("N�FILAS",""+filasini.size());
+
 				for(Fila f : filasini)
 					f.writeToParcel(parcel, 0);
 				fos.write(parcel.marshall());
@@ -1764,36 +1614,6 @@ public class ListaArticulos extends AppCompatActivity implements AdapterView.OnI
 		}
 
 	}
-	/*
-	class cargaImagenes extends AsyncTask<String, Void, Boolean> {
-		View row; int position; Drawable d;
-		public cargaImagenes(View row, int position) {
-			this.row = row; this.position = position;
-		}
-
-		protected void onPreExecute() {}
-
-		protected void onPostExecute(final Boolean success) {
-			if(success){
-				ViewHolder vh = (ViewHolder)row.getTag();
-				vh.pic.setImageDrawable(d);
-			}
-		}
-
-		@Override protected Boolean doInBackground(String... params) {
-			if(pics.get(position)!=null){
-				try{File imagen = new File(pics.get(position));
-				if(imagen.exists()) d = Drawable.createFromPath(imagen.getPath());
-				else d = getResources().getDrawable(R.drawable.cesta6);
-				}catch(Exception e){e.printStackTrace();}
-			return true;}
-			else{  d = getResources().getDrawable(R.drawable.cesta6); return false; }
-		}
-	}*/
-	/*if(new File(getExternalCacheDir()+File.separator+"articulos"+File.separator+e.getEid()+File.separator+
-  			filas.get(position).articulo.getAid()+".png").exists())
-  				vh.pic.setImageDrawable(Drawable.createFromPath(getExternalCacheDir()+
-  					File.separator+"articulos"+File.separator+e.getEid()+File.separator+filas.get(position).articulo.getAid()+".png"));*/
 
 	@SuppressLint("NewApi")
 	private void zoomImageFromThumb(final View thumbView, Drawable d, int pos) {

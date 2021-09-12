@@ -1,0 +1,214 @@
+# List of SDK dependencies of this app, this information is also included in an encrypted form in the APK.
+# For more information visit: https://d.android.com/r/tools/dependency-metadata
+
+library {
+  maven_library {
+    groupId: "com.android.support"
+    artifactId: "appcompat-v7"
+    version: "23.1.1"
+  }
+  digests {
+    sha256: "\n\207b!C\202\267\350\324\271\211\264\254\020\265\310F\271W\327g\314\267\274\313\306\276Z\372\210Z\202"
+  }
+}
+library {
+  maven_library {
+    groupId: "com.android.support"
+    artifactId: "support-v4"
+    version: "23.1.1"
+  }
+  digests {
+    sha256: "\\}\316\266\310$\b\237\350\017P.R\006&@H\357\213\377\244\350\335\352\261\200\270\027#\347\233\177"
+  }
+}
+library {
+  maven_library {
+    groupId: "com.android.support"
+    artifactId: "support-annotations"
+    version: "23.1.1"
+  }
+  digests {
+    sha256: "\363G\243[\227H\244\020;9\246qJw\342\020\017H\215b?\326&\216%\234\027{ \016\235\202"
+  }
+}
+library {
+  maven_library {
+    groupId: "com.google.android.gms"
+    artifactId: "play-services-plus"
+    version: "8.4.0"
+  }
+  digests {
+    sha256: "N\006\242\373\366\252\036\340\025; &uf`\024\321\001j\216Pvn\363\000\225\201\345\n\225R:"
+  }
+}
+library {
+  maven_library {
+    groupId: "com.google.android.gms"
+    artifactId: "play-services-base"
+    version: "8.4.0"
+  }
+  digests {
+    sha256: "\233\267\210w\342\224}\361/{YV\321\277\246\nh\367\263\233\241z|\341s\264\322\374$\362\246J"
+  }
+}
+library {
+  maven_library {
+    groupId: "com.google.android.gms"
+    artifactId: "play-services-basement"
+    version: "8.4.0"
+  }
+  digests {
+    sha256: "z3\206\356\027!\346d\342\031\202\376\301\363\340\v\270\363\002\371\243Ulfv\224Fh8\314\205m"
+  }
+}
+library {
+  maven_library {
+    groupId: "com.google.android.gms"
+    artifactId: "play-services-drive"
+    version: "8.4.0"
+  }
+  digests {
+    sha256: "\340\213\255\250\231\335\b\240\212\323\241\252 \312{\264.\0322{\351\311h\221\264X\302\254\234\231\362F"
+  }
+}
+library {
+  maven_library {
+    groupId: "com.journeyapps"
+    artifactId: "zxing-android-embedded"
+    version: "3.0.3"
+  }
+  digests {
+    sha256: "\'[\323\310ok\364?\252\002\302\016\227=L{\3774\243\327L3\211V\021@` \201\231\027{"
+  }
+}
+library {
+  maven_library {
+    groupId: "com.google.zxing"
+    artifactId: "core"
+    version: "3.2.1"
+  }
+  digests {
+    sha256: "\264\330$R\347\246\277n\302i\211\004\2632C\027\027\355\217\232\205\002$\362\225\256\310\235\350\017\"Y"
+  }
+}
+library {
+  maven_library {
+    groupId: "org.postgresql"
+    artifactId: "postgresql"
+    version: "9.2-1003-jdbc4"
+  }
+  digests {
+    sha256: "lLJ\252\337\252\245.\210\017ft?\024\350\0050\261-\345BZa\354\343\r\246\340\271,\324\343"
+  }
+}
+library {
+  maven_library {
+    groupId: "javax.mail"
+    artifactId: "mail"
+    version: "1.4.7"
+  }
+  digests {
+    sha256: "x\303;O|{`\364\266\200\362\322@[\037\006=q\222\234\361\244\373\303(\210\203y\363e\374\373"
+  }
+}
+library {
+  maven_library {
+    groupId: "javax.activation"
+    artifactId: "activation"
+    version: "1.1"
+  }
+  digests {
+    sha256: "(\201\307\234\235n\360\034X\346+\356\241>\235\032\310\270\272\241o/\301\230\255ngv\336\375\315\323"
+  }
+}
+library {
+  maven_library {
+    groupId: "com.nostra13.universalimageloader"
+    artifactId: "universal-image-loader"
+    version: "1.9.5"
+  }
+  digests {
+    sha256: "\333\325\031\177\376\303\2501u3\031\bp\247\300\017\363u\r\326\243\022AD\214jU\"\325\033e\264"
+  }
+}
+library {
+  maven_library {
+    groupId: "com.nononsenseapps"
+    artifactId: "filepicker"
+    version: "2.4.2"
+  }
+  digests {
+    sha256: "\343b\177Y\242\361\312\351P\375\241W\006\374\247\336rF\226\326J-\035n\311Fu\234C\357?\307"
+  }
+}
+library {
+  maven_library {
+    groupId: "com.android.support"
+    artifactId: "recyclerview-v7"
+    version: "23.0.1"
+  }
+  digests {
+    sha256: "\226!\365y\016G\001\016\024\031l>\316\341h\314he\223\026\321\233.\366\265\250C\363Z\201\303\333"
+  }
+}
+library {
+  maven_library {
+    groupId: "com.android.support"
+    artifactId: "multidex"
+    version: "1.0.2"
+  }
+  digests {
+    sha256: "|\324\207U\307\317\333m\322\322\034\273\002#n\303\220\366\254\221\315\350~\266/G[%\232\2650\035"
+  }
+}
+library_dependencies {
+  library_dep_index: 1
+}
+library_dependencies {
+  library_index: 1
+  library_dep_index: 2
+}
+library_dependencies {
+  library_index: 3
+  library_dep_index: 4
+}
+library_dependencies {
+  library_index: 4
+  library_dep_index: 5
+}
+library_dependencies {
+  library_index: 5
+  library_dep_index: 1
+}
+library_dependencies {
+  library_index: 6
+  library_dep_index: 4
+}
+library_dependencies {
+  library_index: 10
+  library_dep_index: 11
+}
+library_dependencies {
+  library_index: 13
+  library_dep_index: 0
+  library_dep_index: 1
+  library_dep_index: 14
+}
+library_dependencies {
+  library_index: 14
+  library_dep_index: 1
+  library_dep_index: 2
+}
+module_dependencies {
+  module_name: "base"
+  dependency_index: 0
+  dependency_index: 3
+  dependency_index: 6
+  dependency_index: 7
+  dependency_index: 8
+  dependency_index: 9
+  dependency_index: 10
+  dependency_index: 12
+  dependency_index: 13
+  dependency_index: 15
+}

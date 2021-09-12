@@ -94,10 +94,6 @@ import android.support.v4.internal.view.SupportMenuItem;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.AppCompatSpinner;
-//import com.actionbarsherlock.internal.widget.IcsAdapterView;
-//import com.actionbarsherlock.internal.widget.IcsAdapterView.OnItemSelectedListener;
-//import com.actionbarsherlock.internal.widget.IcsSpinner;
-//import com.actionbarsherlock.view.MenuInflater;
 import com.disoft.distarea.extras.Automailer;
 import com.disoft.distarea.extras.Common;
 import com.disoft.distarea.extras.DatabaseHandler;
@@ -2021,7 +2017,7 @@ public class ListaCompra extends AppCompatActivity implements AdapterView.OnItem
 					horaped.setTextColor(Color.BLACK); observpedido.setTextColor(Color.BLACK);
 					referencia.setEms(15); fechaped.setEms(15);
 					horaped.setEms(15); observpedido.setMaxLines(5);
-					((TextView) popupView3.findViewById(R.id.texto)).setText("Información adicional");
+					((TextView) popupView3.findViewById(R.id.texto)).setText("Informacion adicional");
 					((TextView) popupView3.findViewById(R.id.texto)).setTextAppearance(getBaseContext(),
 							android.R.style.TextAppearance_Large);
 					((TextView) popupView3.findViewById(R.id.texto)).setTextColor(Color.BLACK);
@@ -2261,7 +2257,7 @@ public class ListaCompra extends AppCompatActivity implements AdapterView.OnItem
 					horaped.setTextColor(Color.BLACK); observpedido.setTextColor(Color.BLACK);
 					referencia.setEms(15); fechaped.setEms(15);
 					horaped.setEms(15); observpedido.setMaxLines(5);
-					((TextView) popupView3.findViewById(R.id.texto)).setText("Información adicional");
+					((TextView) popupView3.findViewById(R.id.texto)).setText("Informacion adicional");
 					((TextView) popupView3.findViewById(R.id.texto)).setTextAppearance(getBaseContext(),
 							android.R.style.TextAppearance_Large);
 					((TextView) popupView3.findViewById(R.id.texto)).setTextColor(Color.BLACK);
@@ -3983,8 +3979,10 @@ public class ListaCompra extends AppCompatActivity implements AdapterView.OnItem
 				String nombre = sharedPrefs.getString("seudonimo", "");
 				if(sharedPrefs.getString("seudonimo","").equals(""))
 					nombre = sharedPrefs.getString("nombre", "");
+				Log.e("noooo", "antteeees");
 				Automailer am = new Automailer(getString(R.string.userauto),getString(R.string.passauto));
 				Est e = db.getEstablecimiento(eidactual);
+				Log.e("siii", "despuuuuues");
 
 				//XXX CUERPO
 				//Test cambio fuente
@@ -4000,12 +3998,12 @@ public class ListaCompra extends AppCompatActivity implements AdapterView.OnItem
 						"<br/>Cliente: "+db.buscaClienteF(idclif).getNombre()+"<br/>ID Cliente: "+idclif+
 						" ["+db.buscaClienteF(idclif).getRef()+"]";
 				else cuerpo += "Destinatario: "+e.getNombre()+"<br/>Referencia Interna DISTAREA: "+eidactual;
-					cuerpo += "<br/>Número de pedido:"+db.getPedidoPendiente(eidactual).getPid()+"<br/>Fecha y Hora: "+
+					cuerpo += "<br/>Numero de pedido:"+db.getPedidoPendiente(eidactual).getPid()+"<br/>Fecha y Hora: "+
 					sdfdiashow.format(new Date()) + " a las "+sdfhora.format(new Date())+
 					"<br/>"+linea+"<br/>DATOS DEL EMISOR<br/>"+linea+"<br/><br/>Referencia Distarea: "+
-					sharedPrefs.getInt("id",0)+"<br/>Pseudónimo: "+nombre+"<br/>Dirección: "+
+					sharedPrefs.getInt("id",0)+"<br/>Pseudonimo: "+nombre+"<br/>Direccion: "+
 					sharedPrefs.getString("dir","*No definida*")+"<br/>E-mail: "+
-					sharedPrefs.getString("mail","*No definido*")+"<br/>Teléfono: "+
+					sharedPrefs.getString("mail","*No definido*")+"<br/>Telefono: "+
 					sharedPrefs.getString("tlf","*No definido*");
 
 					String xml ="<?xml version=\"1.0\" encoding=\"iso-8859-1\"?>\n" +
@@ -4295,15 +4293,18 @@ public class ListaCompra extends AppCompatActivity implements AdapterView.OnItem
 				else cuerpo+="Este pedido no ha sido firmado.";
 				//csv+="[FIN]"+(contador-1);
 
+				Log.e("siii", "llego aqui");
 				am.setFrom(getString(R.string.userauto));
 				am.setSubject("Pedido de "+nombre+" para "+e.getNombre());
 				am.setBody(style+cuerpo+"</p></body></html>");
 				am.setHTML();
 				//ENVIAR MENSAJE INTERNO
+		Log.e("siii", "yess");
 				try{Class.forName("org.postgresql.Driver");}catch(ClassNotFoundException ex){ex.printStackTrace();}
 				try{DriverManager.setLoginTimeout(20);
 					Connection conn = DriverManager.getConnection(getString(R.string.dirbbdd));
 					Statement st = conn.createStatement();
+					Log.e("siii", "sooo");
 					ResultSet rs = st.executeQuery("INSERT INTO mensajeapp (clienteglobal,mensaje,fecharealizacion,horarealizacion," +
 						"idestablecimiento,tipomensaje,estado,idmensajeappmovil,remitente,xml,xmlestado) VALUES " +
 						"("+sharedPrefs.getInt("id",0)+",'"+cuerpo.replace("<br/>", "\n")+"','"+
@@ -4322,6 +4323,7 @@ public class ListaCompra extends AppCompatActivity implements AdapterView.OnItem
 						sharedPrefs.getString("seudonimo",sharedPrefs.getString("nombre","")),midbd,xml);
 				db.almacenarMensajeEnviado(mensaje);
 
+		Log.e("siii", "ajjaaaa");
 				//Mensaje al establecimiento
 				if(e.getConfigura() != null && e.getConfigura().contains(",M,"))
 				try{ if(e.getTv()!=null &&!e.getTv().equals("")){ //XXX Xiaomi error carpeta envío CSV
@@ -4354,8 +4356,15 @@ public class ListaCompra extends AppCompatActivity implements AdapterView.OnItem
 					if(flagfirma==2){
 						am.addAttachment(getApplicationInfo().dataDir+"/firmas/"+
 							sharedPrefs.getInt("nped",1)+".jpg");} }
+
+					Log.e("siii", "casi final");
+
 				am.setTo(new String[] {sharedPrefs.getString("mail","")});
+
+					Log.e("siii", "en medio");
 				am.send();
+
+					Log.e("siii", "no peta");
 				} catch(Exception er){er.printStackTrace(); return false;}
 
 				return true;

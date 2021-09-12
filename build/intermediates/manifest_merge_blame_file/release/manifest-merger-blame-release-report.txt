@@ -1,0 +1,363 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.disoft.distarea"
+4    android:versionCode="29"
+5    android:versionName="2.3 (Beta)" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="19"
+8-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml
+9        android:targetSdkVersion="30" />
+9-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:8:5-66
+11-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:8:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:9:5-79
+12-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:9:22-76
+13    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+13-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:10:5-81
+13-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:10:22-78
+14    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+14-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:11:5-80
+14-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:11:22-78
+15    <uses-permission android:name="android.permission.VIBRATE" />
+15-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:12:5-66
+15-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:12:22-63
+16    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+16-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:13:5-70
+16-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:13:22-68
+17    <uses-permission android:name="android.permission.READ_CONTACTS" />
+17-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:14:5-71
+17-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:14:22-69
+18    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+18-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:15:5-79
+18-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:15:22-77
+19    <uses-permission android:name="android.permission.CAMERA" />
+19-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:16:5-64
+19-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:16:22-62
+20    <uses-permission android:name="android.permission.CAPTURE_VIDEO_OUTPUT" />
+20-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:17:5-78
+20-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:17:22-76
+21    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+21-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:18:5-73
+21-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:18:22-71
+22    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+22-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:19:5-75
+22-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:19:22-73
+23    <uses-permission android:name="android.permission.GET_TASKS" />
+23-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:20:5-68
+23-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:20:22-65
+24    <!-- <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" /> -->
+25    <uses-permission android:name="android.permission.CALL_PHONE" />
+25-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:22:5-68
+25-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:22:22-66
+26
+27    <uses-feature
+27-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:24:5-25:29
+28        android:name="android.permission.WRITE_CONTACTS"
+28-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:24:19-67
+29        android:required="false" />
+29-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:25:3-27
+30    <uses-feature
+30-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:26:5-27:35
+31        android:name="android.permission.CALL_PHONE"
+31-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:26:19-63
+32        android:required="false" />
+32-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:27:9-33
+33    <uses-feature
+33-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:28:5-29:29
+34        android:name="android.permission.ACCESS_FINE_LOCATION"
+34-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:28:19-73
+35        android:required="false" />
+35-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:29:3-27
+36    <uses-feature
+36-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:30:5-31:35
+37        android:name="android.permission.ACCESS_COARSE_LOCATION"
+37-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:30:19-75
+38        android:required="false" />
+38-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:31:9-33
+39    <uses-feature
+39-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:32:2-33:32
+40        android:name="android.permission.READ_PHONE_STATE"
+40-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:32:16-66
+41        android:required="false" />
+41-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:33:6-30
+42    <!--
+43         <uses-feature android:name="android.permission.READ_EXTERNAL_STORAGE"
+44	    android:required="false" />
+45    -->
+46
+47    <uses-feature
+47-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:37:2-38:33
+48        android:name="android.hardware.touchscreen"
+48-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:37:16-59
+49        android:required="false" />
+49-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:38:6-30
+50    <uses-feature
+50-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:39:2-40:33
+51        android:name="android.hardware.telephony"
+51-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:39:16-57
+52        android:required="false" />
+52-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:40:6-30
+53    <uses-feature
+53-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:41:2-42:33
+54        android:name="android.hardware.location"
+54-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:41:16-56
+55        android:required="false" />
+55-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:42:6-30
+56    <uses-feature
+56-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:43:2-44:32
+57        android:name="android.hardware.camera"
+57-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:43:16-54
+58        android:required="false" />
+58-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:44:6-30
+59    <uses-feature
+59-->[com.journeyapps:zxing-android-embedded:3.0.3] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/9e60e9cddbdb5357ed90035728afe8d4/zxing-android-embedded-3.0.3/AndroidManifest.xml:29:5-31:36
+60        android:name="android.hardware.camera.front"
+60-->[com.journeyapps:zxing-android-embedded:3.0.3] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/9e60e9cddbdb5357ed90035728afe8d4/zxing-android-embedded-3.0.3/AndroidManifest.xml:30:9-53
+61        android:required="false" /> <!-- TODO replace above two with next line after Android 4.2 -->
+61-->[com.journeyapps:zxing-android-embedded:3.0.3] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/9e60e9cddbdb5357ed90035728afe8d4/zxing-android-embedded-3.0.3/AndroidManifest.xml:31:9-33
+62    <!-- <uses-feature android:name="android.hardware.camera.any"/> -->
+63    <uses-feature
+63-->[com.journeyapps:zxing-android-embedded:3.0.3] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/9e60e9cddbdb5357ed90035728afe8d4/zxing-android-embedded-3.0.3/AndroidManifest.xml:34:5-36:36
+64        android:name="android.hardware.camera.autofocus"
+64-->[com.journeyapps:zxing-android-embedded:3.0.3] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/9e60e9cddbdb5357ed90035728afe8d4/zxing-android-embedded-3.0.3/AndroidManifest.xml:35:9-57
+65        android:required="false" />
+65-->[com.journeyapps:zxing-android-embedded:3.0.3] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/9e60e9cddbdb5357ed90035728afe8d4/zxing-android-embedded-3.0.3/AndroidManifest.xml:36:9-33
+66    <uses-feature
+66-->[com.journeyapps:zxing-android-embedded:3.0.3] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/9e60e9cddbdb5357ed90035728afe8d4/zxing-android-embedded-3.0.3/AndroidManifest.xml:37:5-39:36
+67        android:name="android.hardware.camera.flash"
+67-->[com.journeyapps:zxing-android-embedded:3.0.3] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/9e60e9cddbdb5357ed90035728afe8d4/zxing-android-embedded-3.0.3/AndroidManifest.xml:38:9-53
+68        android:required="false" />
+68-->[com.journeyapps:zxing-android-embedded:3.0.3] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/9e60e9cddbdb5357ed90035728afe8d4/zxing-android-embedded-3.0.3/AndroidManifest.xml:39:9-33
+69    <uses-feature
+69-->[com.journeyapps:zxing-android-embedded:3.0.3] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/9e60e9cddbdb5357ed90035728afe8d4/zxing-android-embedded-3.0.3/AndroidManifest.xml:40:5-42:36
+70        android:name="android.hardware.screen.landscape"
+70-->[com.journeyapps:zxing-android-embedded:3.0.3] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/9e60e9cddbdb5357ed90035728afe8d4/zxing-android-embedded-3.0.3/AndroidManifest.xml:41:9-57
+71        android:required="false" />
+71-->[com.journeyapps:zxing-android-embedded:3.0.3] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/9e60e9cddbdb5357ed90035728afe8d4/zxing-android-embedded-3.0.3/AndroidManifest.xml:42:9-33
+72    <uses-feature
+72-->[com.journeyapps:zxing-android-embedded:3.0.3] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/9e60e9cddbdb5357ed90035728afe8d4/zxing-android-embedded-3.0.3/AndroidManifest.xml:43:5-45:36
+73        android:name="android.hardware.wifi"
+73-->[com.journeyapps:zxing-android-embedded:3.0.3] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/9e60e9cddbdb5357ed90035728afe8d4/zxing-android-embedded-3.0.3/AndroidManifest.xml:44:9-45
+74        android:required="false" />
+74-->[com.journeyapps:zxing-android-embedded:3.0.3] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/9e60e9cddbdb5357ed90035728afe8d4/zxing-android-embedded-3.0.3/AndroidManifest.xml:45:9-33
+75
+76    <application
+76-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:46:5-134:19
+77        android:name="android.support.multidex.MultiDexApplication"
+78        android:allowBackup="true"
+78-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:47:9-35
+79        android:icon="@drawable/ic_launcher2"
+79-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:48:9-46
+80        android:label="@string/app_name"
+80-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:49:9-41
+81        android:theme="@style/Theme.Sherlock.Light.DarkActionBar.Disoft"
+81-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:52:9-73
+82        android:usesCleartextTraffic="true" >
+82-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:50:9-44
+83        <meta-data
+83-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:53:9-55:69
+84            android:name="com.google.android.gms.version"
+84-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:54:13-58
+85            android:value="@integer/google_play_services_version" />
+85-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:55:13-66
+86
+87        <service
+87-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:56:9-60:13
+88            android:name="com.disoft.distarea.extras.NotificacionMensajes"
+88-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:57:6-49
+89            android:icon="@drawable/content_email"
+89-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:58:6-44
+90            android:label="Mensajer\u00EDa" >
+90-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:59:6-37
+91        </service>
+92        <service
+92-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:62:9-66:16
+93            android:name="com.disoft.distarea.MyDriveEventService"
+93-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:62:18-53
+94            android:exported="true" >
+94-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:62:54-77
+95            <intent-filter>
+95-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:63:10-65:26
+96                <action android:name="com.google.android.gms.drive.events.HANDLE_EVENT" />
+96-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:64:14-87
+96-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:64:22-85
+97            </intent-filter>
+98        </service>
+99
+100        <receiver
+100-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:68:9-73:20
+101            android:name="com.disoft.distarea.Autorun"
+101-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:68:42-65
+102            android:enabled="true"
+102-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:68:19-41
+103            android:exported="false"
+103-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:68:66-90
+104            android:permission="android.permission.RECEIVE_BOOT_COMPLETED" >
+104-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:69:10-72
+105            <intent-filter>
+105-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:70:14-72:30
+106                <action android:name="android.intent.action.BOOT_COMPLETED" />
+106-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:71:19-81
+106-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:71:27-78
+107            </intent-filter>
+108        </receiver>
+109
+110        <activity
+110-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:75:9-83:20
+111            android:name="com.disoft.distarea.ListaCompra"
+111-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:76:13-59
+112            android:label="@string/app_name" >
+112-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:77:13-45
+113            <intent-filter>
+113-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:78:13-82:29
+114                <action android:name="android.intent.action.MAIN" />
+114-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:79:17-69
+114-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:79:25-66
+115
+116                <category android:name="android.intent.category.LAUNCHER" />
+116-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:81:17-77
+116-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:81:27-74
+117            </intent-filter>
+118        </activity>
+119        <activity
+119-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:84:9-85:52
+120            android:name="com.disoft.distarea.VentanaFirma"
+120-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:84:19-47
+121            android:screenOrientation="landscape" />
+121-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:85:13-50
+122        <activity android:name="com.disoft.distarea.Registro" />
+122-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:86:9-46
+122-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:86:19-43
+123        <activity android:name="com.disoft.distarea.Registro2" />
+123-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:87:9-47
+123-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:87:19-44
+124        <activity android:name="com.disoft.distarea.ListaAnterior" />
+124-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:88:9-51
+124-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:88:19-48
+125        <activity android:name="com.disoft.distarea.ListaArticulos" />
+125-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:89:9-52
+125-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:89:19-49
+126        <activity
+126-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:90:9-92:51
+127            android:name="com.disoft.distarea.TiendaVirtual"
+127-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:90:19-48
+128            android:configChanges="orientation"
+128-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:91:13-48
+129            android:hardwareAccelerated="false" />
+129-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:92:13-48
+130        <activity android:name="com.disoft.distarea.Mensajes" />
+130-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:93:9-46
+130-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:93:19-43
+131        <activity android:name="com.disoft.distarea.Conversaciones" />
+131-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:94:9-52
+131-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:94:19-49
+132        <activity android:name="com.disoft.distarea.Chat" />
+132-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:95:9-41
+132-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:95:19-39
+133        <activity
+133-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:96:9-104:20
+134            android:name="com.nononsenseapps.filepicker.FilePickerActivity"
+134-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:97:13-76
+135            android:label="@string/app_name"
+135-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:98:13-45
+136            android:theme="@style/FilePickerTheme" >
+136-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:99:13-51
+137            <intent-filter>
+137-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:100:13-103:29
+138                <action android:name="android.intent.action.GET_CONTENT" />
+138-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:101:17-75
+138-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:101:25-73
+139
+140                <category android:name="android.intent.category.DEFAULT" />
+140-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:102:17-75
+140-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:102:27-73
+141            </intent-filter>
+142        </activity>
+143        <activity android:name="com.disoft.distarea.Mensaje" />
+143-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:105:9-45
+143-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:105:19-42
+144        <activity android:name="com.disoft.distarea.ListaEstablecimientos" />
+144-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:106:9-59
+144-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:106:19-56
+145        <activity android:name="com.disoft.distarea.ListaEst" />
+145-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:107:9-46
+145-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:107:19-43
+146        <activity android:name="com.disoft.distarea.Establecimiento" />
+146-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:108:9-53
+146-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:108:19-50
+147        <activity android:name="com.disoft.distarea.Geolocalizacion" />
+147-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:109:9-53
+147-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:109:19-50
+148        <activity
+148-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:110:9-111:60
+149            android:name="com.disoft.distarea.Opciones"
+149-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:110:19-43
+150            android:theme="@style/Theme.MyTheme.Opciones" />
+150-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:111:13-58
+151        <activity
+151-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:112:9-113:61
+152            android:name="com.disoft.distarea.Opciones2"
+152-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:112:19-44
+153            android:theme="@style/Theme.MyTheme.Opciones" />
+153-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:113:13-58
+154        <activity
+154-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:114:9-115:61
+155            android:name="com.disoft.distarea.Opciones3"
+155-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:114:19-44
+156            android:theme="@style/Theme.MyTheme.Opciones" />
+156-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:115:13-58
+157        <activity
+157-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:116:9-117:61
+158            android:name="com.disoft.distarea.OpcionesTec"
+158-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:116:19-46
+159            android:theme="@style/Theme.MyTheme.Opciones" />
+159-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:117:13-58
+160        <activity
+160-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:118:9-119:61
+161            android:name="com.disoft.distarea.OpcionesAv"
+161-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:118:19-45
+162            android:theme="@style/Theme.MyTheme.Opciones" />
+162-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:119:13-58
+163        <activity android:name="com.disoft.distarea.OpCNAE" />
+163-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:120:9-44
+163-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:120:19-41
+164        <activity android:name="com.disoft.distarea.OpAbout" />
+164-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:121:9-45
+164-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:121:19-42
+165        <activity android:name="com.disoft.distarea.Ayuda" />
+165-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:122:9-43
+165-->/Users/disoftserviciosinformaticos/Desktop/Distarea/AndroidManifest.xml:122:19-40
+166
+167        <!--
+168<activity android:name="com.google.zxing.client.android.CaptureActivity"
+169
+170  android:configChanges="orientation|keyboardHidden"
+171
+172  android:windowSoftInputMode="stateAlwaysHidden">
+173  <intent-filter>
+174    <action android:name="com.google.zxing.client.android.SCAN"/>
+175    <category android:name="android.intent.category.DEFAULT"/>
+176  </intent-filter>
+177</activity>
+178        -->
+179        <activity
+179-->[com.journeyapps:zxing-android-embedded:3.0.3] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/9e60e9cddbdb5357ed90035728afe8d4/zxing-android-embedded-3.0.3/AndroidManifest.xml:48:9-54:63
+180            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+180-->[com.journeyapps:zxing-android-embedded:3.0.3] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/9e60e9cddbdb5357ed90035728afe8d4/zxing-android-embedded-3.0.3/AndroidManifest.xml:49:13-74
+181            android:clearTaskOnLaunch="true"
+181-->[com.journeyapps:zxing-android-embedded:3.0.3] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/9e60e9cddbdb5357ed90035728afe8d4/zxing-android-embedded-3.0.3/AndroidManifest.xml:50:13-45
+182            android:screenOrientation="sensorLandscape"
+182-->[com.journeyapps:zxing-android-embedded:3.0.3] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/9e60e9cddbdb5357ed90035728afe8d4/zxing-android-embedded-3.0.3/AndroidManifest.xml:51:13-56
+183            android:stateNotNeeded="true"
+183-->[com.journeyapps:zxing-android-embedded:3.0.3] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/9e60e9cddbdb5357ed90035728afe8d4/zxing-android-embedded-3.0.3/AndroidManifest.xml:52:13-42
+184            android:theme="@style/zxing_CaptureTheme"
+184-->[com.journeyapps:zxing-android-embedded:3.0.3] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/9e60e9cddbdb5357ed90035728afe8d4/zxing-android-embedded-3.0.3/AndroidManifest.xml:53:13-54
+185            android:windowSoftInputMode="stateAlwaysHidden" />
+185-->[com.journeyapps:zxing-android-embedded:3.0.3] /Users/disoftserviciosinformaticos/.gradle/caches/transforms-2/files-2.1/9e60e9cddbdb5357ed90035728afe8d4/zxing-android-embedded-3.0.3/AndroidManifest.xml:54:13-60
+186    </application>
+187
+188</manifest>
